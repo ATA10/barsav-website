@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Atatürk Havalimanı LED Sistemleri",
+      "category": "Havaalanı Işıklandırması",
+      "shortDescription": "Türkiye'nin önemli havalimanlarından birinin modernize edilmiş ışıklandırma sistemi",
+      "fullDescription": "Atatürk Havalimanı LED ışıklandırma sistemi projesi, BARSAV tarafından tamamlanan en geniş kapsamlı havaalanı ışıklandırması projesidir. Proje, eski halojenleri modern LED teknolojisiyle değiştirerek enerji tasarrufunu %60 oranında artırmıştır. Sistem, all-weather operasyonu destekler ve 24/7 güvenilir hizmet sunar.",
+      "year": "2023",
+      "status": "Tamamlandı",
+      "client": "Türkiye Havalimanları İşletmesi",
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 2,
+      "title": "Hava Savunma Sistemleri",
+      "category": "Savunma Teknolojisi",
+      "shortDescription": "Milli hava savunma sistemleri için ileri kontrol ve elektronik platformu",
+      "fullDescription": "Bu proje, Türk savunma sanayisinin kritik bir bileşenini oluşturmaktadır. BARSAV, hava savunma sisteminin kontrol elektroniklerinin tasarımı ve üretiminde lider rol oynamıştır. Sistem, yüksek güvenilirlik ve gerçek zamanlı işleme kapasitesiyle karakterize edilir.",
+      "year": "2022-2024",
+      "status": "Devam Ediyor",
+      "client": "Savunma Sanayi Müsteşarlığı",
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 3,
+      "title": "Pilot Eğitim Simülatörü",
+      "category": "Simülasyon Platformu",
+      "shortDescription": "Sivil pilot adayları için gelişmiş uçuş simülatörü platformu",
+      "fullDescription": "Pilot eğitim simülatörü, sivil havacılık kuruluşları için geliştirilen en son teknoloji platformudur. Gerçekçi sabin tasarımı, yüksek sadakat grafikleri ve dinamik hareket sistemi ile tam immersize eğitim ortamı sağlanır. Sistem, havacılık otoritesi tarafından sertifiye edilmiştir.",
+      "year": "2023",
+      "status": "Tamamlandı",
+      "client": "Türk Havacılık Akademisi",
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 4,
+      "title": "Elektronik Bileşen Üretim",
+      "category": "Üretim Teknolojisi",
+      "shortDescription": "Yüksek teknoloji elektronik bileşenleri için modern üretim tesisi",
+      "fullDescription": "BARSAV üretim tesisi, hassas elektronik bileşenlerinin üretilmesi için özel olarak tasarlanmıştır. Tam otomatik yönetim sistemi ile kalite kontrol sağlanır. Tesis, yılda 50,000+ bileşen üretim kapasitesine sahiptir.",
+      "year": "2021-2024",
+      "status": "Operasyonel",
+      "client": "Yerli Üretim Programı",
+      "image": "/placeholder.svg?height=400&width=600"
+    }
+  ]
+}

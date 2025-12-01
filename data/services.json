@@ -1,0 +1,60 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Havaalanı Işıklandırması",
+      "shortDescription": "Son teknoloji LED sistemleriyle aerodromların etkin ve güvenli aydınlatması",
+      "fullDescription": "BARSAV'ın havaalanı ışıklandırması sistemleri, uluslararası standartlara uygun olarak tasarlanmış ve uygulanmıştır. LED teknolojisi kullanılarak yüksek verimlilik ve enerji tasarrufu sağlanır. Sistem, gece ve hava şartlarında da en yüksek görüş kalitesini garantiler.",
+      "features": [
+        "LED tabanlı modern teknoloji",
+        "Enerji tasarrufu ve sürdürülebilirlik",
+        "Otomatik kontrol sistemleri",
+        "Uluslararası standartlara uyumlu",
+        "24/7 operasyonel güvenilirlik"
+      ],
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 2,
+      "title": "Elektronik Sistemleri",
+      "shortDescription": "Yüksek performanslı elektronik bileşenleri ve kontrol sistemleri",
+      "fullDescription": "BARSAV elektronik bölümü, askeri ve sivil uygulamalar için yüksek performanslı kontrol sistemleri üretir. Hassas mühendislik ve kalite kontrol ile her ürün en yüksek standartlarda sunulur. Özel taleplere göre özelleştirme imkanı mevcuttur.",
+      "features": [
+        "Özel tasarım ve geliştirme",
+        "Yüksek güvenilirlik ve dayanıklılık",
+        "Hassas kalite kontrol",
+        "Hızlı prototipleme ve test",
+        "Tam teknik destek"
+      ],
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 3,
+      "title": "Araç Simülasyonları",
+      "shortDescription": "Askeri ve sivil araçlar için gelişmiş simülasyon ve eğitim platformları",
+      "fullDescription": "BARSAV'ın simülasyon sistemleri, pilot ve operatör eğitimi için gerçekçi ve tam kontrollü ortamlar sağlar. Yüksek sadakat grafikleri ve yapay zeka destekli senaryolar ile etkinlik maksimum düzeyde tutulur. Sistem, gerçek araç simülasyonu deneyimi sunarak eğitim maliyetlerini minimize eder.",
+      "features": [
+        "Yüksek sadakat grafikleri",
+        "Gerçekçi fizik motorları",
+        "Yapay zeka destekli senaryolar",
+        "Çok oyunculu eğitim desteği",
+        "Uluslararası sertifikasyon"
+      ],
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 4,
+      "title": "Elektronik Üretim",
+      "shortDescription": "ISO standartlara uygun modern üretim tesisleri ve kontrol sistemleri",
+      "fullDescription": "BARSAV üretim tesisleri, en modern teknolojiler ve kalite kontrol sistemleri ile donatılmıştır. ISO 9001 ve ISO 14001 sertifikasyonları ile kalite ve çevre standartlarına uyum sağlanır. Yüksek kapasiteli üretim hattı ile büyük ölçekli projeler gerçekleştirilmektedir.",
+      "features": [
+        "ISO sertifikasyonları",
+        "Otomatik üretim hatları",
+        "Hassas kalite kontrol",
+        "Çevre dostu üretim",
+        "Esnek ve hızlı üretim kapasitesi"
+      ],
+      "image": "/placeholder.svg?height=400&width=600"
+    }
+  ]
+}

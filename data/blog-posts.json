@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Havacılık Teknolojisinde Yapay Zeka Uygulamaları",
+      "date": "15 Aralık 2024",
+      "category": "Teknoloji",
+      "excerpt": "AI'nin havacılık sektöründe devrim yaratması ve güvenliği artırması hakkında...",
+      "content": "Yapay zeka teknolojileri, havacılık sektöründe giderek daha önemli bir rol oynamaktadır. Otonom uçuş sistemlerinden, bakım ve onarım otomasyonuna kadar AI birçok alanda kullanılmaktadır.\n\nBARSAV olarak, AI teknolojisini havacılık simülasyonlarında entegre ederek, pilot eğitimini daha etkili ve verimli hale getiriyoruz. Bu teknoloji, gerçek hayat senaryolarını simüle etmek ve beklenmedik durumlarla başa çıkma becerilerini geliştirmek için kullanılıyor.\n\nYerel ve uluslararası standartlar doğrultusunda geliştirilen sistemlerimiz, havacılık endüstrisine yeni boyutlar kazandırmaktadır.",
+      "author": "BARSAV Teknoloji Ekibi",
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 2,
+      "title": "Elektronik Sistemlerde Son Trendler",
+      "date": "10 Aralık 2024",
+      "category": "İnovasyon",
+      "excerpt": "Modern elektronik tasarımında en yeni teknolojileri keşfedin...",
+      "content": "Elektronik endüstrisi, her geçen gün daha hızlı ve daha verimli çözümler sunmaktadır. Mikro-çip tasarımından, yüksek güç elektroniklerine kadar, teknoloji her alanda ilerlemektedir.\n\nBARSAV elektronik üretim tesisleri, en son teknolojiler ve yüksek kalite standartları ile donatılmıştır. Hassas ölçüm ve kalite kontrol sistemleri kullanarak, her ürünün en yüksek standartlarda üretilmesini sağlıyoruz.\n\nSavunma ve sivil uygulamalar için özelleştirilebilir elektronik çözümler sunuyoruz.",
+      "author": "Elektronik Bölümü",
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 3,
+      "title": "Savunma Sanayi İçin Simülasyon Teknolojisi",
+      "date": "5 Aralık 2024",
+      "category": "Savunma",
+      "excerpt": "İleri simülasyon platformları ile eğitim kalitesini artırma...",
+      "content": "Simülasyon teknolojisi, modern savunma eğitiminin temelini oluşturmaktadır. Gerçekçi ve ihtiyaca göre özelleştirilebilir simülasyon ortamları, personel eğitiminin kalitesini önemli ölçüde artırmaktadır.\n\nBARSAV'ın simülasyon sistemleri, askeri ve sivil araç eğitimi için kullanılan en gelişmiş platformlardan biridir. Yüksek sadakat grafikleri, gerçekçi fizik motorları ve yapay zeka destekli senaryolar ile tam immersif bir eğitim deneyimi sağlıyoruz.\n\nUluslararası standartlara uygun olarak geliştirilen sistemlerimiz, dünya çapında tanınmıştır.",
+      "author": "Savunma Sistemleri Ekibi",
+      "image": "/placeholder.svg?height=400&width=600"
+    }
+  ]
+}
