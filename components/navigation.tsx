@@ -32,7 +32,7 @@ export default function Navigation() {
           </Link>
 
           <div className="hidden md:flex space-x-8">
-            <Link href="#about" className="text-foreground hover:text-accent transition">
+            <Link href="/about" className="text-foreground hover:text-accent transition">
               Hakkımızda
             </Link>
             <Link href="#services" className="text-foreground hover:text-accent transition">
@@ -47,9 +47,9 @@ export default function Navigation() {
             <Link href="#career" className="text-foreground hover:text-accent transition">
               Kariyer
             </Link>
-            <Link href="#contact" className="text-foreground hover:text-accent transition">
+            <a href="#contact" className="text-foreground hover:text-accent transition">
               İletişim
-            </Link>
+            </a>
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 hover:bg-card rounded-lg">
@@ -61,7 +61,7 @@ export default function Navigation() {
 
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2 bg-background/80 backdrop-blur-sm">
-            <Link href="#about" className="block text-foreground hover:text-accent transition py-2">
+            <Link href="/about" className="block text-foreground hover:text-accent transition py-2">
               Hakkımızda
             </Link>
             <Link href="#services" className="block text-foreground hover:text-accent transition py-2">
@@ -76,9 +76,9 @@ export default function Navigation() {
             <Link href="#career" className="block text-foreground hover:text-accent transition py-2">
               Kariyer
             </Link>
-            <Link href="#contact" className="block text-foreground hover:text-accent transition py-2">
+            <a href="#contact" className="block text-foreground hover:text-accent transition py-2">
               İletişim
-            </Link>
+            </a>
           </div>
         )}
       </div>

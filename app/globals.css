@@ -128,9 +128,20 @@
 }
 
 @layer utilities {
-  /* Blur overlay efekti untuk modal arka planı */
+  /* Blur overlay efekti için modal arka planı */
   .modal-blur {
     @apply fixed inset-0 bg-black/40 backdrop-blur-md transition-opacity duration-300;
+  }
+
+  /* Modal scroll bar'ını kaldır */
+  .modal-no-scroll {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .modal-no-scroll::-webkit-scrollbar {
+    display: none;
   }
 
   .border-border {
