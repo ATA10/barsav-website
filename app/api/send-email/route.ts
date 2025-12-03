@@ -5,8 +5,8 @@ import nodemailer from "nodemailer"
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.GMAIL_USER, // dash.aniltaha@gmail.com
-    pass: process.env.GMAIL_APP_PASSWORD, // Gmail App Password
+    user: process.env.GMAIL_USER, 
+    pass: process.env.GMAIL_APP_PASSWORD,
   },
 })
 
@@ -15,12 +15,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { name, email, subject, message } = body
 
-    // Email validasyonu
     if (!name || !email || !subject || !message) {
       return NextResponse.json({ error: "Tüm alanlar gereklidir." }, { status: 400 })
     }
 
-    // Email formatı validasyonu
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) {
       return NextResponse.json({ error: "Geçersiz email formatı." }, { status: 400 })
@@ -28,9 +26,9 @@ export async function POST(request: NextRequest) {
 
     // Email içeriği oluştur
     const mailOptions = {
-      from: process.env.GMAIL_USER, // Gönderen (sizin emailiniz)
-      to: process.env.GMAIL_USER, // Alıcı (yine sizin emailiniz)
-      replyTo: email, // Kullanıcının email'i cevap için
+      from: process.env.GMAIL_USER, 
+      to: process.env.GMAIL_USER, 
+      replyTo: email, 
       subject: `BARSAV İletişim Formu: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

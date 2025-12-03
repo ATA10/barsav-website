@@ -45,7 +45,7 @@ export default function BlogModal({ post, isOpen, onClose }: BlogModalProps) {
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="sticky top-0 bg-card border-b border-[color:var(--border)] p-6 flex justify-between items-start">
+          <div className="sticky top-0 bg-card border-b border-[color:var(--border)] p-6 flex justify-between items-start z-10">
             <div>
               <div className="flex gap-2 mb-2">
                 <span className="text-xs text-accent bg-accent/10 px-3 py-1 rounded-full">{post.category}</span>

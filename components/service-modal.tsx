@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect } from "react"
-import { X } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 interface Service {
   id: number
@@ -33,29 +34,41 @@ export default function ServiceModal({
     <>
       <div className="modal-blur" onClick={onClose} />
 
-      {/* Modal */}
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-        <div className="relative bg-card rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-          {/* Close button */}
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 p-2 hover:bg-secondary rounded-lg transition z-10 bg-card"
-          >
-            <X className="w-6 h-6 text-foreground" />
-          </button>
+      <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4" onClick={onClose}>
+        <div
+          className="bg-card border border-[color:var(--border)] rounded-lg max-w-2xl w-full max-h-[90vh] modal-no-scroll"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Header */}
+          <div className="sticky top-0 bg-card border-b border-[color:var(--border)] p-6 flex justify-between items-start z-10">
+            <div>
+              <h2 className="text-2xl font-bold text-foreground">{service.title}</h2>
+            </div>
+            <button
+              onClick={onClose}
+              className="text-muted-foreground hover:text-foreground text-2xl font-bold w-8 h-8 flex items-center justify-center"
+            >
+              ×
+            </button>
+          </div>
 
           {/* Content */}
-          <div className="p-8">
-            <img
-              src={service.image || "/placeholder.svg"}
-              alt={service.title}
-              className="w-full h-64 object-cover rounded-lg mb-6"
-            />
-            <h2 className="text-3xl font-bold text-foreground mb-4">{service.title}</h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{service.fullDescription}</p>
+          <div className="p-6">
+            <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
+              <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+            </div>
+
+            {/* Description */}
+            <div className="text-foreground space-y-4 mb-6">
+              {service.fullDescription.split("\n\n").map((paragraph, index) => (
+                <p key={index} className="leading-relaxed text-muted-foreground">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
 
             {/* Features */}
-            <div className="mb-6">
+            <div className="mb-6 p-4 bg-background rounded-lg">
               <h3 className="text-xl font-semibold text-foreground mb-4">Özellikler</h3>
               <ul className="space-y-3">
                 {service.features.map((feature, i) => (
@@ -66,6 +79,13 @@ export default function ServiceModal({
                 ))}
               </ul>
             </div>
+
+            {/* Footer */}
+            {/* <div className="mt-8 pt-6 border-t border-[color:var(--border)]">
+              <Button onClick={onClose} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                Kapat
+              </Button>
+            </div> */}
           </div>
         </div>
       </div>
