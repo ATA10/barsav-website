@@ -68,22 +68,23 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
-      - name: Install dependencies
+      - name: Clean and install dependencies
         run: |
-          # Clear npm cache to avoid issues with native modules
+          # Remove package-lock.json and node_modules as suggested by error message
+          rm -rf node_modules package-lock.json || true
+          # Clear npm cache
           npm cache clean --force || true
+          # Install dependencies fresh
           npm install
-      - name: Verify and fix lightningcss native bindings
+      - name: Install Tailwind CSS native bindings
         run: |
-          # Check if native module exists
-          if [ ! -f "node_modules/lightningcss/lightningcss.linux-x64-gnu.node" ]; then
-            echo "lightningcss native module missing, installing..."
-            # Try to install the specific platform package
-            npm install lightningcss-linux-x64-gnu --no-save || true
-            # Rebuild lightningcss
-            npm rebuild lightningcss || true
+          # Install Tailwind CSS oxide native module for Linux x64
+          npm install @tailwindcss/oxide-linux-x64-gnu --no-save || true
+          # Verify installation
+          if [ -d "node_modules/@tailwindcss/oxide-linux-x64-gnu" ]; then
+            echo "✓ @tailwindcss/oxide-linux-x64-gnu installed successfully"
           else
-            echo "lightningcss native module found"
+            echo "⚠ Warning: @tailwindcss/oxide-linux-x64-gnu not found, but continuing..."
           fi
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
