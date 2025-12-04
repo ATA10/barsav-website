@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import ProjectModal from "./project-modal"
+import Image from "next/image"
 
 interface Project {
   id: number
@@ -94,10 +95,11 @@ export default function ProjectsSection() {
                 className="group cursor-pointer overflow-hidden rounded-lg"
               >
                 <div className="relative h-64 overflow-hidden bg-card rounded-lg">
-                  <img
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                    fill
+                    className="object-cover group-hover:scale-105 transition duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition" />
                 </div>

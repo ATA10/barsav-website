@@ -4,6 +4,7 @@ import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { useState, useEffect } from "react"
 import { Building2, Users, Lightbulb, Shield, Heart, Target, Award } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutPage() {
   const [showNav, setShowNav] = useState(false)
@@ -36,8 +37,8 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">Biz Kimiz?</h2>
 
-          <div className="mb-8 rounded-lg overflow-hidden h-96 bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-            <img src="/modern-aerospace-technology-facility.jpg" alt="Barsav Teknoloji" className="w-full h-full object-cover" />
+          <div className="mb-8 rounded-lg overflow-hidden h-96 bg-gradient-to-br from-accent/20 to-primary/20 relative">
+            <Image src="/modern-aerospace-technology-facility.jpg" alt="Barsav Teknoloji" fill className="object-cover" />
           </div>
 
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
@@ -152,14 +153,14 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">Deneyimli Ekibimiz</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-            <div className="rounded-lg overflow-hidden h-64 bg-gradient-to-br from-accent/20 to-primary/20">
-              <img src="/aerospace-engineer-team.jpg" alt="Mühendislik Ekibi" className="w-full h-full object-cover" />
+            <div className="rounded-lg overflow-hidden h-64 bg-gradient-to-br from-accent/20 to-primary/20 relative">
+              <Image src="/aerospace-engineer-team.jpg" alt="Mühendislik Ekibi" fill className="object-cover" />
             </div>
-            <div className="rounded-lg overflow-hidden h-64 bg-gradient-to-br from-accent/20 to-primary/20">
-              <img src="/manufacturing-facility-workers.jpg" alt="Üretim Tesisi" className="w-full h-full object-cover" />
+            <div className="rounded-lg overflow-hidden h-64 bg-gradient-to-br from-accent/20 to-primary/20 relative">
+              <Image src="/manufacturing-facility-workers.jpg" alt="Üretim Tesisi" fill className="object-cover" />
             </div>
-            <div className="rounded-lg overflow-hidden h-64 bg-gradient-to-br from-accent/20 to-primary/20">
-              <img src="/simulation-control-room.jpg" alt="Simülasyon Merkezi" className="w-full h-full object-cover" />
+            <div className="rounded-lg overflow-hidden h-64 bg-gradient-to-br from-accent/20 to-primary/20 relative">
+              <Image src="/simulation-control-room.jpg" alt="Simülasyon Merkezi" fill className="object-cover" />
             </div>
           </div>
 

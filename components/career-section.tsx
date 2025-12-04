@@ -1,10 +1,12 @@
+import Image from "next/image"
+
 export default function CareerSection() {
   return (
     <section id="career" className="py-24 bg-card/50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 hidden md:block">
-            <img src="/team-collaboration-technology.jpg" alt="Kariyer" className="w-full h-full object-cover rounded-lg" />
+            <Image src="/team-collaboration-technology.jpg" alt="Kariyer" fill className="object-cover rounded-lg" />
           </div>
 
           <div className="space-y-6">
