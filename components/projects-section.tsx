@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import ProjectModal from "./project-modal"
-import Image from "next/image"
+import ImageWithBasePath from "./image-with-basepath"
 
 interface Project {
   id: number
@@ -95,7 +95,7 @@ export default function ProjectsSection() {
                 className="group cursor-pointer overflow-hidden rounded-lg"
               >
                 <div className="relative h-64 overflow-hidden bg-card rounded-lg">
-                  <Image
+                  <ImageWithBasePath
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     fill

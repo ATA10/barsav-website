@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import ImageWithBasePath from "./image-with-basepath"
 
 interface BlogPost {
   id: number
@@ -64,7 +64,7 @@ export default function BlogModal({ post, isOpen, onClose }: BlogModalProps) {
           {/* Content */}
           <div className="p-6">
             <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
-              <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
+              <ImageWithBasePath src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
             </div>
 
             <div className="prose prose-invert max-w-none">

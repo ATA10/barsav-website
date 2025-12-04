@@ -1,4 +1,4 @@
-import Image from "next/image"
+import ImageWithBasePath from "./image-with-basepath"
 
 export default function CareerSection() {
   return (
@@ -6,7 +6,7 @@ export default function CareerSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 hidden md:block">
-            <Image src="/team-collaboration-technology.jpg" alt="Kariyer" fill className="object-cover rounded-lg" />
+            <ImageWithBasePath src="/team-collaboration-technology.jpg" alt="Kariyer" fill className="object-cover rounded-lg" />
           </div>
 
           <div className="space-y-6">

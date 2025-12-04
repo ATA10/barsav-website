@@ -88,7 +88,7 @@
 import { useEffect } from "react"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import ImageWithBasePath from "./image-with-basepath"
 
 interface Project {
   id: number
@@ -147,7 +147,7 @@ export default function ProjectModal({
           {/* Content */}
           <div className="p-6">
             <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
-              <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+              <ImageWithBasePath src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
             </div>
 
             {/* Project Info */}

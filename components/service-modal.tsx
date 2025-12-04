@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import ImageWithBasePath from "./image-with-basepath"
 
 interface Service {
   id: number
@@ -55,7 +55,7 @@ export default function ServiceModal({
           {/* Content */}
           <div className="p-6">
             <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
-              <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+              <ImageWithBasePath src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
             </div>
 
             {/* Description */}
