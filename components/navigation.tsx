@@ -6,7 +6,6 @@ import Link from "next/link"
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
-  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
