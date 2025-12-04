@@ -1,16 +1,9 @@
 import { type NextRequest, NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
-<<<<<<< HEAD
-// Gmail SMTP konfigürasyonu
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.GMAIL_USER, 
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-})
-=======
+// Gmail SMTP konfigürasyonu - bu kısım silinecek, aşağıdaki global transporter kullanılacak
+let globalTransporter: nodemailer.Transporter | null = null
+
 function validateEmailConfig() {
   const missingVars: string[] = []
 
@@ -22,12 +15,10 @@ function validateEmailConfig() {
   }
 }
 
-let transporter: nodemailer.Transporter | null = null
-
 function getTransporter() {
-  if (!transporter) {
+  if (!globalTransporter) {
     validateEmailConfig()
-    transporter = nodemailer.createTransport({
+    globalTransporter = nodemailer.createTransport({
       service: "gmail",
       host: "smtp.gmail.com",
       port: 587,
@@ -38,9 +29,8 @@ function getTransporter() {
       },
     })
   }
-  return transporter
+  return globalTransporter
 }
->>>>>>> 0530d04b58e13669fbebee7e64e75536731decd7
 
 export async function POST(request: NextRequest) {
   try {
@@ -81,15 +71,8 @@ export async function POST(request: NextRequest) {
     const mailTransporter = getTransporter()
 
     const mailOptions = {
-<<<<<<< HEAD
-      from: process.env.GMAIL_USER, 
-      to: process.env.GMAIL_USER, 
-      replyTo: email, 
-=======
-      from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER,
-      replyTo: email,
->>>>>>> 0530d04b58e13669fbebee7e64e75536731decd7
+      from: `"BARSAV İletişim Formu" <${process.env.GMAIL_USER}>`,
+      to: "info@barsav.com",
       subject: `BARSAV İletişim Formu: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
