@@ -3,7 +3,7 @@
 3:I[31713,["/barsav-website/_next/static/chunks/c6221d48f09904bf.js","/barsav-website/_next/static/chunks/1264b8c44b02ae50.js","/barsav-website/_next/static/chunks/c1cee496a796ae24.js"],"default"]
 6:I[97367,["/barsav-website/_next/static/chunks/ff1a16fafef87110.js","/barsav-website/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"xEu1hV5m3UjFm77pSCykN","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/barsav-website/_next/static/chunks/1264b8c44b02ae50.js","async":true}],["$","script","script-1",{"src":"/barsav-website/_next/static/chunks/c1cee496a796ae24.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"Sedc459KKM3vnl_v9X8b6","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/barsav-website/_next/static/chunks/1264b8c44b02ae50.js","async":true}],["$","script","script-1",{"src":"/barsav-website/_next/static/chunks/c1cee496a796ae24.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
