@@ -79,12 +79,29 @@ export default function Home() {
     }
   }, [])
 
-  // Hash change için
+  // Hash change ve initial hash için
   useEffect(() => {
-    const handleHashChange = () => {
-      if (window.location.hash === "#contact") {
-        setIsContactModalOpen(true)
+    const scrollToHash = (hash: string) => {
+      const element = document.getElementById(hash.replace('#', ''))
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }, 100)
       }
+    }
+
+    const handleHashChange = () => {
+      const hash = window.location.hash
+      if (hash === "#contact") {
+        setIsContactModalOpen(true)
+      } else if (hash) {
+        scrollToHash(hash)
+      }
+    }
+
+    // Sayfa yüklendiğinde hash varsa scroll yap
+    if (window.location.hash) {
+      handleHashChange()
     }
 
     window.addEventListener("hashchange", handleHashChange)

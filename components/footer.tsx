@@ -1,4 +1,16 @@
+"use client"
+
 export default function Footer() {
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const hash = href.replace('#', '')
+    const element = document.getElementById(hash)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      window.history.pushState(null, '', `#${hash}`)
+    }
+  }
+
   return (
     <footer className="bg-background border-t border-[color:var(--border)] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,22 +26,22 @@ export default function Footer() {
             <h4 className="text-foreground font-semibold mb-4">Hızlı Linkler</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <a href="#about" className="hover:text-accent transition">
+                <a href="#about" onClick={(e) => handleAnchorClick(e, '#about')} className="hover:text-accent transition cursor-pointer">
                   Hakkımızda
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-accent transition">
+                <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="hover:text-accent transition cursor-pointer">
                   Hizmetler
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-accent transition">
+                <a href="#projects" onClick={(e) => handleAnchorClick(e, '#projects')} className="hover:text-accent transition cursor-pointer">
                   Projeler
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-accent transition">
+                <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="hover:text-accent transition cursor-pointer">
                   İletişim
                 </a>
               </li>
@@ -40,22 +52,22 @@ export default function Footer() {
             <h4 className="text-foreground font-semibold mb-4">Şirket</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <a href="#career" className="hover:text-accent transition">
+                <a href="#career" onClick={(e) => handleAnchorClick(e, '#career')} className="hover:text-accent transition cursor-pointer">
                   Kariyer
                 </a>
               </li>
               <li>
-                <a href="#blog" className="hover:text-accent transition">
+                <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="hover:text-accent transition cursor-pointer">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#blog" className="hover:text-accent transition">
+                <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="hover:text-accent transition cursor-pointer">
                   Basın Özeti
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-accent transition">
+                <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="hover:text-accent transition cursor-pointer">
                   İletişim
                 </a>
               </li>

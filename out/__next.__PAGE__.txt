@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[47257,["/barsav-website/_next/static/chunks/ff1a16fafef87110.js","/barsav-website/_next/static/chunks/247eb132b7f7b574.js"],"ClientPageRoot"]
-3:I[31713,["/barsav-website/_next/static/chunks/c6221d48f09904bf.js","/barsav-website/_next/static/chunks/448e4619eb8371ef.js","/barsav-website/_next/static/chunks/e043784128733901.js"],"default"]
+3:I[31713,["/barsav-website/_next/static/chunks/c6221d48f09904bf.js","/barsav-website/_next/static/chunks/73766a51406d4f29.js","/barsav-website/_next/static/chunks/fabc05b66956e333.js"],"default"]
 6:I[97367,["/barsav-website/_next/static/chunks/ff1a16fafef87110.js","/barsav-website/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"tYxHq4sa1HpRcSWlzB9-c","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/barsav-website/_next/static/chunks/448e4619eb8371ef.js","async":true}],["$","script","script-1",{"src":"/barsav-website/_next/static/chunks/e043784128733901.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"_31HXeNYv5OgNMFhD9-EF","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/barsav-website/_next/static/chunks/73766a51406d4f29.js","async":true}],["$","script","script-1",{"src":"/barsav-website/_next/static/chunks/fabc05b66956e333.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null

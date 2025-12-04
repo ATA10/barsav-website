@@ -5,6 +5,15 @@
   import Image from "next/image"
 
   export default function HeroSection() {
+    const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+      e.preventDefault()
+      const hash = href.replace('#', '')
+      const element = document.getElementById(hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        window.history.pushState(null, '', `#${hash}`)
+      }
+    }
 
     return (
       <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
@@ -40,16 +49,16 @@
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Link href="#services">
+              <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="cursor-pointer">
                 <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-gray-900 font-bold rounded-lg transition transform hover:scale-105 shadow-lg shadow-cyan-500/50">
                   Çözümlerimizi Keşfet
                 </button>
-              </Link>
-              <Link href="#contact">
+              </a>
+              <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="cursor-pointer">
                 <button className="px-8 py-4 border-2 border-cyan-400 text-cyan-300 hover:bg-cyan-500/20 rounded-lg font-semibold transition">
                   İletişime Geç
                 </button>
-              </Link>
+              </a>
 
             </div>
 

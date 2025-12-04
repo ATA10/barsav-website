@@ -6,6 +6,7 @@ import Link from "next/link"
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,17 @@ export default function Navigation() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const hash = href.replace('#', '')
+    const element = document.getElementById(hash)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      // Update URL without reload
+      window.history.pushState(null, '', `#${hash}`)
+    }
+  }
 
   return (
     <nav
@@ -35,19 +47,19 @@ export default function Navigation() {
             <Link href="/about" className="text-foreground hover:text-accent transition">
               Hakkımızda
             </Link>
-            <Link href="#services" className="text-foreground hover:text-accent transition">
+            <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="text-foreground hover:text-accent transition cursor-pointer">
               Hizmetler
-            </Link>
-            <Link href="#projects" className="text-foreground hover:text-accent transition">
+            </a>
+            <a href="#projects" onClick={(e) => handleAnchorClick(e, '#projects')} className="text-foreground hover:text-accent transition cursor-pointer">
               Projeler
-            </Link>
-            <Link href="#blog" className="text-foreground hover:text-accent transition">
+            </a>
+            <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="text-foreground hover:text-accent transition cursor-pointer">
               Blog
-            </Link>
-            <Link href="#career" className="text-foreground hover:text-accent transition">
+            </a>
+            <a href="#career" onClick={(e) => handleAnchorClick(e, '#career')} className="text-foreground hover:text-accent transition cursor-pointer">
               Kariyer
-            </Link>
-            <a href="#contact" className="text-foreground hover:text-accent transition">
+            </a>
+            <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="text-foreground hover:text-accent transition cursor-pointer">
               İletişim
             </a>
           </div>
@@ -64,19 +76,19 @@ export default function Navigation() {
             <Link href="/about" className="block text-foreground hover:text-accent transition py-2">
               Hakkımızda
             </Link>
-            <Link href="#services" className="block text-foreground hover:text-accent transition py-2">
+            <a href="#services" onClick={(e) => { handleAnchorClick(e, '#services'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
               Hizmetler
-            </Link>
-            <Link href="#projects" className="block text-foreground hover:text-accent transition py-2">
+            </a>
+            <a href="#projects" onClick={(e) => { handleAnchorClick(e, '#projects'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
               Projeler
-            </Link>
-            <Link href="#blog" className="block text-foreground hover:text-accent transition py-2">
+            </a>
+            <a href="#blog" onClick={(e) => { handleAnchorClick(e, '#blog'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
               Blog
-            </Link>
-            <Link href="#career" className="block text-foreground hover:text-accent transition py-2">
+            </a>
+            <a href="#career" onClick={(e) => { handleAnchorClick(e, '#career'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
               Kariyer
-            </Link>
-            <a href="#contact" className="block text-foreground hover:text-accent transition py-2">
+            </a>
+            <a href="#contact" onClick={(e) => { handleAnchorClick(e, '#contact'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
               İletişim
             </a>
           </div>
