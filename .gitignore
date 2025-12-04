@@ -1,7 +1,7 @@
 # .gitignore
 node_modules/
 .next/
-out/
+# out/
 
 # production
 build
