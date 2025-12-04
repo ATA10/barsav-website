@@ -6,7 +6,7 @@ export default function BenefitsSection() {
   const benefits = [
     {
       label: "Kalite",
-      value: "%99.9",
+      value: "%100",
       icon: Award,
     },
     {
@@ -16,12 +16,12 @@ export default function BenefitsSection() {
     },
     {
       label: "Hızlı Teslimat",
-      value: "%98",
+      value: "%99.9",
       icon: Zap,
     },
     {
       label: "Müşteri Memnuniyeti",
-      value: "%99.5",
+      value: "%100",
       icon: Smile,
     },
   ]

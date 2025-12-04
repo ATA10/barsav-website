@@ -40,22 +40,22 @@ export default function Footer() {
             <h4 className="text-foreground font-semibold mb-4">Şirket</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <a href="#" className="hover:text-accent transition">
+                <a href="#career" className="hover:text-accent transition">
                   Kariyer
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition">
+                <a href="#blog" className="hover:text-accent transition">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition">
-                  Başın Özeti
+                <a href="#blog" className="hover:text-accent transition">
+                  Basın Özeti
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition">
+                <a href="#contact" className="hover:text-accent transition">
                   İletişim
                 </a>
               </li>
