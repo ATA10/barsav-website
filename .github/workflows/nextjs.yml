@@ -52,7 +52,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          # Disable cache to ensure native modules are built correctly
+          cache: 'npm'
       - name: Setup Pages
         uses: actions/configure-pages@v5
         # Note: basePath is manually configured in next.config.mjs
@@ -68,7 +69,22 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: |
+          # Clear npm cache to avoid issues with native modules
+          npm cache clean --force || true
+          npm install
+      - name: Verify and fix lightningcss native bindings
+        run: |
+          # Check if native module exists
+          if [ ! -f "node_modules/lightningcss/lightningcss.linux-x64-gnu.node" ]; then
+            echo "lightningcss native module missing, installing..."
+            # Try to install the specific platform package
+            npm install lightningcss-linux-x64-gnu --no-save || true
+            # Rebuild lightningcss
+            npm rebuild lightningcss || true
+          else
+            echo "lightningcss native module found"
+          fi
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
