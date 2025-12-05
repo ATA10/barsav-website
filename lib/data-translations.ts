@@ -256,3 +256,128 @@ export function getLocalizedProduct(productId: number, lang: Language) {
   return product
 }
 
+// Services çevirileri
+const serviceTranslations: Record<Language, Record<number, any>> = {
+  tr: {},
+  en: {
+    1: {
+      title: "Airport Lighting",
+      shortDescription: "Effective and safe lighting of aerodromes with state-of-the-art LED systems",
+      fullDescription: "BARSAV's airport lighting systems are designed and implemented in accordance with international standards. High efficiency and energy savings are achieved using LED technology. The system guarantees the highest visibility quality even at night and in weather conditions.",
+      features: [
+        "LED-based modern technology",
+        "Energy savings and sustainability",
+        "Automatic control systems",
+        "Compliant with international standards",
+        "24/7 operational reliability"
+      ]
+    },
+    2: {
+      title: "Electronic Systems",
+      shortDescription: "High-performance electronic components and control systems",
+      fullDescription: "BARSAV electronics division produces high-performance control systems for military and civil applications. Every product is delivered to the highest standards with precision engineering and quality control. Customization is available according to special requirements.",
+      features: [
+        "Custom design and development",
+        "High reliability and durability",
+        "Precision quality control",
+        "Rapid prototyping and testing",
+        "Full technical support"
+      ]
+    },
+    3: {
+      title: "Vehicle Simulations",
+      shortDescription: "Advanced simulation and training platforms for military and civil vehicles",
+      fullDescription: "BARSAV's simulation systems provide realistic and fully controlled environments for pilot and operator training. Effectiveness is maximized with high-fidelity graphics and AI-powered scenarios. The system minimizes training costs by providing a real vehicle simulation experience.",
+      features: [
+        "High-fidelity graphics",
+        "Realistic physics engines",
+        "AI-powered scenarios",
+        "Multi-player training support",
+        "International certification"
+      ]
+    },
+    4: {
+      title: "Electronics Manufacturing",
+      shortDescription: "Modern production facilities and control systems compliant with ISO standards",
+      fullDescription: "BARSAV production facilities are equipped with the most modern technologies and quality control systems. Quality and environmental standards are met with ISO 9001 and ISO 14001 certifications. Large-scale projects are carried out with high-capacity production lines.",
+      features: [
+        "ISO certifications",
+        "Automatic production lines",
+        "Precision quality control",
+        "Environmentally friendly production",
+        "Flexible and fast production capacity"
+      ]
+    }
+  },
+  ru: {},
+  de: {}
+}
+
+// Projects çevirileri
+const projectTranslations: Record<Language, Record<number, any>> = {
+  tr: {},
+  en: {
+    1: {
+      title: "Airport LED Lighting Project",
+      category: "Airport Lighting",
+      fullDescription: "LED lighting system project for one of Turkey's largest airports. Systems optimized for approach, landing and runway safety.",
+      status: "Completed",
+      client: "Leading Airport Operator"
+    },
+    2: {
+      title: "Military Tank Simulator System",
+      category: "Military Simulation",
+      fullDescription: "Advanced tank simulator system. Equipped with realistic physics engine, multi-channel visual system and motion platform. Used for training and operation planning.",
+      status: "Completed",
+      client: "Turkish Armed Forces"
+    },
+    3: {
+      title: "Electronic Control System",
+      category: "Electronics Manufacturing",
+      fullDescription: "Multi-channel electronic control system design and manufacturing. Compliant with defense industry standards, tested and approved.",
+      status: "Ongoing",
+      client: "Defense Contractor"
+    },
+    4: {
+      title: "Aviation Simulator Training System",
+      category: "Civil Simulation",
+      fullDescription: "FSTD certified aviation simulator. With realistic instrument panel, motion system and fully integrated control structure. Used for pilot training programs.",
+      status: "Completed",
+      client: "Aviation Training Center"
+    }
+  },
+  ru: {},
+  de: {}
+}
+
+// Services verilerini dil desteği ile getir
+export function getLocalizedServices(lang: Language) {
+  return servicesData.services.map((service) => {
+    const translation = serviceTranslations[lang]?.[service.id]
+    if (translation && lang !== "tr") {
+      return {
+        ...service,
+        ...translation,
+        image: service.image,
+      }
+    }
+    return service
+  })
+}
+
+// Projects verilerini dil desteği ile getir
+export function getLocalizedProjects(lang: Language) {
+  return projectsData.projects.map((project) => {
+    const translation = projectTranslations[lang]?.[project.id]
+    if (translation && lang !== "tr") {
+      return {
+        ...project,
+        ...translation,
+        image: project.image,
+        year: project.year,
+      }
+    }
+    return project
+  })
+}
+

@@ -29,8 +29,8 @@ export default function LanguageSelector() {
         className="flex items-center gap-2 px-3 py-2 rounded-full bg-card border border-[color:var(--border)] hover:border-accent transition text-foreground"
         aria-label="Select language"
       >
-        <span className="text-xl">{currentLanguage.flag}</span>
-        <span className="text-sm font-medium">{currentLanguage.code.toUpperCase()}</span>
+        <span className="text-xl" role="img" aria-label={currentLanguage.name}>{currentLanguage.flag}</span>
+        <span className="text-sm font-medium">{currentLanguage.displayCode}</span>
         <svg
           className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
           fill="none"
@@ -54,8 +54,8 @@ export default function LanguageSelector() {
                 language === lang.code ? "bg-background" : ""
               }`}
             >
-              <span className="text-xl">{lang.flag}</span>
-              <span className="text-foreground font-medium">{lang.code.toUpperCase()}</span>
+              <span className="text-xl" role="img" aria-label={lang.name}>{lang.flag}</span>
+              <span className="text-foreground font-medium">{lang.displayCode}</span>
               {language === lang.code && (
                 <span className="ml-auto text-accent">✓</span>
               )}

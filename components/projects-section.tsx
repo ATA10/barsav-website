@@ -3,7 +3,9 @@
 import { useState } from "react"
 import ProjectModal from "./project-modal"
 import ImageWithBasePath from "./image-with-basepath"
-import projectsData from "@/dataa/projects.json"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
+import { getLocalizedProjects } from "@/lib/data-translations"
 
 interface Project {
   id: number
@@ -17,6 +19,7 @@ interface Project {
 }
 
 export default function ProjectsSection() {
+  const { language } = useLanguage()
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -35,14 +38,14 @@ export default function ProjectsSection() {
       <section id="projects" className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Projelerimiz</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "projects.title")}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Başarıyla tamamlanmış ve devam eden projelerimiz
+              {getTranslation(language, "projects.subtitle")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projectsData.projects.map((project: Project) => (
+            {getLocalizedProjects(language).map((project: Project) => (
               <div
                 key={project.id}
                 onClick={() => handleProjectClick(project)}

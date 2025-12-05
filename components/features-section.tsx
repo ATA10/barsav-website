@@ -3,7 +3,9 @@
 import { useState } from "react"
 import ServiceModal from "./service-modal"
 import ImageWithBasePath from "./image-with-basepath"
-import servicesData from "@/dataa/services.json"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
+import { getLocalizedServices } from "@/lib/data-translations"
 
 interface Service {
   id: number
@@ -15,6 +17,7 @@ interface Service {
 }
 
 export default function FeaturesSection() {
+  const { language } = useLanguage()
   const [selectedService, setSelectedService] = useState<Service | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -33,14 +36,14 @@ export default function FeaturesSection() {
       <section id="services" className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Hizmetlerimiz</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "services.title")}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Savunma ve sivil sektörler için kapsamlı teknoloji çözümleri
+              {getTranslation(language, "services.subtitle")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {servicesData.services.map((service: Service) => (
+            {getLocalizedServices(language).map((service: Service) => (
               <div
                 key={service.id}
                 onClick={() => handleServiceClick(service)}

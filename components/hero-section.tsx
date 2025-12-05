@@ -3,8 +3,11 @@
   import { useEffect, useState } from "react"
   import Link from "next/link"
   import Image from "next/image"
+  import { useLanguage } from "@/contexts/language-context"
+  import { getTranslation } from "@/lib/translations"
 
   export default function HeroSection() {
+    const { language } = useLanguage()
     const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
       e.preventDefault()
       const hash = href.replace('#', '')
@@ -39,24 +42,23 @@
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <h1 className="text-6xl md:text-8xl font-bold text-foreground text-balance leading-tight">BARSAV</h1>
+              <h1 className="text-6xl md:text-8xl font-bold text-foreground text-balance leading-tight">{getTranslation(language, "hero.title")}</h1>
               <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-blue-500 mx-auto rounded-full" />
-              <p className="text-2xl md:text-3xl text-blue-700 font-semibold">Havacılık, Elektronik & Savunma</p>
+              <p className="text-2xl md:text-3xl text-blue-700 font-semibold">{getTranslation(language, "hero.subtitle")}</p>
               <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto text-balance">
-                Yenilikçi teknoloji çözümleri, havaalanı ışıklandırması, elektronik üretim ve askeri/sivil araç
-                simülasyonlarında lider.
+                {getTranslation(language, "hero.description")}
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="cursor-pointer">
                 <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-lg transition transform hover:scale-105 shadow-lg shadow-blue-500/50">
-                  Çözümlerimizi Keşfet
+                  {getTranslation(language, "hero.exploreButton")}
                 </button>
               </a>
               <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="cursor-pointer">
                 <button className="px-8 py-4 border-2 border-blue-500 text-blue-700 hover:bg-blue-500/20 rounded-lg font-semibold transition">
-                  İletişime Geç
+                  {getTranslation(language, "hero.contactButton")}
                 </button>
               </a>
 
@@ -65,15 +67,15 @@
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-12">
               <div className="space-y-2 backdrop-blur-md bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
                 <p className="text-4xl md:text-5xl font-bold text-blue-700">50+</p>
-                <p className="text-gray-600">Proje</p>
+                <p className="text-gray-600">{getTranslation(language, "hero.projects")}</p>
               </div>
               <div className="space-y-2 backdrop-blur-md bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
                 <p className="text-4xl md:text-5xl font-bold text-blue-700">20+</p>
-                <p className="text-gray-600">Yıl Deneyim</p>
+                <p className="text-gray-600">{getTranslation(language, "hero.years")}</p>
               </div>
               <div className="space-y-2 backdrop-blur-md bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
                 <p className="text-4xl md:text-5xl font-bold text-blue-700">500+</p>
-                <p className="text-gray-600">Profesyonel</p>
+                <p className="text-gray-600">{getTranslation(language, "hero.professionals")}</p>
               </div>
             </div>
           </div>

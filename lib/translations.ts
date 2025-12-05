@@ -1,10 +1,10 @@
 export type Language = "tr" | "en" | "ru" | "de"
 
-export const languages: { code: Language; name: string; flag: string }[] = [
-  { code: "tr", name: "Türkçe", flag: "🇹🇷" },
-  { code: "en", name: "English", flag: "🇬🇧" },
-  { code: "ru", name: "Русский", flag: "🇷🇺" },
-  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+export const languages: { code: Language; name: string; flag: string; displayCode: string }[] = [
+  { code: "tr", name: "Türkçe", flag: "🇹🇷", displayCode: "TR" },
+  { code: "en", name: "English", flag: "🇬🇧", displayCode: "EN" },
+  { code: "ru", name: "Русский", flag: "🇷🇺", displayCode: "RU" },
+  { code: "de", name: "Deutsch", flag: "🇩🇪", displayCode: "DE" },
 ]
 
 export const translations = {
@@ -34,6 +34,29 @@ export const translations = {
       reviews: "Yorumlar",
       productNotFound: "Ürün Bulunamadı",
     },
+    hero: {
+      title: "BARSAV",
+      subtitle: "Havacılık, Elektronik & Savunma",
+      description: "Yenilikçi teknoloji çözümleri, havaalanı ışıklandırması, elektronik üretim ve askeri/sivil araç simülasyonlarında lider.",
+      exploreButton: "Çözümlerimizi Keşfet",
+      contactButton: "İletişime Geç",
+      projects: "Proje",
+      years: "Yıl Deneyim",
+      professionals: "Profesyonel",
+    },
+    services: {
+      title: "Hizmetlerimiz",
+      subtitle: "Savunma ve sivil sektörler için kapsamlı teknoloji çözümleri",
+    },
+    projects: {
+      title: "Projelerimiz",
+      subtitle: "Başarıyla tamamlanmış ve devam eden projelerimiz",
+    },
+    blog: {
+      title: "Blog",
+      subtitle: "Teknoloji, inovasyon ve savunma sanayi üzerine yazılarımız",
+      readMore: "Devamını Oku →",
+    },
   },
   en: {
     nav: {
@@ -60,6 +83,29 @@ export const translations = {
       technicalSpecs: "Technical Specifications",
       reviews: "Reviews",
       productNotFound: "Product Not Found",
+    },
+    hero: {
+      title: "BARSAV",
+      subtitle: "Aviation, Electronics & Defense",
+      description: "Leading in innovative technology solutions, airport lighting, electronics manufacturing and military/civil vehicle simulations.",
+      exploreButton: "Explore Our Solutions",
+      contactButton: "Contact Us",
+      projects: "Projects",
+      years: "Years Experience",
+      professionals: "Professionals",
+    },
+    services: {
+      title: "Our Services",
+      subtitle: "Comprehensive technology solutions for defense and civil sectors",
+    },
+    projects: {
+      title: "Our Projects",
+      subtitle: "Successfully completed and ongoing projects",
+    },
+    blog: {
+      title: "Blog",
+      subtitle: "Articles on technology, innovation and defense industry",
+      readMore: "Read More →",
     },
   },
   ru: {
@@ -88,6 +134,29 @@ export const translations = {
       reviews: "Отзывы",
       productNotFound: "Продукт не найден",
     },
+    hero: {
+      title: "BARSAV",
+      subtitle: "Авиация, Электроника и Оборона",
+      description: "Лидер в инновационных технологических решениях, аэропортовом освещении, производстве электроники и военных/гражданских симуляторах.",
+      exploreButton: "Изучить наши решения",
+      contactButton: "Связаться с нами",
+      projects: "Проектов",
+      years: "Лет опыта",
+      professionals: "Профессионалов",
+    },
+    services: {
+      title: "Наши услуги",
+      subtitle: "Комплексные технологические решения для оборонного и гражданского секторов",
+    },
+    projects: {
+      title: "Наши проекты",
+      subtitle: "Успешно завершенные и текущие проекты",
+    },
+    blog: {
+      title: "Блог",
+      subtitle: "Статьи о технологиях, инновациях и оборонной промышленности",
+      readMore: "Читать далее →",
+    },
   },
   de: {
     nav: {
@@ -114,6 +183,29 @@ export const translations = {
       technicalSpecs: "Technische Spezifikationen",
       reviews: "Bewertungen",
       productNotFound: "Produkt nicht gefunden",
+    },
+    hero: {
+      title: "BARSAV",
+      subtitle: "Luftfahrt, Elektronik & Verteidigung",
+      description: "Führend bei innovativen Technologielösungen, Flughafenbeleuchtung, Elektronikfertigung und militärischen/zivilen Fahrzeugsimulationen.",
+      exploreButton: "Unsere Lösungen erkunden",
+      contactButton: "Kontaktieren Sie uns",
+      projects: "Projekte",
+      years: "Jahre Erfahrung",
+      professionals: "Fachkräfte",
+    },
+    services: {
+      title: "Unsere Dienstleistungen",
+      subtitle: "Umfassende Technologielösungen für Verteidigungs- und Zivilsektoren",
+    },
+    projects: {
+      title: "Unsere Projekte",
+      subtitle: "Erfolgreich abgeschlossene und laufende Projekte",
+    },
+    blog: {
+      title: "Blog",
+      subtitle: "Artikel zu Technologie, Innovation und Verteidigungsindustrie",
+      readMore: "Weiterlesen →",
     },
   },
 }
