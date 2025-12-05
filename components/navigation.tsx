@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import LanguageSelector from "@/components/language-selector"
 import ThemeToggle from "@/components/theme-toggle"
+import ImageWithBasePath from "@/components/image-with-basepath"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
 import { getBasePath, getHomePath } from "@/lib/base-path"
@@ -49,8 +50,13 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-sm">BA</span>
+            <div className="relative w-12 h-12">
+              <ImageWithBasePath
+                src="/logo.jpg"
+                alt="Barsav Logo"
+                fill
+                className="object-contain"
+              />
             </div>
             <span className="hidden sm:inline text-foreground font-semibold">Barsav</span>
           </Link>

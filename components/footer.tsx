@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import ImageWithBasePath from "@/components/image-with-basepath"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
 import { getBasePath, getHomePath } from "@/lib/base-path"
@@ -37,6 +38,14 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm">
               {getTranslation(language, "footer.description")}
             </p>
+            <div className="relative w-32 h-32 mt-4">
+              <ImageWithBasePath
+                src="/logo.jpg"
+                alt="Barsav Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
 
           <div>

@@ -69,8 +69,16 @@ export default function ProductsPage() {
       {showNav && <Navigation />}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#dbeafe] via-[#bfdbfe] to-[#93c5fd]">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute inset-0">
+          <ImageWithBasePath
+            src="/c.png"
+            alt="Products Background"
+            fill
+            className="object-cover opacity-30"
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">
             {getTranslation(language, "products.title")}
           </h1>

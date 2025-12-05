@@ -33,14 +33,26 @@ export default function FeaturesSection() {
 
   return (
     <>
+      {/* Hero Section */}
+      <section className="relative w-full h-64 flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <ImageWithBasePath
+            src="/b.png"
+            alt="Services Background"
+            fill
+            className="object-cover opacity-20"
+          />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "services.title")}</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            {getTranslation(language, "services.subtitle")}
+          </p>
+        </div>
+      </section>
+
       <section id="services" className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "services.title")}</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              {getTranslation(language, "services.subtitle")}
-            </p>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {getLocalizedServices(language).map((service: Service) => (
