@@ -29,7 +29,7 @@
           <div className="absolute top-1/2 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse animation-delay-4000" />
         </div>
 
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0">
           <ImageWithBasePath
             src="/a.png"
             alt="Background"

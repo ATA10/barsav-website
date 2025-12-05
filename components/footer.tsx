@@ -38,7 +38,7 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm">
               {getTranslation(language, "footer.description")}
             </p>
-            <div className="relative w-32 h-32 mt-4">
+            <div className="relative w-[192px] h-32 mt-4">
               <ImageWithBasePath
                 src="/logo.jpg"
                 alt="Barsav Logo"

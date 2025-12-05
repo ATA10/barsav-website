@@ -37,8 +37,16 @@ export default function AboutPage() {
       {showNav && <Navigation />}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute inset-0">
+          <ImageWithBasePath
+            src="/d.png"
+            alt="About Background"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">{aboutData.title}</h1>
           <p className="text-xl text-muted-foreground text-balance">
             {aboutData.subtitle}

@@ -75,7 +75,7 @@ export default function ProductsPage() {
             src="/c.png"
             alt="Products Background"
             fill
-            className="object-cover opacity-30"
+            className="object-cover"
           />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">

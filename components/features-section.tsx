@@ -40,7 +40,7 @@ export default function FeaturesSection() {
             src="/b.png"
             alt="Services Background"
             fill
-            className="object-cover opacity-20"
+            className="object-cover"
           />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
