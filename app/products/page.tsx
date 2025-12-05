@@ -5,9 +5,9 @@ import { useRouter } from "next/navigation"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import ImageWithBasePath from "@/components/image-with-basepath"
-import productsData from "@/dataa/products.json"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
+import { getLocalizedProducts } from "@/lib/data-translations"
 
 interface Product {
   id: number
@@ -29,7 +29,7 @@ export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>(getTranslation(language, "products.all"))
   const [searchQuery, setSearchQuery] = useState("")
 
-  const products: Product[] = productsData.products
+  const products: Product[] = getLocalizedProducts(language)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,12 +64,12 @@ export default function ProductsPage() {
       {showNav && <Navigation />}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0a3d4d] via-[#0a5a6f] to-[#041e24]">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#dbeafe] via-[#bfdbfe] to-[#93c5fd]">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">
             {getTranslation(language, "products.title")}
           </h1>
-          <p className="text-xl text-gray-300 text-balance">
+          <p className="text-xl text-gray-700 text-balance">
             {getTranslation(language, "products.subtitle")}
           </p>
         </div>

@@ -30,7 +30,7 @@ export default function LanguageSelector() {
         aria-label="Select language"
       >
         <span className="text-xl">{currentLanguage.flag}</span>
-        <span className="hidden sm:inline text-sm font-medium">{currentLanguage.code.toUpperCase()}</span>
+        <span className="text-sm font-medium">{currentLanguage.code.toUpperCase()}</span>
         <svg
           className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
           fill="none"
@@ -55,7 +55,7 @@ export default function LanguageSelector() {
               }`}
             >
               <span className="text-xl">{lang.flag}</span>
-              <span className="text-foreground font-medium">{lang.name}</span>
+              <span className="text-foreground font-medium">{lang.code.toUpperCase()}</span>
               {language === lang.code && (
                 <span className="ml-auto text-accent">✓</span>
               )}

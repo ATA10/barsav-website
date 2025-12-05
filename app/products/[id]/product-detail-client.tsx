@@ -7,6 +7,7 @@ import Footer from "@/components/footer"
 import ImageWithBasePath from "@/components/image-with-basepath"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
+import { getLocalizedProduct } from "@/lib/data-translations"
 
 interface Product {
   id: number
@@ -34,11 +35,14 @@ interface ProductDetailClientProps {
   product: Product
 }
 
-export default function ProductDetailClient({ product }: ProductDetailClientProps) {
+export default function ProductDetailClient({ product: initialProduct }: ProductDetailClientProps) {
   const router = useRouter()
   const { language } = useLanguage()
   const [showNav, setShowNav] = useState(false)
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
+
+  // Dil desteği ile ürünü al
+  const product = getLocalizedProduct(initialProduct.id, language) || initialProduct
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +59,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
       {showNav && <Navigation />}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0a3d4d] via-[#0a5a6f] to-[#041e24]">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#dbeafe] via-[#bfdbfe] to-[#93c5fd]">
         <div className="max-w-7xl mx-auto">
           <button
             onClick={() => router.push("/products")}
@@ -75,7 +79,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
             </span>
           </div>
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6">{product.name}</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">{product.description}</p>
+          <p className="text-xl text-gray-700 max-w-3xl">{product.description}</p>
         </div>
       </section>
 
