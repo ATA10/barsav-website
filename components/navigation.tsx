@@ -2,8 +2,12 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import LanguageSelector from "@/components/language-selector"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
 
 export default function Navigation() {
+  const { language } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -22,7 +26,6 @@ export default function Navigation() {
     const element = document.getElementById(hash)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      // Update URL without reload
       window.history.pushState(null, '', `#${hash}`)
     }
   }
@@ -42,59 +45,63 @@ export default function Navigation() {
             <span className="hidden sm:inline text-foreground font-semibold">Barsav</span>
           </Link>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <Link href="/about" className="text-foreground hover:text-accent transition">
-              Hakkımızda
+              {getTranslation(language, "nav.about")}
             </Link>
             <Link href="/products" className="text-foreground hover:text-accent transition">
-              Ürünler
+              {getTranslation(language, "nav.products")}
             </Link>
             <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="text-foreground hover:text-accent transition cursor-pointer">
-              Hizmetler
+              {getTranslation(language, "nav.services")}
             </a>
             <a href="#projects" onClick={(e) => handleAnchorClick(e, '#projects')} className="text-foreground hover:text-accent transition cursor-pointer">
-              Projeler
+              {getTranslation(language, "nav.projects")}
             </a>
             <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="text-foreground hover:text-accent transition cursor-pointer">
-              Blog
+              {getTranslation(language, "nav.blog")}
             </a>
             <a href="#career" onClick={(e) => handleAnchorClick(e, '#career')} className="text-foreground hover:text-accent transition cursor-pointer">
-              Kariyer
+              {getTranslation(language, "nav.career")}
             </a>
             <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="text-foreground hover:text-accent transition cursor-pointer">
-              İletişim
+              {getTranslation(language, "nav.contact")}
             </a>
+            <LanguageSelector />
           </div>
 
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 hover:bg-card rounded-lg">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageSelector />
+            <button onClick={() => setIsOpen(!isOpen)} className="p-2 hover:bg-card rounded-lg">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2 bg-background/80 backdrop-blur-sm">
             <Link href="/about" className="block text-foreground hover:text-accent transition py-2">
-              Hakkımızda
+              {getTranslation(language, "nav.about")}
             </Link>
             <Link href="/products" className="block text-foreground hover:text-accent transition py-2">
-              Ürünler
+              {getTranslation(language, "nav.products")}
             </Link>
             <a href="#services" onClick={(e) => { handleAnchorClick(e, '#services'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
-              Hizmetler
+              {getTranslation(language, "nav.services")}
             </a>
             <a href="#projects" onClick={(e) => { handleAnchorClick(e, '#projects'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
-              Projeler
+              {getTranslation(language, "nav.projects")}
             </a>
             <a href="#blog" onClick={(e) => { handleAnchorClick(e, '#blog'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
-              Blog
+              {getTranslation(language, "nav.blog")}
             </a>
             <a href="#career" onClick={(e) => { handleAnchorClick(e, '#career'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
-              Kariyer
+              {getTranslation(language, "nav.career")}
             </a>
             <a href="#contact" onClick={(e) => { handleAnchorClick(e, '#contact'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
-              İletişim
+              {getTranslation(language, "nav.contact")}
             </a>
           </div>
         )}

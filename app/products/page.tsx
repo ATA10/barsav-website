@@ -1,10 +1,13 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import ImageWithBasePath from "@/components/image-with-basepath"
 import productsData from "@/dataa/products.json"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
 
 interface Product {
   id: number
@@ -20,11 +23,11 @@ interface Product {
 }
 
 export default function ProductsPage() {
+  const router = useRouter()
+  const { language } = useLanguage()
   const [showNav, setShowNav] = useState(false)
-  const [selectedCategory, setSelectedCategory] = useState<string>("Tümü")
+  const [selectedCategory, setSelectedCategory] = useState<string>(getTranslation(language, "products.all"))
   const [searchQuery, setSearchQuery] = useState("")
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const products: Product[] = productsData.products
 
@@ -37,11 +40,13 @@ export default function ProductsPage() {
   }, [])
 
   // Kategorileri çıkar
-  const categories = ["Tümü", ...Array.from(new Set(products.map((p) => p.category)))]
+  const allCategories = Array.from(new Set(products.map((p) => p.category)))
+  const categories = [getTranslation(language, "products.all"), ...allCategories]
 
   // Filtreleme
   const filteredProducts = products.filter((product) => {
-    const matchesCategory = selectedCategory === "Tümü" || product.category === selectedCategory
+    const allCategory = getTranslation(language, "products.all")
+    const matchesCategory = selectedCategory === allCategory || product.category === selectedCategory
     const matchesSearch =
       searchQuery === "" ||
       product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -51,13 +56,7 @@ export default function ProductsPage() {
   })
 
   const handleProductClick = (product: Product) => {
-    setSelectedProduct(product)
-    setIsModalOpen(true)
-  }
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false)
-    setSelectedProduct(null)
+    router.push(`/products/${product.id}`)
   }
 
   return (
@@ -67,9 +66,11 @@ export default function ProductsPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0a3d4d] via-[#0a5a6f] to-[#041e24]">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">Ürünlerimiz</h1>
+          <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">
+            {getTranslation(language, "products.title")}
+          </h1>
           <p className="text-xl text-gray-300 text-balance">
-            Havacılık, elektronik ve savunma sanayi için yenilikçi ürün çözümleri
+            {getTranslation(language, "products.subtitle")}
           </p>
         </div>
       </section>
@@ -82,7 +83,7 @@ export default function ProductsPage() {
             <div className="w-full md:w-1/3">
               <input
                 type="text"
-                placeholder="Ürün ara..."
+                placeholder={getTranslation(language, "products.search")}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-2 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
@@ -109,7 +110,7 @@ export default function ProductsPage() {
 
           {/* Results Count */}
           <div className="mt-4 text-muted-foreground text-sm">
-            {filteredProducts.length} ürün bulundu
+            {filteredProducts.length} {getTranslation(language, "products.found")}
           </div>
         </div>
       </section>
@@ -119,7 +120,9 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto">
           {filteredProducts.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-xl text-muted-foreground">Aradığınız kriterlere uygun ürün bulunamadı.</p>
+              <p className="text-xl text-muted-foreground">
+                {getTranslation(language, "products.notFound")}
+              </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -156,7 +159,7 @@ export default function ProductsPage() {
                     <div className="flex items-center justify-between">
                       <span className="text-accent font-semibold">{product.price}</span>
                       <button className="text-accent hover:text-accent/80 font-medium text-sm">
-                        Detaylar →
+                        {getTranslation(language, "products.details")}
                       </button>
                     </div>
                   </div>
@@ -167,73 +170,9 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Product Modal */}
-      {isModalOpen && selectedProduct && (
-        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4" onClick={handleCloseModal}>
-          <div
-            className="bg-card border border-[color:var(--border)] rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sticky top-0 bg-card border-b border-[color:var(--border)] p-6 flex justify-between items-start z-10">
-              <div>
-                <div className="flex gap-2 mb-2">
-                  <span className="text-xs text-accent bg-accent/10 px-3 py-1 rounded-full">
-                    {selectedProduct.category}
-                  </span>
-                  <span className="text-xs text-muted-foreground bg-background px-3 py-1 rounded-full">
-                    {selectedProduct.year}
-                  </span>
-                </div>
-                <h2 className="text-2xl font-bold text-foreground">{selectedProduct.name}</h2>
-              </div>
-              <button
-                onClick={handleCloseModal}
-                className="text-muted-foreground hover:text-foreground text-2xl font-bold w-8 h-8 flex items-center justify-center"
-              >
-                ×
-              </button>
-            </div>
-
-            <div className="p-6">
-              <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
-                <ImageWithBasePath
-                  src={selectedProduct.image || "/placeholder.svg"}
-                  alt={selectedProduct.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Açıklama</h3>
-                  <p className="text-foreground leading-relaxed">{selectedProduct.fullDescription}</p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Özellikler</h3>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {selectedProduct.features.map((feature, index) => (
-                      <li key={index} className="flex items-center gap-2 text-foreground">
-                        <span className="text-accent">✓</span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
-                  <p className="text-foreground font-semibold mb-1">Fiyat</p>
-                  <p className="text-accent text-lg">{selectedProduct.price}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
       <Footer />
     </main>
   )
 }
+
 

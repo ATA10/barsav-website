@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { LanguageProvider } from "@/contexts/language-context"
 import "./globals.css"
 
 // Only enable Analytics on Vercel, not on GitHub Pages
@@ -25,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="tr" className="dark">
       <body className={`font-sans antialiased`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
         {isVercel && <Analytics />}
       </body>
     </html>
