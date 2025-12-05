@@ -1,8 +1,10 @@
 "use client"
 
 import { useRouter } from "next/navigation"
+import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
+import { getBasePath, getHomePath } from "@/lib/base-path"
 
 export default function Footer() {
   const router = useRouter()
@@ -11,15 +13,17 @@ export default function Footer() {
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
     const hash = href.replace('#', '')
+    const homePath = getHomePath()
+    const currentPath = window.location.pathname
     
     // Eğer ana sayfada değilsek, ana sayfaya yönlendir
-    if (window.location.pathname !== '/') {
-      router.push(`/#${hash}`)
+    if (currentPath !== homePath && currentPath !== `${homePath}/`) {
+      router.push(`${homePath}/#${hash}`)
     } else {
       const element = document.getElementById(hash)
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        window.history.pushState(null, '', `#${hash}`)
+        window.history.pushState(null, '', `${homePath}/#${hash}`)
       }
     }
   }
@@ -39,9 +43,9 @@ export default function Footer() {
             <h4 className="text-foreground font-semibold mb-4">{getTranslation(language, "footer.quickLinks")}</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <a href="/about" className="hover:text-accent transition cursor-pointer">
+                <Link href="/about" className="hover:text-accent transition cursor-pointer">
                   {getTranslation(language, "nav.about")}
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="hover:text-accent transition cursor-pointer">

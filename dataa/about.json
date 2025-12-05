@@ -1,0 +1,78 @@
+{
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Havacılık, elektronik ve savunma sanayi alanında yenilikçi teknoloji çözümleri sunuyoruz.",
+    "whoWeAre": "Biz Kimiz?",
+    "description1": "BARSAV, 1995 yılından beri havacılık, elektronik ve savunma sanayi alanında yenilikçi teknoloji çözümleri geliştiren ve üreten bir kuruluştur. Ülkemizin ve dünyanın önde gelen şirketleriyle çalışan BARSAV, her zaman kaliteyi ve yeniliği ön planda tutmuştur.",
+    "description2": "Havaalanı ışıklandırma sistemlerinden tutun, askeri ve sivil araç simülasyonlarına kadar geniş bir ürün yelpazesine sahip olan BARSAV, müşteri memnuniyetini en üst seviyede tutmaya çalışmaktadır.",
+    "description3": "Elektronik üretim alanında son teknoloji kullanarak, yüksek kaliteli ürünler sunmaktayız. Ar-Ge çalışmalarına büyük önem veren şirketimiz, sürekli olarak yeni ve geliştirilmiş ürünler sunmaya devam etmektedir.",
+    "mission": "Misyon",
+    "missionText": "Havacılık, elektronik ve savunma sanayi alanında müşteri beklentilerini aşan, kaliteli ve güvenilir ürün ve hizmetler sunmak. Teknolojik yenilikleri yakından takip ederek, endüstrinin gelişmesine katkıda bulunmaktır.",
+    "vision": "Vizyon",
+    "visionText": "Bölgenin ve dünyının saygın teknoloji şirketlerinden biri olmak. Yenilikçi ürün ve hizmetleriyle uluslararası pazarlarda tanınan, tercih edilen bir kuruluş haline gelmektir.",
+    "values": "Değerlerimiz",
+    "valuesList": [
+      {
+        "title": "Kalite",
+        "description": "Her ürün ve hizmette en yüksek kalite standartlarına uyuyoruz.",
+        "icon": "Award"
+      },
+      {
+        "title": "Yenilik",
+        "description": "Sürekli olarak yeni teknolojileri araştırıp geliştiriyoruz.",
+        "icon": "Lightbulb"
+      },
+      {
+        "title": "Güvenilirlik",
+        "description": "Müşterilerimizin bize olan güvenini her zaman korumaya çalışırız.",
+        "icon": "Shield"
+      },
+      {
+        "title": "İşbirliği",
+        "description": "Ekip çalışması ve iş birliğine inanıyoruz.",
+        "icon": "Users"
+      },
+      {
+        "title": "Sorumluluk",
+        "description": "Çevreye ve topluma karşı sorumlu davranırız.",
+        "icon": "Building2"
+      },
+      {
+        "title": "Müşteri Memnuniyeti",
+        "description": "Müşteri tatmini bizim için en önemli başarı ölçütüdür.",
+        "icon": "Heart"
+      }
+    ],
+    "team": "Deneyimli Ekibimiz",
+    "teamDesc": "BARSAV'ın başarısı, alanında uzman ve deneyimli profesyonellerden oluşan ekibinin çalışkanlığı ve dedikasyonunun sonucudur.",
+    "teamImages": [
+      {
+        "src": "/aerospace-engineer-team.jpg",
+        "alt": "Mühendislik Ekibi"
+      },
+      {
+        "src": "/manufacturing-facility-workers.jpg",
+        "alt": "Üretim Tesisi"
+      },
+      {
+        "src": "/simulation-control-room.jpg",
+        "alt": "Simülasyon Merkezi"
+      }
+    ],
+    "statistics": [
+      {
+        "value": "500+",
+        "label": "Çalışan"
+      },
+      {
+        "value": "25+",
+        "label": "Yıl Tecrübe"
+      },
+      {
+        "value": "100+",
+        "label": "Proje"
+      }
+    ]
+  }
+}
+

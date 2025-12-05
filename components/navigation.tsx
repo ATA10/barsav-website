@@ -6,6 +6,7 @@ import LanguageSelector from "@/components/language-selector"
 import ThemeToggle from "@/components/theme-toggle"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
+import { getBasePath, getHomePath } from "@/lib/base-path"
 
 export default function Navigation() {
   const { language } = useLanguage()
@@ -24,15 +25,17 @@ export default function Navigation() {
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
     const hash = href.replace('#', '')
+    const homePath = getHomePath()
+    const currentPath = window.location.pathname
     
     // Eğer ana sayfada değilsek, ana sayfaya yönlendir
-    if (window.location.pathname !== '/') {
-      window.location.href = `/#${hash}`
+    if (currentPath !== homePath && currentPath !== `${homePath}/`) {
+      window.location.href = `${homePath}/#${hash}`
     } else {
       const element = document.getElementById(hash)
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        window.history.pushState(null, '', `#${hash}`)
+        window.history.pushState(null, '', `${homePath}/#${hash}`)
       }
     }
   }

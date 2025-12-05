@@ -2,6 +2,7 @@ import { Language } from "./translations"
 import productsData from "@/dataa/products.json"
 import servicesData from "@/dataa/services.json"
 import projectsData from "@/dataa/projects.json"
+import aboutData from "@/dataa/about.json"
 
 // Ürün çevirileri
 const productTranslations: Record<Language, Record<number, any>> = {
@@ -683,6 +684,210 @@ export function getLocalizedBlogPosts(lang: Language) {
     }
     return post
   })
+}
+
+// About çevirileri
+const aboutTranslations: Record<Language, any> = {
+  tr: {},
+  en: {
+    title: "About",
+    subtitle: "We provide innovative technology solutions in aviation, electronics and defense industry.",
+    whoWeAre: "Who We Are?",
+    description1: "BARSAV is an organization that has been developing and producing innovative technology solutions in aviation, electronics and defense industry since 1995. Working with leading companies in our country and the world, BARSAV has always prioritized quality and innovation.",
+    description2: "BARSAV, which has a wide range of products from airport lighting systems to military and civil vehicle simulations, strives to keep customer satisfaction at the highest level.",
+    description3: "We offer high-quality products using the latest technology in electronics manufacturing. Our company, which attaches great importance to R&D studies, continues to offer new and improved products continuously.",
+    mission: "Mission",
+    missionText: "To provide quality and reliable products and services that exceed customer expectations in aviation, electronics and defense industry. To contribute to the development of the industry by closely following technological innovations.",
+    vision: "Vision",
+    visionText: "To be one of the respected technology companies in the region and the world. To become an organization recognized and preferred in international markets with innovative products and services.",
+    values: "Our Values",
+    valuesList: [
+      {
+        title: "Quality",
+        description: "We comply with the highest quality standards in every product and service.",
+        icon: "Award"
+      },
+      {
+        title: "Innovation",
+        description: "We continuously research and develop new technologies.",
+        icon: "Lightbulb"
+      },
+      {
+        title: "Reliability",
+        description: "We always strive to maintain our customers' trust in us.",
+        icon: "Shield"
+      },
+      {
+        title: "Collaboration",
+        description: "We believe in teamwork and cooperation.",
+        icon: "Users"
+      },
+      {
+        title: "Responsibility",
+        description: "We act responsibly towards the environment and society.",
+        icon: "Building2"
+      },
+      {
+        title: "Customer Satisfaction",
+        description: "Customer satisfaction is the most important success criterion for us.",
+        icon: "Heart"
+      }
+    ],
+    team: "Our Experienced Team",
+    teamDesc: "BARSAV's success is the result of the hard work and dedication of its team consisting of experts and experienced professionals in their fields.",
+    statistics: [
+      {
+        value: "500+",
+        label: "Employees"
+      },
+      {
+        value: "25+",
+        label: "Years Experience"
+      },
+      {
+        value: "100+",
+        label: "Projects"
+      }
+    ]
+  },
+  ru: {
+    title: "О нас",
+    subtitle: "Мы предоставляем инновационные технологические решения в области авиации, электроники и оборонной промышленности.",
+    whoWeAre: "Кто мы?",
+    description1: "BARSAV - это организация, которая с 1995 года разрабатывает и производит инновационные технологические решения в области авиации, электроники и оборонной промышленности. Работая с ведущими компаниями нашей страны и мира, BARSAV всегда ставил качество и инновации на первое место.",
+    description2: "BARSAV, имеющий широкий спектр продуктов от систем освещения аэропортов до военных и гражданских симуляторов транспортных средств, стремится поддерживать удовлетворенность клиентов на самом высоком уровне.",
+    description3: "Мы предлагаем высококачественную продукцию, используя новейшие технологии в производстве электроники. Наша компания, придающая большое значение исследованиям и разработкам, продолжает постоянно предлагать новые и улучшенные продукты.",
+    mission: "Миссия",
+    missionText: "Предоставлять качественные и надежные продукты и услуги, превышающие ожидания клиентов в области авиации, электроники и оборонной промышленности. Вносить вклад в развитие отрасли, внимательно следя за технологическими инновациями.",
+    vision: "Видение",
+    visionText: "Быть одной из уважаемых технологических компаний в регионе и мире. Стать организацией, признанной и предпочитаемой на международных рынках благодаря инновационным продуктам и услугам.",
+    values: "Наши ценности",
+    valuesList: [
+      {
+        title: "Качество",
+        description: "Мы соблюдаем самые высокие стандарты качества в каждом продукте и услуге.",
+        icon: "Award"
+      },
+      {
+        title: "Инновации",
+        description: "Мы постоянно исследуем и разрабатываем новые технологии.",
+        icon: "Lightbulb"
+      },
+      {
+        title: "Надежность",
+        description: "Мы всегда стремимся поддерживать доверие наших клиентов к нам.",
+        icon: "Shield"
+      },
+      {
+        title: "Сотрудничество",
+        description: "Мы верим в командную работу и сотрудничество.",
+        icon: "Users"
+      },
+      {
+        title: "Ответственность",
+        description: "Мы действуем ответственно по отношению к окружающей среде и обществу.",
+        icon: "Building2"
+      },
+      {
+        title: "Удовлетворенность клиентов",
+        description: "Удовлетворенность клиентов является для нас самым важным критерием успеха.",
+        icon: "Heart"
+      }
+    ],
+    team: "Наша опытная команда",
+    teamDesc: "Успех BARSAV является результатом упорного труда и преданности его команды, состоящей из экспертов и опытных профессионалов в своих областях.",
+    statistics: [
+      {
+        value: "500+",
+        label: "Сотрудников"
+      },
+      {
+        value: "25+",
+        label: "Лет опыта"
+      },
+      {
+        value: "100+",
+        label: "Проектов"
+      }
+    ]
+  },
+  de: {
+    title: "Über uns",
+    subtitle: "Wir bieten innovative Technologielösungen in den Bereichen Luftfahrt, Elektronik und Verteidigungsindustrie.",
+    whoWeAre: "Wer sind wir?",
+    description1: "BARSAV ist eine Organisation, die seit 1995 innovative Technologielösungen in den Bereichen Luftfahrt, Elektronik und Verteidigungsindustrie entwickelt und produziert. Durch die Zusammenarbeit mit führenden Unternehmen unseres Landes und der Welt hat BARSAV Qualität und Innovation immer in den Vordergrund gestellt.",
+    description2: "BARSAV, das ein breites Produktspektrum von Flughafenbeleuchtungssystemen bis hin zu militärischen und zivilen Fahrzeugsimulationen hat, bemüht sich, die Kundenzufriedenheit auf höchstem Niveau zu halten.",
+    description3: "Wir bieten hochwertige Produkte unter Verwendung modernster Technologie in der Elektronikfertigung an. Unser Unternehmen, das Forschung und Entwicklung große Bedeutung beimisst, bietet kontinuierlich neue und verbesserte Produkte an.",
+    mission: "Mission",
+    missionText: "Qualitative und zuverlässige Produkte und Dienstleistungen anzubieten, die die Kundenerwartungen in den Bereichen Luftfahrt, Elektronik und Verteidigungsindustrie übertreffen. Durch die enge Verfolgung technologischer Innovationen zur Entwicklung der Industrie beizutragen.",
+    vision: "Vision",
+    visionText: "Eines der angesehenen Technologieunternehmen in der Region und der Welt zu sein. Eine Organisation zu werden, die auf internationalen Märkten mit innovativen Produkten und Dienstleistungen anerkannt und bevorzugt wird.",
+    values: "Unsere Werte",
+    valuesList: [
+      {
+        title: "Qualität",
+        description: "Wir halten die höchsten Qualitätsstandards in jedem Produkt und jeder Dienstleistung ein.",
+        icon: "Award"
+      },
+      {
+        title: "Innovation",
+        description: "Wir erforschen und entwickeln kontinuierlich neue Technologien.",
+        icon: "Lightbulb"
+      },
+      {
+        title: "Zuverlässigkeit",
+        description: "Wir bemühen uns immer, das Vertrauen unserer Kunden in uns zu bewahren.",
+        icon: "Shield"
+      },
+      {
+        title: "Zusammenarbeit",
+        description: "Wir glauben an Teamarbeit und Zusammenarbeit.",
+        icon: "Users"
+      },
+      {
+        title: "Verantwortung",
+        description: "Wir handeln verantwortungsbewusst gegenüber Umwelt und Gesellschaft.",
+        icon: "Building2"
+      },
+      {
+        title: "Kundenzufriedenheit",
+        description: "Kundenzufriedenheit ist für uns das wichtigste Erfolgskriterium.",
+        icon: "Heart"
+      }
+    ],
+    team: "Unser erfahrenes Team",
+    teamDesc: "BARSAVs Erfolg ist das Ergebnis der harten Arbeit und Hingabe seines Teams, das aus Experten und erfahrenen Fachkräften in ihren Bereichen besteht.",
+    statistics: [
+      {
+        value: "500+",
+        label: "Mitarbeiter"
+      },
+      {
+        value: "25+",
+        label: "Jahre Erfahrung"
+      },
+      {
+        value: "100+",
+        label: "Projekte"
+      }
+    ]
+  }
+}
+
+// About verilerini dil desteği ile getir
+export function getLocalizedAbout(lang: Language) {
+  const baseData = aboutData.about
+  const translation = aboutTranslations[lang]
+  
+  if (translation && lang !== "tr") {
+    return {
+      ...baseData,
+      ...translation,
+      teamImages: baseData.teamImages,
+    }
+  }
+  
+  return baseData
 }
 
 
