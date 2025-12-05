@@ -381,3 +381,69 @@ export function getLocalizedProjects(lang: Language) {
   })
 }
 
+// Blog çevirileri
+import blogData from "@/dataa/blog-posts.json"
+
+const blogTranslations: Record<Language, Record<number, any>> = {
+  tr: {},
+  en: {
+    1: {
+      title: "The Place of LED Technology in the Aviation Industry",
+      date: "November 15, 2024",
+      category: "Technology",
+      excerpt: "The role and benefits of LED lighting systems in the modern aviation industry...",
+      content: "LED technology has revolutionized the aviation industry. It offers many advantages from energy efficiency to reliability. Modern LED systems used in airports consume 60% less energy compared to traditional lighting solutions. At the same time, maintenance costs are significantly reduced due to their longer lifespan. These technologies provide significant benefits to airport operators by offering solutions optimized for day and night operations.",
+      author: "BARSAV Technology Team"
+    },
+    2: {
+      title: "Artificial Intelligence Applications in Military Simulators",
+      date: "November 10, 2024",
+      category: "Artificial Intelligence",
+      excerpt: "The use and advances of artificial intelligence technology in military training simulators...",
+      content: "Artificial intelligence applications in military simulators have significantly increased training quality and realism. Today, artificial intelligence in advanced military simulators can create realistic combat scenarios and provide adaptive training programs. This technology enables pilots and military personnel to receive more effective training, minimizing the margin of error before operations. AI-powered simulators can quickly adapt to various scenarios and provide real-time feedback.",
+      author: "BARSAV R&D Team"
+    },
+    3: {
+      title: "Quality Control Standards in Electronics Manufacturing",
+      date: "November 5, 2024",
+      category: "Manufacturing",
+      excerpt: "Quality standards that must be applied in defense industry electronic products...",
+      content: "Quality control standards for electronic products manufactured in the defense industry are very strict and comprehensive. These standards have been established to ensure the reliability and durability of products. BARSAV aims for the highest quality level by complying with international standards in all electronics manufacturing. Detailed tests and controls are carried out at every stage of production, and even the smallest deviation can stop the process. This meticulous approach guarantees that our products are long-lasting and reliable.",
+      author: "BARSAV Quality Team"
+    },
+    4: {
+      title: "Cybersecurity in Defense Industry",
+      date: "November 1, 2024",
+      category: "Security",
+      excerpt: "The importance of cybersecurity in modern defense systems and measures to be taken...",
+      content: "Cybersecurity in the defense industry is a matter of critical importance. With the digitization of military systems, cyber threats have also increased. BARSAV applies the highest level of cybersecurity standards in all its products. We protect our systems with multi-layered security protocols, continuous monitoring systems and regular security tests.",
+      author: "BARSAV Security Team"
+    },
+    5: {
+      title: "Next Generation Simulator Technologies",
+      date: "October 28, 2024",
+      category: "Innovation",
+      excerpt: "The use of virtual reality and augmented reality technologies in military training...",
+      content: "Next generation simulator technologies are completely transforming military training. Thanks to VR and AR technologies, personnel can receive training in conditions much closer to real combat environments. These technologies significantly increase training quality while reducing training costs. As BARSAV, we follow the latest developments in this field and integrate them into our products.",
+      author: "BARSAV Innovation Team"
+    }
+  },
+  ru: {},
+  de: {}
+}
+
+// Blog verilerini dil desteği ile getir
+export function getLocalizedBlogPosts(lang: Language) {
+  return blogData.posts.map((post) => {
+    const translation = blogTranslations[lang]?.[post.id]
+    if (translation && lang !== "tr") {
+      return {
+        ...post,
+        ...translation,
+        image: post.image,
+      }
+    }
+    return post
+  })
+}
+

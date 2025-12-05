@@ -104,9 +104,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import blogData from "@/dataa/blog-posts.json"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
+import { getLocalizedBlogPosts } from "@/lib/data-translations"
 
 interface BlogPost {
   id: number
@@ -180,7 +180,7 @@ export default function BlogSection() {
     setAutoPlay(true) // Dot tıklandığında otomatik oynatmayı sıfırla
   }
 
-  const posts: BlogPost[] = blogData.posts
+  const posts: BlogPost[] = getLocalizedBlogPosts(language)
 
   const getVisiblePosts = () => {
     const visible = []

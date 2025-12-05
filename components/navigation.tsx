@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import LanguageSelector from "@/components/language-selector"
+import ThemeToggle from "@/components/theme-toggle"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
 
@@ -73,10 +74,14 @@ export default function Navigation() {
             <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="text-foreground hover:text-accent transition cursor-pointer">
               {getTranslation(language, "nav.contact")}
             </a>
-            <LanguageSelector />
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <LanguageSelector />
+            </div>
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
             <LanguageSelector />
             <button onClick={() => setIsOpen(!isOpen)} className="p-2 hover:bg-card rounded-lg">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

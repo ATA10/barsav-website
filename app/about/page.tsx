@@ -5,8 +5,11 @@ import Footer from "@/components/footer"
 import { useState, useEffect } from "react"
 import { Building2, Users, Lightbulb, Shield, Heart, Target, Award } from "lucide-react"
 import ImageWithBasePath from "@/components/image-with-basepath"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
 
 export default function AboutPage() {
+  const { language } = useLanguage()
   const [showNav, setShowNav] = useState(false)
 
   useEffect(() => {
@@ -25,9 +28,9 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">Hakkımızda</h1>
+          <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">{getTranslation(language, "about.title")}</h1>
           <p className="text-xl text-muted-foreground text-balance">
-            Havacılık, elektronik ve savunma sanayi alanında yenilikçi teknoloji çözümleri sunuyoruz.
+            {getTranslation(language, "about.subtitle")}
           </p>
         </div>
       </section>
@@ -35,7 +38,7 @@ export default function AboutPage() {
       {/* Kurumsal Bilgiler */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">Biz Kimiz?</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">{getTranslation(language, "about.whoWeAre")}</h2>
 
           <div className="mb-8 rounded-lg overflow-hidden h-96 bg-gradient-to-br from-accent/20 to-primary/20 relative">
             <ImageWithBasePath src="/modern-aerospace-technology-facility.jpg" alt="Barsav Teknoloji" fill className="object-cover" />
@@ -43,20 +46,15 @@ export default function AboutPage() {
 
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              BARSAV, 1995 yılından beri havacılık, elektronik ve savunma sanayi alanında yenilikçi teknoloji çözümleri
-              geliştiren ve üreten bir kuruluştur. Ülkemizin ve dünyanın önde gelen şirketleriyle çalışan BARSAV, her
-              zaman kaliteyi ve yeniliği ön planda tutmuştur.
+              {getTranslation(language, "about.description1")}
             </p>
 
             <p>
-              Havaalanı ışıklandırma sistemlerinden tutun, askeri ve sivil araç simülasyonlarına kadar geniş bir ürün
-              yelpazesine sahip olan BARSAV, müşteri memnuniyetini en üst seviyede tutmaya çalışmaktadır.
+              {getTranslation(language, "about.description2")}
             </p>
 
             <p>
-              Elektronik üretim alanında son teknoloji kullanarak, yüksek kaliteli ürünler sunmaktayız. Ar-Ge
-              çalışmalarına büyük önem veren şirketimiz, sürekli olarak yeni ve geliştirilmiş ürünler sunmaya devam
-              etmektedir.
+              {getTranslation(language, "about.description3")}
             </p>
           </div>
         </div>
@@ -70,12 +68,10 @@ export default function AboutPage() {
             <div className="bg-card/50 rounded-lg p-8 border border-[color:var(--border)]">
               <div className="flex items-center gap-3 mb-4">
                 <Target className="w-8 h-8 text-accent" />
-                <h3 className="text-3xl font-bold text-accent">Misyon</h3>
+                <h3 className="text-3xl font-bold text-accent">{getTranslation(language, "about.mission")}</h3>
               </div>
               <p className="text-foreground leading-relaxed">
-                Havacılık, elektronik ve savunma sanayi alanında müşteri beklentilerini aşan, kaliteli ve güvenilir ürün
-                ve hizmetler sunmak. Teknolojik yenilikleri yakından takip ederek, endüstrinin gelişmesine katkıda
-                bulunmaktır.
+                {getTranslation(language, "about.missionText")}
               </p>
             </div>
 
@@ -83,11 +79,10 @@ export default function AboutPage() {
             <div className="bg-card/50 rounded-lg p-8 border border-[color:var(--border)]">
               <div className="flex items-center gap-3 mb-4">
                 <Lightbulb className="w-8 h-8 text-accent" />
-                <h3 className="text-3xl font-bold text-accent">Vizyon</h3>
+                <h3 className="text-3xl font-bold text-accent">{getTranslation(language, "about.vision")}</h3>
               </div>
               <p className="text-foreground leading-relaxed">
-                Bölgenin ve dünyının saygın teknoloji şirketlerinden biri olmak. Yenilikçi ürün ve hizmetleriyle
-                uluslararası pazarlarda tanınan, tercih edilen bir kuruluş haline gelmektir.
+                {getTranslation(language, "about.visionText")}
               </p>
             </div>
           </div>
@@ -97,38 +92,38 @@ export default function AboutPage() {
       {/* Değerlerimiz */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">Değerlerimiz</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">{getTranslation(language, "about.values")}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: "Kalite",
-                description: "Her ürün ve hizmette en yüksek kalite standartlarına uyuyoruz.",
+                title: getTranslation(language, "about.quality"),
+                description: getTranslation(language, "about.qualityDesc"),
                 icon: Award,
               },
               {
-                title: "Yenilik",
-                description: "Sürekli olarak yeni teknolojileri araştırıp geliştiriyoruz.",
+                title: getTranslation(language, "about.innovation"),
+                description: getTranslation(language, "about.innovationDesc"),
                 icon: Lightbulb,
               },
               {
-                title: "Güvenilirlik",
-                description: "Müşterilerimizin bize olan güvenini her zaman korumaya çalışırız.",
+                title: getTranslation(language, "about.reliability"),
+                description: getTranslation(language, "about.reliabilityDesc"),
                 icon: Shield,
               },
               {
-                title: "İşbirliği",
-                description: "Ekip çalışması ve iş birliğine inanıyoruz.",
+                title: getTranslation(language, "about.collaboration"),
+                description: getTranslation(language, "about.collaborationDesc"),
                 icon: Users,
               },
               {
-                title: "Sorumluluk",
-                description: "Çevreye ve topluma karşı sorumlu davranırız.",
+                title: getTranslation(language, "about.responsibility"),
+                description: getTranslation(language, "about.responsibilityDesc"),
                 icon: Building2,
               },
               {
-                title: "Müşteri Memnuniyeti",
-                description: "Müşteri tatmini bizim için en önemli başarı ölçütüdür.",
+                title: getTranslation(language, "about.customerSatisfaction"),
+                description: getTranslation(language, "about.customerSatisfactionDesc"),
                 icon: Heart,
               },
             ].map((value, index) => {
@@ -150,7 +145,7 @@ export default function AboutPage() {
       {/* Ekip */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">Deneyimli Ekibimiz</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">{getTranslation(language, "about.team")}</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <div className="rounded-lg overflow-hidden h-64 bg-gradient-to-br from-accent/20 to-primary/20 relative">
@@ -166,22 +161,21 @@ export default function AboutPage() {
 
           <div className="bg-card/50 rounded-lg p-8 border border-[color:var(--border)]">
             <p className="text-lg text-foreground leading-relaxed mb-6">
-              BARSAV'ın başarısı, alanında uzman ve deneyimli profesyonellerden oluşan ekibinin çalışkanlığı ve
-              dedikasyonunun sonucudur.
+              {getTranslation(language, "about.teamDesc")}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="text-center">
                 <p className="text-4xl font-bold text-accent mb-2">500+</p>
-                <p className="text-foreground">Çalışan</p>
+                <p className="text-foreground">{getTranslation(language, "about.employees")}</p>
               </div>
               <div className="text-center">
                 <p className="text-4xl font-bold text-accent mb-2">25+</p>
-                <p className="text-foreground">Yıl Tecrübe</p>
+                <p className="text-foreground">{getTranslation(language, "about.yearsExperience")}</p>
               </div>
               <div className="text-center">
                 <p className="text-4xl font-bold text-accent mb-2">100+</p>
-                <p className="text-foreground">Proje</p>
+                <p className="text-foreground">{getTranslation(language, "about.projects")}</p>
               </div>
             </div>
           </div>
