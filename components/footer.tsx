@@ -1,13 +1,26 @@
 "use client"
 
+import { useRouter } from "next/navigation"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
+
 export default function Footer() {
+  const router = useRouter()
+  const { language } = useLanguage()
+  
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
     const hash = href.replace('#', '')
-    const element = document.getElementById(hash)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      window.history.pushState(null, '', `#${hash}`)
+    
+    // Eğer ana sayfada değilsek, ana sayfaya yönlendir
+    if (window.location.pathname !== '/') {
+      router.push(`/#${hash}`)
+    } else {
+      const element = document.getElementById(hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        window.history.pushState(null, '', `#${hash}`)
+      }
     }
   }
 
@@ -16,66 +29,66 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-foreground font-semibold mb-4">Barsav</h3>
+            <h3 className="text-foreground font-semibold mb-4">{getTranslation(language, "footer.company")}</h3>
             <p className="text-muted-foreground text-sm">
-              Havacılık ve savunma sanayi için yenilikçi teknoloji çözümleri
+              {getTranslation(language, "footer.description")}
             </p>
           </div>
 
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Hızlı Linkler</h4>
+            <h4 className="text-foreground font-semibold mb-4">{getTranslation(language, "footer.quickLinks")}</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <a href="#about" onClick={(e) => handleAnchorClick(e, '#about')} className="hover:text-accent transition cursor-pointer">
-                  Hakkımızda
+                <a href="/about" className="hover:text-accent transition cursor-pointer">
+                  {getTranslation(language, "nav.about")}
                 </a>
               </li>
               <li>
                 <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="hover:text-accent transition cursor-pointer">
-                  Hizmetler
+                  {getTranslation(language, "nav.services")}
                 </a>
               </li>
               <li>
                 <a href="#projects" onClick={(e) => handleAnchorClick(e, '#projects')} className="hover:text-accent transition cursor-pointer">
-                  Projeler
+                  {getTranslation(language, "nav.projects")}
                 </a>
               </li>
               <li>
                 <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="hover:text-accent transition cursor-pointer">
-                  İletişim
+                  {getTranslation(language, "nav.contact")}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Şirket</h4>
+            <h4 className="text-foreground font-semibold mb-4">{getTranslation(language, "footer.companyLinks")}</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
                 <a href="#career" onClick={(e) => handleAnchorClick(e, '#career')} className="hover:text-accent transition cursor-pointer">
-                  Kariyer
+                  {getTranslation(language, "nav.career")}
                 </a>
               </li>
               <li>
                 <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="hover:text-accent transition cursor-pointer">
-                  Blog
+                  {getTranslation(language, "nav.blog")}
                 </a>
               </li>
               <li>
                 <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="hover:text-accent transition cursor-pointer">
-                  Basın Özeti
+                  {getTranslation(language, "footer.pressRelease")}
                 </a>
               </li>
               <li>
                 <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="hover:text-accent transition cursor-pointer">
-                  İletişim
+                  {getTranslation(language, "nav.contact")}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Sosyal Ağlar</h4>
+            <h4 className="text-foreground font-semibold mb-4">{getTranslation(language, "footer.socialNetworks")}</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
                 <a href="#" className="hover:text-accent transition">
@@ -102,13 +115,13 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[color:var(--border)] pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">&copy; 2025 Barsav. Tüm hakları saklıdır.</p>
+          <p className="text-muted-foreground text-sm">&copy; 2025 Barsav. {getTranslation(language, "footer.copyright")}</p>
           <div className="flex space-x-6 text-muted-foreground text-sm mt-4 md:mt-0">
             <a href="#" className="hover:text-accent transition">
-              Gizlilik Politikası
+              {getTranslation(language, "footer.privacyPolicy")}
             </a>
             <a href="#" className="hover:text-accent transition">
-              Hizmet Şartları
+              {getTranslation(language, "footer.termsOfService")}
             </a>
           </div>
         </div>

@@ -1,8 +1,15 @@
 "use client"
 
 import React from "react"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
+
+interface ContactSectionProps {
+  onContactClick?: () => void
+}
 
 export default function ContactSection({ onContactClick }: ContactSectionProps) {
+  const { language } = useLanguage()
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
@@ -59,15 +66,15 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
     <section id="contact" className="py-24 bg-card/50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Bize Ulaşın</h2>
-          <p className="text-lg text-muted-foreground">Projeleriniz veya sorularınız için bize yazın</p>
+          <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "contact.title")}</h2>
+          <p className="text-lg text-muted-foreground">{getTranslation(language, "contact.subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Sol taraf - Harita ve İletişim Bilgileri */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">İletişim Bilgileri</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">{getTranslation(language, "contact.contactInfo")}</h3>
               <div className="bg-background rounded-lg p-4 mb-6">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6262506623846!2d29.00596!3d41.04733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7c0e3f0001%3A0x1234567890abc!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890"
@@ -84,7 +91,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
             {/* İletişim Detayları */}
             <div className="space-y-4">
               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
-                <p className="text-accent font-semibold mb-1">Adres</p>
+                <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.address")}</p>
                 <p className="text-foreground">
                   Barsav Teknoloji A.Ş.
                   <br />
@@ -93,12 +100,12 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
               </div>
 
               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
-                <p className="text-accent font-semibold mb-1">Telefon</p>
+                <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.phone")}</p>
                 <p className="text-foreground">+90 (212) 555-0123</p>
               </div>
 
               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
-                <p className="text-accent font-semibold mb-1">E-mail</p>
+                <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.email")}</p>
                 <p className="text-foreground">info@barsav.com</p>
               </div>
             </div>
@@ -106,14 +113,14 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
 
           {/* Sağ taraf - İletişim Formu */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">Mesaj Gönderin</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-6">{getTranslation(language, "contact.sendMessage")}</h3>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <input
                   type="text"
                   name="name"
-                  placeholder="Adınız"
+                  placeholder={getTranslation(language, "contact.namePlaceholder")}
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -125,7 +132,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 <input
                   type="email"
                   name="email"
-                  placeholder="E-mail Adresiniz"
+                  placeholder={getTranslation(language, "contact.emailPlaceholder")}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -137,7 +144,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 <input
                   type="text"
                   name="subject"
-                  placeholder="Konu"
+                  placeholder={getTranslation(language, "contact.subjectPlaceholder")}
                   value={formData.subject}
                   onChange={handleChange}
                   required
@@ -148,7 +155,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
               <div>
                 <textarea
                   name="message"
-                  placeholder="Mesajınız"
+                  placeholder={getTranslation(language, "contact.messagePlaceholder")}
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -159,13 +166,13 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
 
               {submitStatus === "success" && (
                 <div className="bg-green-500/20 border border-green-500/50 rounded-lg p-3 text-green-400">
-                  Mesajınız başarıyla gönderildi!
+                  {getTranslation(language, "contact.success")}
                 </div>
               )}
 
               {submitStatus === "error" && (
                 <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-3 text-red-400">
-                  Mesaj gönderilirken hata oluştu. Lütfen tekrar deneyin.
+                  {getTranslation(language, "contact.error")}
                 </div>
               )}
 
@@ -174,7 +181,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 disabled={isSubmitting}
                 className="w-full px-8 py-3 bg-accent hover:bg-accent/90 disabled:bg-accent/50 text-accent-foreground rounded-lg font-semibold transition"
               >
-                {isSubmitting ? "Gönderiliyor..." : "Mesaj Gönder"}
+                {isSubmitting ? getTranslation(language, "contact.sending") : getTranslation(language, "contact.send")}
               </button>
             </form>
           </div>

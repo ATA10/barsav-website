@@ -23,10 +23,16 @@ export default function Navigation() {
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
     const hash = href.replace('#', '')
-    const element = document.getElementById(hash)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      window.history.pushState(null, '', `#${hash}`)
+    
+    // Eğer ana sayfada değilsek, ana sayfaya yönlendir
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${hash}`
+    } else {
+      const element = document.getElementById(hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        window.history.pushState(null, '', `#${hash}`)
+      }
     }
   }
 

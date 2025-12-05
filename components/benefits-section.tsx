@@ -1,26 +1,30 @@
 "use client"
 
 import { Award, Target, Zap, Smile } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
 
 export default function BenefitsSection() {
+  const { language } = useLanguage()
+  
   const benefits = [
     {
-      label: "Kalite",
+      label: getTranslation(language, "benefits.quality"),
       value: "%100",
       icon: Award,
     },
     {
-      label: "Başarılı Projeler",
+      label: getTranslation(language, "benefits.successfulProjects"),
       value: "50+",
       icon: Target,
     },
     {
-      label: "Hızlı Teslimat",
+      label: getTranslation(language, "benefits.fastDelivery"),
       value: "%99.9",
       icon: Zap,
     },
     {
-      label: "Müşteri Memnuniyeti",
+      label: getTranslation(language, "benefits.customerSatisfaction"),
       value: "%100",
       icon: Smile,
     },

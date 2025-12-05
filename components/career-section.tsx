@@ -1,6 +1,11 @@
+"use client"
+
 import ImageWithBasePath from "./image-with-basepath"
+import { useLanguage } from "@/contexts/language-context"
+import { getTranslation } from "@/lib/translations"
 
 export default function CareerSection() {
+  const { language } = useLanguage()
   return (
     <section id="career" className="py-24 bg-card/50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,31 +15,30 @@ export default function CareerSection() {
           </div>
 
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-foreground">Ekibimize Katılın</h2>
+            <h2 className="text-4xl font-bold text-foreground">{getTranslation(language, "career.title")}</h2>
             <p className="text-lg text-muted-foreground">
-              Baykar Tech'de kariyer yaparak teknolojinin geleceğini şekillendirin. Yaratıcı, özel ve profesyonel bir
-              ortamda yeteneklerinizi geliştirin.
+              {getTranslation(language, "career.description")}
             </p>
 
             <div className="space-y-4">
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Yazılım Geliştirici</h3>
-                <p className="text-muted-foreground">Python, C++ ve modern web teknolojileri alanlarında deneyim</p>
+                <h3 className="font-semibold text-foreground mb-2">{getTranslation(language, "career.softwareDeveloper")}</h3>
+                <p className="text-muted-foreground">{getTranslation(language, "career.softwareDeveloperDesc")}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Donanım Mühendisi</h3>
+                <h3 className="font-semibold text-foreground mb-2">{getTranslation(language, "career.hardwareEngineer")}</h3>
                 <p className="text-muted-foreground">
-                  Elektronik tasarım ve simülasyon alanında uzmanlaşmış profesyoneller
+                  {getTranslation(language, "career.hardwareEngineerDesc")}
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Proje Yöneticisi</h3>
-                <p className="text-muted-foreground">Büyük ölçekli projeleri yönetme ve liderlik deneyimi</p>
+                <h3 className="font-semibold text-foreground mb-2">{getTranslation(language, "career.projectManager")}</h3>
+                <p className="text-muted-foreground">{getTranslation(language, "career.projectManagerDesc")}</p>
               </div>
             </div>
 
             <button className="px-8 py-3 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-semibold transition">
-              Kariyer Fırsatlarını Gör
+              {getTranslation(language, "career.viewOpportunities")}
             </button>
           </div>
         </div>
