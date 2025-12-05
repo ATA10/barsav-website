@@ -18,7 +18,7 @@ export default function Footer() {
     
     // Eğer ana sayfada değilsek, ana sayfaya yönlendir
     if (currentPath !== homePath && currentPath !== `${homePath}/`) {
-      router.push(`${homePath}/#${hash}`)
+      window.location.href = `${homePath}/#${hash}`
     } else {
       const element = document.getElementById(hash)
       if (element) {

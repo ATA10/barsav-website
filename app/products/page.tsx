@@ -31,6 +31,11 @@ export default function ProductsPage() {
 
   const products: Product[] = getLocalizedProducts(language)
 
+  // Dil değiştiğinde filtreyi sıfırla
+  useEffect(() => {
+    setSelectedCategory(getTranslation(language, "products.all"))
+  }, [language])
+
   useEffect(() => {
     const handleScroll = () => {
       setShowNav(window.scrollY > 100)

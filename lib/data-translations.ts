@@ -215,8 +215,422 @@ const productTranslations: Record<Language, Record<number, any>> = {
       ]
     }
   },
-  ru: {},
-  de: {}
+  ru: {
+    1: {
+      name: "Система LED-освещения аэропорта",
+      category: "Аэропортовое освещение",
+      description: "Профессиональные решения для освещения аэропортов. Энергоэффективные и долговечные системы с LED-технологией.",
+      fullDescription: "Передовые системы освещения, используемые в аэропортах. Энергоэффективные, долговечные и надежные решения. Системы оптимизированы для дневных и ночных операций. Разработаны и реализованы в соответствии с международными стандартами.",
+      price: "Свяжитесь с нами для получения ценового предложения",
+      features: [
+        "Современная технология на основе LED",
+        "Энергосбережение и устойчивость",
+        "Автоматические системы управления",
+        "Соответствие международным стандартам",
+        "Надежность работы 24/7"
+      ],
+      status: "Активен",
+      technicalSpecs: {
+        "Потребление энергии": "50-200Вт",
+        "Срок службы": "50,000+ часов",
+        "Цветовая температура": "4000K-6000K",
+        "Класс защиты IP": "IP65",
+        "Рабочая температура": "-40°C до +60°C",
+        "Стандарты": "ICAO Annex 14, FAA AC 150/5345-46"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Мехмет Йылмаз",
+          rating: 5,
+          comment: "Отличная система. Сэкономила энергию и снизила затраты на обслуживание.",
+          date: "2024-01-15"
+        },
+        {
+          id: 2,
+          author: "Айше Демир",
+          rating: 5,
+          comment: "Полностью соответствует международным стандартам. Очень довольны.",
+          date: "2024-02-20"
+        }
+      ]
+    },
+    2: {
+      name: "Военный симулятор танка",
+      category: "Военная симуляция",
+      description: "Передовые симуляторы военных транспортных средств. Реалистичный физический движок и многоканальная визуальная система.",
+      fullDescription: "Реалистичные и высокоточные системы симуляции военных транспортных средств. Профессиональные решения, используемые для обучения и планирования операций. Полностью интегрированные панели управления и наблюдения. Оснащены реалистичным физическим движком, многоканальной визуальной системой и платформой движения.",
+      price: "Свяжитесь с нами для получения ценового предложения",
+      features: [
+        "Реалистичный физический движок",
+        "Многоканальная визуальная система",
+        "Платформа движения",
+        "Станции наблюдения",
+        "Сценарии на базе ИИ"
+      ],
+      status: "Активен",
+      technicalSpecs: {
+        "Поле зрения": "360°",
+        "Разрешение": "4K на канал",
+        "Платформа движения": "6 степеней свободы",
+        "Физический движок": "В реальном времени",
+        "Сценарии ИИ": "100+",
+        "Одновременные пользователи": "1-4 человека"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Али Кая",
+          rating: 5,
+          comment: "Значительно улучшило качество обучения. Реалистичный опыт симуляции.",
+          date: "2024-03-10"
+        }
+      ]
+    },
+    3: {
+      name: "Гражданский авиасимулятор",
+      category: "Гражданская симуляция",
+      description: "Авиасимуляторы для обучения пилотов. Сертифицированный профессиональный симулятор FSTD.",
+      fullDescription: "Профессиональные симуляторы для обучения пилотов гражданской авиации. Полностью возобновляемая конструкция компонентов и передовая модель аэродинамики. Сертифицированные системы FSTD с реалистичной приборной панелью, системой движения и полностью интегрированной структурой управления.",
+      price: "Свяжитесь с нами для получения ценового предложения",
+      features: [
+        "Сертифицирован FSTD",
+        "Реалистичная приборная панель",
+        "Система движения",
+        "Техническая поддержка",
+        "Возобновляемые компоненты"
+      ],
+      status: "Активен",
+      technicalSpecs: {
+        "Сертификация": "FSTD Level D",
+        "Визуальная система": "180° x 40°",
+        "Система движения": "6 степеней свободы",
+        "Модели самолетов": "10+",
+        "Аэродинамика": "В реальном времени",
+        "Приборная панель": "Полностью функциональна"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Пилот Ахмет Шахин",
+          rating: 5,
+          comment: "Сертифицированная система FSTD очень близка к реальному опыту полета. Отличный инструмент для обучения.",
+          date: "2024-01-25"
+        },
+        {
+          id: 2,
+          author: "Менеджер по обучению Зейнеп Оз",
+          rating: 5,
+          comment: "Используем в наших программах обучения пилотов. Очень успешные результаты.",
+          date: "2024-02-14"
+        }
+      ]
+    },
+    4: {
+      name: "Электронная система управления",
+      category: "Производство электроники",
+      description: "Проектирование и производство многоканальной электронной системы управления. Соответствует стандартам оборонной промышленности.",
+      fullDescription: "Проектирование, прототипирование и массовое производство специальных электронных продуктов для оборонного и авиационного секторов. Производство осуществляется с высочайшими стандартами качества. Проектирование и производство многоканальной электронной системы управления. Соответствует стандартам оборонной промышленности, протестировано и одобрено.",
+      price: "Свяжитесь с нами для получения ценового предложения",
+      features: [
+        "Индивидуальный дизайн",
+        "Контроль качества",
+        "Массовое производство",
+        "Техническая поддержка",
+        "Точная инженерия"
+      ],
+      status: "Активен",
+      technicalSpecs: {
+        "Количество каналов": "8-64",
+        "Процессор": "ARM Cortex-A78",
+        "Рабочее напряжение": "12В-48В постоянного тока",
+        "Рабочая температура": "-55°C до +85°C",
+        "Стандарты": "MIL-STD-810G, DO-160",
+        "Интерфейс": "CAN, RS485, Ethernet"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Инженер Джан Арслан",
+          rating: 5,
+          comment: "Используем в наших оборонных проектах. Очень надежная и долговечная система.",
+          date: "2024-02-05"
+        }
+      ]
+    },
+    5: {
+      name: "Система обучения авиасимулятору",
+      category: "Гражданская симуляция",
+      description: "Сертифицированный авиасимулятор FSTD. Используется для программ обучения пилотов.",
+      fullDescription: "Сертифицированный авиасимулятор FSTD. С реалистичной приборной панелью, системой движения и полностью интегрированной структурой управления. Используется для программ обучения пилотов. Обеспечивается полная иммерсивная среда обучения.",
+      price: "Свяжитесь с нами для получения ценового предложения",
+      features: [
+        "Сертифицирован FSTD",
+        "Реалистичная приборная панель",
+        "Система движения",
+        "Полностью интегрированное управление",
+        "Программы обучения"
+      ],
+      status: "Активен",
+      technicalSpecs: {
+        "Сертификация": "FSTD Level C/D",
+        "Визуальное разрешение": "1920x1080 на экран",
+        "Система движения": "6 степеней свободы электрогидравлическая",
+        "Сценарии обучения": "500+",
+        "Воздушное движение": "В реальном времени",
+        "Погода": "Динамическая"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Координатор обучения Фатма Йылдыз",
+          rating: 5,
+          comment: "Используем в нашем обучении пилотов. Очень эффективный инструмент обучения.",
+          date: "2024-03-01"
+        }
+      ]
+    },
+    6: {
+      name: "Производственная линия электронных компонентов",
+      category: "Производство электроники",
+      description: "Современное производственное предприятие для высокотехнологичных электронных компонентов.",
+      fullDescription: "Производственное предприятие BARSAV специально разработано для производства точных электронных компонентов. Контроль качества обеспечивается полностью автоматической системой управления. Предприятие имеет производственную мощность 50,000+ компонентов в год.",
+      price: "Свяжитесь с нами для получения ценового предложения",
+      features: [
+        "Автоматические производственные линии",
+        "Точный контроль качества",
+        "Высокая мощность",
+        "Сертификаты ISO",
+        "Экологически чистое производство"
+      ],
+      status: "Активен",
+      technicalSpecs: {
+        "Производственная мощность": "50,000+ компонентов/год",
+        "Уровень автоматизации": "95%",
+        "Контроль качества": "100% тестирование",
+        "Сертификаты": "ISO 9001, ISO 14001",
+        "Чистое помещение": "ISO 7 (Класс 10,000)",
+        "Рабочая зона": "2,500 м²"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Менеджер по производству Серкан Доган",
+          rating: 5,
+          comment: "Современная и эффективная производственная линия. Соответствует нашим стандартам качества.",
+          date: "2024-01-10"
+        }
+      ]
+    }
+  },
+  de: {
+    1: {
+      name: "Flughafen-LED-Beleuchtungssystem",
+      category: "Flughafenbeleuchtung",
+      description: "Professionelle Flughafenbeleuchtungslösungen. Energieeffiziente und langlebige Systeme mit LED-Technologie.",
+      fullDescription: "Fortgeschrittene Beleuchtungssysteme, die in Flughäfen verwendet werden. Energieeffiziente, langlebige und zuverlässige Lösungen. Systeme optimiert für Tag- und Nachtbetrieb. Entworfen und implementiert in Übereinstimmung mit internationalen Standards.",
+      price: "Kontaktieren Sie uns für ein Preisangebot",
+      features: [
+        "Moderne Technologie auf LED-Basis",
+        "Energieeinsparung und Nachhaltigkeit",
+        "Automatische Steuerungssysteme",
+        "Konform mit internationalen Standards",
+        "Betriebszuverlässigkeit 24/7"
+      ],
+      status: "Aktiv",
+      technicalSpecs: {
+        "Stromverbrauch": "50-200W",
+        "Lebensdauer": "50,000+ Stunden",
+        "Farbtemperatur": "4000K-6000K",
+        "IP-Schutzklasse": "IP65",
+        "Betriebstemperatur": "-40°C bis +60°C",
+        "Standards": "ICAO Annex 14, FAA AC 150/5345-46"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Mehmet Yilmaz",
+          rating: 5,
+          comment: "Ausgezeichnetes System. Energie gespart und Wartungskosten reduziert.",
+          date: "2024-01-15"
+        },
+        {
+          id: 2,
+          author: "Ayse Demir",
+          rating: 5,
+          comment: "Vollständig konform mit internationalen Standards. Sehr zufrieden.",
+          date: "2024-02-20"
+        }
+      ]
+    },
+    2: {
+      name: "Militärischer Panzersimulator",
+      category: "Militärische Simulation",
+      description: "Fortgeschrittene militärische Fahrzeugsimulationen. Realistische Physik-Engine und Mehrkanal-Visualsystem.",
+      fullDescription: "Realistische und hochpräzise militärische Fahrzeugsimulationssysteme. Professionelle Lösungen für Training und Operationsplanung. Vollständig integrierte Steuerungs- und Beobachterpanels. Ausgestattet mit realistischer Physik-Engine, Mehrkanal-Visualsystem und Bewegungsplattform.",
+      price: "Kontaktieren Sie uns für ein Preisangebot",
+      features: [
+        "Realistische Physik-Engine",
+        "Mehrkanal-Visualsystem",
+        "Bewegungsplattform",
+        "Beobachterstationen",
+        "KI-gestützte Szenarien"
+      ],
+      status: "Aktiv",
+      technicalSpecs: {
+        "Sichtfeld": "360°",
+        "Auflösung": "4K pro Kanal",
+        "Bewegungsplattform": "6 Freiheitsgrade",
+        "Physik-Engine": "Echtzeit",
+        "KI-Szenarien": "100+",
+        "Gleichzeitige Benutzer": "1-4 Personen"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Ali Kaya",
+          rating: 5,
+          comment: "Trainingsqualität erheblich verbessert. Realistische Simulationserfahrung.",
+          date: "2024-03-10"
+        }
+      ]
+    },
+    3: {
+      name: "Ziviler Flugzeugsimulator",
+      category: "Zivile Simulation",
+      description: "Flugzeugsimulationen für Pilotenausbildung. FSTD-zertifizierter professioneller Simulator.",
+      fullDescription: "Professionelle Pilotenausbildungssimulatoren für die zivile Luftfahrt. Vollständig erneuerbare Komponentenkonstruktion und fortgeschrittenes Aerodynamikmodell. FSTD-zertifizierte Systeme mit realistischer Instrumententafel, Bewegungssystem und vollständig integrierter Steuerungsstruktur.",
+      price: "Kontaktieren Sie uns für ein Preisangebot",
+      features: [
+        "FSTD-zertifiziert",
+        "Realistische Instrumententafel",
+        "Bewegungssystem",
+        "Technischer Support",
+        "Erneuerbare Komponenten"
+      ],
+      status: "Aktiv",
+      technicalSpecs: {
+        "Zertifizierung": "FSTD Level D",
+        "Visualsystem": "180° x 40°",
+        "Bewegungssystem": "6 Freiheitsgrade",
+        "Flugzeugmodelle": "10+",
+        "Aerodynamik": "Echtzeit",
+        "Instrumententafel": "Vollständig funktionsfähig"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Pilot Ahmet Sahin",
+          rating: 5,
+          comment: "FSTD-zertifiziertes System ist dem echten Flugerlebnis sehr nahe. Ausgezeichnetes Trainingswerkzeug.",
+          date: "2024-01-25"
+        },
+        {
+          id: 2,
+          author: "Ausbildungsmanagerin Zeynep Oz",
+          rating: 5,
+          comment: "Wir verwenden es in unseren Pilotenausbildungsprogrammen. Sehr erfolgreiche Ergebnisse.",
+          date: "2024-02-14"
+        }
+      ]
+    },
+    4: {
+      name: "Elektronisches Steuerungssystem",
+      category: "Elektronikfertigung",
+      description: "Design und Fertigung eines Mehrkanal-Elektroniksteuerungssystems. Konform mit Verteidigungsindustriestandards.",
+      fullDescription: "Design, Prototyping und Massenproduktion spezieller elektronischer Produkte für Verteidigungs- und Luftfahrtsektoren. Die Produktion erfolgt mit höchsten Qualitätsstandards. Design und Fertigung eines Mehrkanal-Elektroniksteuerungssystems. Konform mit Verteidigungsindustriestandards, getestet und genehmigt.",
+      price: "Kontaktieren Sie uns für ein Preisangebot",
+      features: [
+        "Individuelles Design",
+        "Qualitätskontrolle",
+        "Massenproduktion",
+        "Technischer Support",
+        "Präzisionsingenieurwesen"
+      ],
+      status: "Aktiv",
+      technicalSpecs: {
+        "Kanalanzahl": "8-64",
+        "Prozessor": "ARM Cortex-A78",
+        "Betriebsspannung": "12V-48V Gleichstrom",
+        "Betriebstemperatur": "-55°C bis +85°C",
+        "Standards": "MIL-STD-810G, DO-160",
+        "Schnittstelle": "CAN, RS485, Ethernet"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Ingenieur Can Arslan",
+          rating: 5,
+          comment: "Wir verwenden es in unseren Verteidigungsprojekten. Sehr zuverlässiges und langlebiges System.",
+          date: "2024-02-05"
+        }
+      ]
+    },
+    5: {
+      name: "Luftfahrtsimulator-Trainingssystem",
+      category: "Zivile Simulation",
+      description: "FSTD-zertifizierter Luftfahrtsimulator. Verwendet für Pilotenausbildungsprogramme.",
+      fullDescription: "FSTD-zertifizierter Luftfahrtsimulator. Mit realistischer Instrumententafel, Bewegungssystem und vollständig integrierter Steuerungsstruktur. Verwendet für Pilotenausbildungsprogramme. Vollständige immersive Trainingsumgebung wird bereitgestellt.",
+      price: "Kontaktieren Sie uns für ein Preisangebot",
+      features: [
+        "FSTD-zertifiziert",
+        "Realistische Instrumententafel",
+        "Bewegungssystem",
+        "Vollständig integrierte Steuerung",
+        "Ausbildungsprogramme"
+      ],
+      status: "Aktiv",
+      technicalSpecs: {
+        "Zertifizierung": "FSTD Level C/D",
+        "Visuelle Auflösung": "1920x1080 pro Bildschirm",
+        "Bewegungssystem": "6 Freiheitsgrade elektrohydraulisch",
+        "Trainingsszenarien": "500+",
+        "Luftverkehr": "Echtzeit",
+        "Wetter": "Dynamisch"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Ausbildungskoordinatorin Fatma Yildiz",
+          rating: 5,
+          comment: "Wir verwenden es in unserer Pilotenausbildung. Sehr effektives Trainingswerkzeug.",
+          date: "2024-03-01"
+        }
+      ]
+    },
+    6: {
+      name: "Elektronikkomponenten-Produktionslinie",
+      category: "Elektronikfertigung",
+      description: "Moderne Produktionsanlage für Hightech-Elektronikkomponenten.",
+      fullDescription: "Die Produktionsanlage BARSAV ist speziell für die Produktion präziser Elektronikkomponenten entwickelt. Qualitätskontrolle wird durch vollautomatisches Managementsystem gewährleistet. Die Anlage hat eine Produktionskapazität von 50,000+ Komponenten pro Jahr.",
+      price: "Kontaktieren Sie uns für ein Preisangebot",
+      features: [
+        "Automatische Produktionslinien",
+        "Präzise Qualitätskontrolle",
+        "Hohe Kapazität",
+        "ISO-Zertifizierungen",
+        "Umweltfreundliche Produktion"
+      ],
+      status: "Aktiv",
+      technicalSpecs: {
+        "Produktionskapazität": "50,000+ Komponenten/Jahr",
+        "Automatisierungsgrad": "95%",
+        "Qualitätskontrolle": "100% Test",
+        "Zertifizierungen": "ISO 9001, ISO 14001",
+        "Reinraum": "ISO 7 (Klasse 10,000)",
+        "Arbeitsbereich": "2,500 m²"
+      },
+      reviews: [
+        {
+          id: 1,
+          author: "Produktionsmanager Serkan Dogan",
+          rating: 5,
+          comment: "Moderne und effiziente Produktionslinie. Erfüllt unsere Qualitätsstandards.",
+          date: "2024-01-10"
+        }
+      ]
+    }
+  }
 }
 
 // Ürün verilerini dil desteği ile getir
