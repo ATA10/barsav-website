@@ -3,6 +3,7 @@
 import { useState } from "react"
 import ProjectModal from "./project-modal"
 import ImageWithBasePath from "./image-with-basepath"
+import projectsData from "@/dataa/projects.json"
 
 interface Project {
   id: number
@@ -14,53 +15,6 @@ interface Project {
   client: string
   image: string
 }
-
-const projectsData: Project[] = [
-  {
-    id: 1,
-    title: "Havaalanı LED Aydınlatma Projesi",
-    category: "Havaalanı Aydınlatması",
-    fullDescription:
-      "Türkiye'nin en büyük havaalanlarından biri için yapılan LED aydınlatma sistemi projesi. Başlangıç, iniş ve gemi güvenliği için optimize edilmiş sistemler.",
-    year: "2023",
-    status: "Tamamlandı",
-    client: "Önde Gelen Havaalanı Operatörü",
-    image: "/airport-led-lighting-system.jpg",
-  },
-  {
-    id: 2,
-    title: "Askeri Tanksimülatörü Sistemi",
-    category: "Askeri Simülasyon",
-    fullDescription:
-      "Gelişmiş tank simülatörü sistemi. Gerçekçi fizik motoru, çoklu kanalı görsel sistem ve hareket platformuyla donatılmış. Eğitim ve operasyon planlama için kullanıldı.",
-    year: "2022",
-    status: "Tamamlandı",
-    client: "Türk Silahlı Kuvvetleri",
-    image: "/military-tank-simulator.jpg",
-  },
-  {
-    id: 3,
-    title: "Elektronik Kontrol Sistemi",
-    category: "Elektronik Üretim",
-    fullDescription:
-      "Çok kanallı elektronik kontrol sistemi tasarımı ve üretimi. Savunma endüstrisi standartlarına uygun, teste tabi tutulmuş ve onaylanmış.",
-    year: "2023",
-    status: "Devam Ediyor",
-    client: "Savunma Kontraktörü",
-    image: "/electronic-control-system.jpg",
-  },
-  {
-    id: 4,
-    title: "Havacılık Simülatörü Eğitim Sistemi",
-    category: "Sivil Simülasyon",
-    fullDescription:
-      "FSTD sertifikalı havacılık simülatörü. Gerçekçi gösterge paneli, hareket sistemi ve tam entegre kontrol yapısıyla. Pilot eğitim programları için kullanılıyor.",
-    year: "2023",
-    status: "Tamamlandı",
-    client: "Havacılık Eğitim Merkezi",
-    image: "/aviation-simulator-training.jpg",
-  },
-]
 
 export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
@@ -88,7 +42,7 @@ export default function ProjectsSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projectsData.map((project) => (
+            {projectsData.projects.map((project: Project) => (
               <div
                 key={project.id}
                 onClick={() => handleProjectClick(project)}

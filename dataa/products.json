@@ -1,0 +1,113 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Havaalanı LED Aydınlatma Sistemi",
+      "category": "Havaalanı Aydınlatması",
+      "description": "Profesyonel havaalanı ışıklandırma çözümleri. LED teknolojisi ile enerji verimli ve uzun ömürlü sistemler.",
+      "fullDescription": "Havaalanlarında kullanılan ileri teknoloji aydınlatma sistemleri. Enerji verimli, uzun ömürlü ve güvenilir çözümler. Gece ve gündüz operasyonları için optimize edilmiş sistemler. Uluslararası standartlara uygun olarak tasarlanmış ve uygulanmıştır.",
+      "price": "Fiyat Teklifi İçin İletişime Geçin",
+      "features": [
+        "LED tabanlı modern teknoloji",
+        "Enerji tasarrufu ve sürdürülebilirlik",
+        "Otomatik kontrol sistemleri",
+        "Uluslararası standartlara uyumlu",
+        "24/7 operasyonel güvenilirlik"
+      ],
+      "image": "/airport-led-lighting-system.jpg",
+      "status": "Aktif",
+      "year": "2023"
+    },
+    {
+      "id": 2,
+      "name": "Askeri Tank Simülatörü",
+      "category": "Askeri Simülasyon",
+      "description": "Gelişmiş askeri araç simülasyonları. Gerçekçi fizik motoru ve çoklu kanallı görsel sistem.",
+      "fullDescription": "Gerçekçi ve yüksek doğruluklu askeri araç simülasyon sistemleri. Eğitim ve operasyon planlama için kullanılan profesyonel çözümler. Tam entegre kontrol ve gözlemci panelleri. Gerçekçi fizik motoru, multi-channel görsel sistem ve hareket platformu ile donatılmıştır.",
+      "price": "Fiyat Teklifi İçin İletişime Geçin",
+      "features": [
+        "Gerçekçi fizik motoru",
+        "Multi-channel görsel sistem",
+        "Hareket platformu",
+        "Gözlemci istasyonları",
+        "Yapay zeka destekli senaryolar"
+      ],
+      "image": "/military-tank-simulator.jpg",
+      "status": "Aktif",
+      "year": "2022"
+    },
+    {
+      "id": 3,
+      "name": "Sivil Uçak Simülatörü",
+      "category": "Sivil Simülasyon",
+      "description": "Pilot eğitimi için uçak simülasyonları. FSTD sertifikalı profesyonel simülatör.",
+      "fullDescription": "Sivil havacılık için profesyonel pilot eğitim simülatörleri. Tamamen yenilemelenebilir komponent tasarımı ve gelişmiş hava dinamiği modeli. FSTD sertifikalı sistemler ile gerçekçi gösterge paneli, hareket sistemi ve tam entegre kontrol yapısı.",
+      "price": "Fiyat Teklifi İçin İletişime Geçin",
+      "features": [
+        "FSTD sertifikalı",
+        "Gerçekçi gösterge paneli",
+        "Hareket sistemi",
+        "Teknik destek",
+        "Yenilemelenebilir komponentler"
+      ],
+      "image": "/civil-aircraft-simulator.jpg",
+      "status": "Aktif",
+      "year": "2023"
+    },
+    {
+      "id": 4,
+      "name": "Elektronik Kontrol Sistemi",
+      "category": "Elektronik Üretim",
+      "description": "Çok kanallı elektronik kontrol sistemi tasarımı ve üretimi. Savunma endüstrisi standartlarına uygun.",
+      "fullDescription": "Savunma ve havacılık sektörü için özel elektronik ürünlerin tasarımı, prototipi ve seri üretimi. En yüksek kalite standartlarıyla üretim yapılmaktadır. Çok kanallı elektronik kontrol sistemi tasarımı ve üretimi. Savunma endüstrisi standartlarına uygun, teste tabi tutulmuş ve onaylanmış.",
+      "price": "Fiyat Teklifi İçin İletişime Geçin",
+      "features": [
+        "Özel tasarım",
+        "Kalite kontrol",
+        "Seri üretim",
+        "Teknik destek",
+        "Hassas mühendislik"
+      ],
+      "image": "/electronic-control-system.jpg",
+      "status": "Aktif",
+      "year": "2023"
+    },
+    {
+      "id": 5,
+      "name": "Havacılık Simülatörü Eğitim Sistemi",
+      "category": "Sivil Simülasyon",
+      "description": "FSTD sertifikalı havacılık simülatörü. Pilot eğitim programları için kullanılıyor.",
+      "fullDescription": "FSTD sertifikalı havacılık simülatörü. Gerçekçi gösterge paneli, hareket sistemi ve tam entegre kontrol yapısıyla. Pilot eğitim programları için kullanılıyor. Tam immersif eğitim ortamı sağlanır.",
+      "price": "Fiyat Teklifi İçin İletişime Geçin",
+      "features": [
+        "FSTD sertifikalı",
+        "Gerçekçi gösterge paneli",
+        "Hareket sistemi",
+        "Tam entegre kontrol",
+        "Eğitim programları"
+      ],
+      "image": "/aviation-simulator-training.jpg",
+      "status": "Aktif",
+      "year": "2023"
+    },
+    {
+      "id": 6,
+      "name": "Elektronik Bileşen Üretim Hattı",
+      "category": "Elektronik Üretim",
+      "description": "Yüksek teknoloji elektronik bileşenleri için modern üretim tesisi.",
+      "fullDescription": "BARSAV üretim tesisi, hassas elektronik bileşenlerinin üretilmesi için özel olarak tasarlanmıştır. Tam otomatik yönetim sistemi ile kalite kontrol sağlanır. Tesis, yılda 50,000+ bileşen üretim kapasitesine sahiptir.",
+      "price": "Fiyat Teklifi İçin İletişime Geçin",
+      "features": [
+        "Otomatik üretim hatları",
+        "Hassas kalite kontrol",
+        "Yüksek kapasite",
+        "ISO sertifikasyonları",
+        "Çevre dostu üretim"
+      ],
+      "image": "/electronics-manufacturing-line.png",
+      "status": "Aktif",
+      "year": "2021"
+    }
+  ]
+}
+

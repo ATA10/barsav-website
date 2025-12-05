@@ -12,7 +12,7 @@
         "Uluslararası standartlara uyumlu",
         "24/7 operasyonel güvenilirlik"
       ],
-      "image": "/placeholder.svg?height=400&width=600"
+      "image": "/airport-lighting.jpg"
     },
     {
       "id": 2,
@@ -26,7 +26,7 @@
         "Hızlı prototipleme ve test",
         "Tam teknik destek"
       ],
-      "image": "/placeholder.svg?height=400&width=600"
+      "image": "/electronic-control-system.jpg"
     },
     {
       "id": 3,
@@ -40,7 +40,7 @@
         "Çok oyunculu eğitim desteği",
         "Uluslararası sertifikasyon"
       ],
-      "image": "/placeholder.svg?height=400&width=600"
+      "image": "/military-simulation.jpg"
     },
     {
       "id": 4,
@@ -54,7 +54,7 @@
         "Çevre dostu üretim",
         "Esnek ve hızlı üretim kapasitesi"
       ],
-      "image": "/placeholder.svg?height=400&width=600"
+      "image": "/electronics-manufacturing-line.png"
     }
   ]
 }

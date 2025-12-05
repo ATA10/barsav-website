@@ -104,6 +104,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import blogData from "@/dataa/blog-posts.json"
 
 interface BlogPost {
   id: number
@@ -115,64 +116,6 @@ interface BlogPost {
   author: string
   image: string
 }
-
-const blogData: BlogPost[] = [
-  {
-    id: 1,
-    title: "Havacılık Endüstrisinde LED Teknolojisinin Yeri",
-    date: "15 Kasım 2024",
-    category: "Teknoloji",
-    excerpt: "Modern havacılık endüstrisinde LED aydınlatma sistemlerinin rolü ve faydaları...",
-    content:
-      "Havacılık endüstrisinde LED teknolojisi devrim yaratmıştır. Enerji verimliliğinden güvenilirliğe kadar birçok avantaj sunmaktadır. Havaalanlarında kullanılan modern LED sistemleri, geleneksel aydınlatma çözümlerine kıyasla %60 daha az enerji tüketmektedir. Aynı zamanda daha uzun ömürlü olmaları nedeniyle bakım maliyetleri de önemli ölçüde düşmektedir. Bu teknolojiler, gece ve gündüz operasyonları için optimize edilmiş çözümler sunarak havaalanı operatörlerine önemli fayda sağlamaktadır.",
-    author: "BARSAV Teknoloji Ekibi",
-    image: "/led-aviation-lighting.jpg",
-  },
-  {
-    id: 2,
-    title: "Askeri Simülatörlerde Yapay Zeka Uygulamaları",
-    date: "10 Kasım 2024",
-    category: "Yapay Zeka",
-    excerpt: "Askeri eğitim simülatörlerinde yapay zeka teknolojisinin kullanımı ve ilerlemeleri...",
-    content:
-      "Askeri simülatörlerde yapay zeka uygulamaları, eğitim kalitesini ve gerçekçiliğini önemli ölçüde artırmıştır. Günümüzde gelişmiş askeri simülatörlerde yapay zeka, gerçekçi muharebe senaryoları oluşturabilmekte ve adaptif eğitim programları sağlayabilmektedir. Bu teknoloji, pilotların ve askeri personelin daha etkili bir şekilde eğitim almasını sağlamakta, operasyon öncesi hata payını minimuma indirmektedir. Yapay zeka destekli simülatörler, çeşitli senaryolara hızlı bir şekilde uyum sağlayabilmekte ve gerçek zamanlı geri bildirim sunabilmektedir.",
-    author: "BARSAV Ar-Ge Ekibi",
-    image: "/ai-military-simulator.jpg",
-  },
-  {
-    id: 3,
-    title: "Elektronik Üretimde Kalite Kontrol Standartları",
-    date: "5 Kasım 2024",
-    category: "Üretim",
-    excerpt: "Savunma endüstrisi elektronik ürünlerinde uygulanması gereken kalite standartları...",
-    content:
-      "Savunma endüstrisinde üretilen elektronik ürünlerin kalite kontrol standartları çok sıkı ve kapsamlıdır. Bu standartlar, ürünlerin güvenilirliğini ve dayanıklılığını sağlamak için belirlenmiştir. BARSAV, tüm elektronik üretiminde uluslararası standartlara uyarak, en yüksek kalite seviyesini hedeflemektedir. Her üretim aşamasında detaylı testler ve kontroller yapılmakta, en küçük sapma bile süreci durdurabilmektedir. Bu titiz yaklaşım, ürünlerimizin uzun ömürlü ve güvenilir olmasını garantilemektedir.",
-    author: "BARSAV Kalite Ekibi",
-    image: "/electronics-quality-control.jpg",
-  },
-  {
-    id: 4,
-    title: "Savunma Sanayinde Siber Güvenlik",
-    date: "1 Kasım 2024",
-    category: "Güvenlik",
-    excerpt: "Modern savunma sistemlerinde siber güvenliğin önemi ve alınması gereken önlemler...",
-    content:
-      "Savunma sanayinde siber güvenlik, kritik öneme sahip bir konudur. Askeri sistemlerin dijitalleşmesi ile birlikte siber tehditler de artmıştır. BARSAV, tüm ürünlerinde en yüksek seviye siber güvenlik standartlarını uygular. Çok katmanlı güvenlik protokolleri, sürekli izleme sistemleri ve düzenli güvenlik testleri ile sistemlerimizi koruma altına alıyoruz.",
-    author: "BARSAV Güvenlik Ekibi",
-    image: "/cyber-security.jpg",
-  },
-  {
-    id: 5,
-    title: "Gelecek Nesil Simülatör Teknolojileri",
-    date: "28 Ekim 2024",
-    category: "İnovasyon",
-    excerpt: "Sanal gerçeklik ve artırılmış gerçeklik teknolojilerinin askeri eğitimde kullanımı...",
-    content:
-      "Gelecek nesil simülatör teknolojileri, askeri eğitimi tamamen dönüştürmektedir. VR ve AR teknolojileri sayesinde, personel gerçek savaş ortamlarına çok daha yakın koşullarda eğitim alabilmektedir. Bu teknolojiler, eğitim maliyetlerini düşürürken eğitim kalitesini önemli ölçüde artırmaktadır. BARSAV olarak, bu alandaki en son gelişmeleri takip ediyor ve ürünlerimize entegre ediyoruz.",
-    author: "BARSAV İnovasyon Ekibi",
-    image: "/vr-training.jpg",
-  },
-]
 
 // Modal Component
 function BlogModal({ post, isOpen, onClose }: { post: BlogPost | null; isOpen: boolean; onClose: () => void }) {
@@ -220,12 +163,12 @@ export default function BlogSection() {
   }
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % blogData.length)
+    setCurrentIndex((prev) => (prev + 1) % posts.length)
     setAutoPlay(true) // Manuel geçişte otomatik oynatmayı sıfırla
   }
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + blogData.length) % blogData.length)
+    setCurrentIndex((prev) => (prev - 1 + posts.length) % posts.length)
     setAutoPlay(true) // Manuel geçişte otomatik oynatmayı sıfırla
   }
 
@@ -234,11 +177,13 @@ export default function BlogSection() {
     setAutoPlay(true) // Dot tıklandığında otomatik oynatmayı sıfırla
   }
 
+  const posts: BlogPost[] = blogData.posts
+
   const getVisiblePosts = () => {
     const visible = []
     for (let i = 0; i < itemsToShow; i++) {
-      const index = (currentIndex + i) % blogData.length
-      visible.push(blogData[index])
+      const index = (currentIndex + i) % posts.length
+      visible.push(posts[index])
     }
     return visible
   }
@@ -249,14 +194,14 @@ export default function BlogSection() {
     
     if (autoPlay) {
       interval = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % blogData.length)
+        setCurrentIndex((prev) => (prev + 1) % posts.length)
       }, 5000) // 10 saniye
     }
     
     return () => {
       if (interval) clearInterval(interval)
     }
-  }, [autoPlay])
+  }, [autoPlay, posts.length])
 
   // Modal kapandığında otomatik oynatmayı yeniden başlat
   useEffect(() => {
@@ -290,7 +235,7 @@ export default function BlogSection() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            {blogData.length > itemsToShow && (
+            {posts.length > itemsToShow && (
               <>
                 <button
                   onClick={prevSlide}
@@ -332,9 +277,9 @@ export default function BlogSection() {
               ))}
             </div>
 
-            {blogData.length > itemsToShow && (
+            {posts.length > itemsToShow && (
               <div className="flex justify-center gap-2 mt-8">
-                {blogData.map((_, index) => (
+                {posts.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}

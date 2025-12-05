@@ -2,33 +2,53 @@
   "posts": [
     {
       "id": 1,
-      "title": "Havacılık Teknolojisinde Yapay Zeka Uygulamaları",
-      "date": "15 Aralık 2024",
+      "title": "Havacılık Endüstrisinde LED Teknolojisinin Yeri",
+      "date": "15 Kasım 2024",
       "category": "Teknoloji",
-      "excerpt": "AI'nin havacılık sektöründe devrim yaratması ve güvenliği artırması hakkında...",
-      "content": "Yapay zeka teknolojileri, havacılık sektöründe giderek daha önemli bir rol oynamaktadır. Otonom uçuş sistemlerinden, bakım ve onarım otomasyonuna kadar AI birçok alanda kullanılmaktadır.\n\nBARSAV olarak, AI teknolojisini havacılık simülasyonlarında entegre ederek, pilot eğitimini daha etkili ve verimli hale getiriyoruz. Bu teknoloji, gerçek hayat senaryolarını simüle etmek ve beklenmedik durumlarla başa çıkma becerilerini geliştirmek için kullanılıyor.\n\nYerel ve uluslararası standartlar doğrultusunda geliştirilen sistemlerimiz, havacılık endüstrisine yeni boyutlar kazandırmaktadır.",
+      "excerpt": "Modern havacılık endüstrisinde LED aydınlatma sistemlerinin rolü ve faydaları...",
+      "content": "Havacılık endüstrisinde LED teknolojisi devrim yaratmıştır. Enerji verimliliğinden güvenilirliğe kadar birçok avantaj sunmaktadır. Havaalanlarında kullanılan modern LED sistemleri, geleneksel aydınlatma çözümlerine kıyasla %60 daha az enerji tüketmektedir. Aynı zamanda daha uzun ömürlü olmaları nedeniyle bakım maliyetleri de önemli ölçüde düşmektedir. Bu teknolojiler, gece ve gündüz operasyonları için optimize edilmiş çözümler sunarak havaalanı operatörlerine önemli fayda sağlamaktadır.",
       "author": "BARSAV Teknoloji Ekibi",
-      "image": "/placeholder.svg?height=400&width=600"
+      "image": "/led-aviation-lighting.jpg"
     },
     {
       "id": 2,
-      "title": "Elektronik Sistemlerde Son Trendler",
-      "date": "10 Aralık 2024",
-      "category": "İnovasyon",
-      "excerpt": "Modern elektronik tasarımında en yeni teknolojileri keşfedin...",
-      "content": "Elektronik endüstrisi, her geçen gün daha hızlı ve daha verimli çözümler sunmaktadır. Mikro-çip tasarımından, yüksek güç elektroniklerine kadar, teknoloji her alanda ilerlemektedir.\n\nBARSAV elektronik üretim tesisleri, en son teknolojiler ve yüksek kalite standartları ile donatılmıştır. Hassas ölçüm ve kalite kontrol sistemleri kullanarak, her ürünün en yüksek standartlarda üretilmesini sağlıyoruz.\n\nSavunma ve sivil uygulamalar için özelleştirilebilir elektronik çözümler sunuyoruz.",
-      "author": "Elektronik Bölümü",
-      "image": "/placeholder.svg?height=400&width=600"
+      "title": "Askeri Simülatörlerde Yapay Zeka Uygulamaları",
+      "date": "10 Kasım 2024",
+      "category": "Yapay Zeka",
+      "excerpt": "Askeri eğitim simülatörlerinde yapay zeka teknolojisinin kullanımı ve ilerlemeleri...",
+      "content": "Askeri simülatörlerde yapay zeka uygulamaları, eğitim kalitesini ve gerçekçiliğini önemli ölçüde artırmıştır. Günümüzde gelişmiş askeri simülatörlerde yapay zeka, gerçekçi muharebe senaryoları oluşturabilmekte ve adaptif eğitim programları sağlayabilmektedir. Bu teknoloji, pilotların ve askeri personelin daha etkili bir şekilde eğitim almasını sağlamakta, operasyon öncesi hata payını minimuma indirmektedir. Yapay zeka destekli simülatörler, çeşitli senaryolara hızlı bir şekilde uyum sağlayabilmekte ve gerçek zamanlı geri bildirim sunabilmektedir.",
+      "author": "BARSAV Ar-Ge Ekibi",
+      "image": "/ai-military-simulator.jpg"
     },
     {
       "id": 3,
-      "title": "Savunma Sanayi İçin Simülasyon Teknolojisi",
-      "date": "5 Aralık 2024",
-      "category": "Savunma",
-      "excerpt": "İleri simülasyon platformları ile eğitim kalitesini artırma...",
-      "content": "Simülasyon teknolojisi, modern savunma eğitiminin temelini oluşturmaktadır. Gerçekçi ve ihtiyaca göre özelleştirilebilir simülasyon ortamları, personel eğitiminin kalitesini önemli ölçüde artırmaktadır.\n\nBARSAV'ın simülasyon sistemleri, askeri ve sivil araç eğitimi için kullanılan en gelişmiş platformlardan biridir. Yüksek sadakat grafikleri, gerçekçi fizik motorları ve yapay zeka destekli senaryolar ile tam immersif bir eğitim deneyimi sağlıyoruz.\n\nUluslararası standartlara uygun olarak geliştirilen sistemlerimiz, dünya çapında tanınmıştır.",
-      "author": "Savunma Sistemleri Ekibi",
-      "image": "/placeholder.svg?height=400&width=600"
+      "title": "Elektronik Üretimde Kalite Kontrol Standartları",
+      "date": "5 Kasım 2024",
+      "category": "Üretim",
+      "excerpt": "Savunma endüstrisi elektronik ürünlerinde uygulanması gereken kalite standartları...",
+      "content": "Savunma endüstrisinde üretilen elektronik ürünlerin kalite kontrol standartları çok sıkı ve kapsamlıdır. Bu standartlar, ürünlerin güvenilirliğini ve dayanıklılığını sağlamak için belirlenmiştir. BARSAV, tüm elektronik üretiminde uluslararası standartlara uyarak, en yüksek kalite seviyesini hedeflemektedir. Her üretim aşamasında detaylı testler ve kontroller yapılmakta, en küçük sapma bile süreci durdurabilmektedir. Bu titiz yaklaşım, ürünlerimizin uzun ömürlü ve güvenilir olmasını garantilemektedir.",
+      "author": "BARSAV Kalite Ekibi",
+      "image": "/electronics-quality-control.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Savunma Sanayinde Siber Güvenlik",
+      "date": "1 Kasım 2024",
+      "category": "Güvenlik",
+      "excerpt": "Modern savunma sistemlerinde siber güvenliğin önemi ve alınması gereken önlemler...",
+      "content": "Savunma sanayinde siber güvenlik, kritik öneme sahip bir konudur. Askeri sistemlerin dijitalleşmesi ile birlikte siber tehditler de artmıştır. BARSAV, tüm ürünlerinde en yüksek seviye siber güvenlik standartlarını uygular. Çok katmanlı güvenlik protokolleri, sürekli izleme sistemleri ve düzenli güvenlik testleri ile sistemlerimizi koruma altına alıyoruz.",
+      "author": "BARSAV Güvenlik Ekibi",
+      "image": "/defense-system-technology.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Gelecek Nesil Simülatör Teknolojileri",
+      "date": "28 Ekim 2024",
+      "category": "İnovasyon",
+      "excerpt": "Sanal gerçeklik ve artırılmış gerçeklik teknolojilerinin askeri eğitimde kullanımı...",
+      "content": "Gelecek nesil simülatör teknolojileri, askeri eğitimi tamamen dönüştürmektedir. VR ve AR teknolojileri sayesinde, personel gerçek savaş ortamlarına çok daha yakın koşullarda eğitim alabilmektedir. Bu teknolojiler, eğitim maliyetlerini düşürürken eğitim kalitesini önemli ölçüde artırmaktadır. BARSAV olarak, bu alandaki en son gelişmeleri takip ediyor ve ürünlerimize entegre ediyoruz.",
+      "author": "BARSAV İnovasyon Ekibi",
+      "image": "/military-simulation.jpg"
     }
   ]
 }

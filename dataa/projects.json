@@ -2,47 +2,43 @@
   "projects": [
     {
       "id": 1,
-      "title": "Atatürk asdHavalimanı LED Sistemleri",
-      "category": "Havaalanı Işıklandırması",
-      "shortDescription": "Türkiye'nin önemli havalimanlarından birinin modernize edilmiş ışıklandırma sistemi",
-      "fullDescription": "Atatürk Havalimanı LED ışıklandırma sistemi projesi, BARSAV tarafından tamamlanan en geniş kapsamlı havaalanı ışıklandırması projesidir. Proje, eski halojenleri modern LED teknolojisiyle değiştirerek enerji tasarrufunu %60 oranında artırmıştır. Sistem, all-weather operasyonu destekler ve 24/7 güvenilir hizmet sunar. Atatürk Havalimanı LED ışıklandırma sistemi projesi, BARSAV tarafından tamamlanan en geniş kapsamlı havaalanı ışıklandırması projesidir. Proje, eski halojenleri modern LED teknolojisiyle değiştirerek enerji tasarrufunu %60 oranında artırmıştır. Sistem, all-weather operasyonu destekler ve 24/7 güvenilir hizmet sunar.Atatürk Havalimanı LED ışıklandırma sistemi projesi, BARSAV tarafından tamamlanan en geniş kapsamlı havaalanı ışıklandırması projesidir. Proje, eski halojenleri modern LED teknolojisiyle değiştirerek enerji tasarrufunu %60 oranında artırmıştır. Sistem, all-weather operasyonu destekler ve 24/7 güvenilir hizmet sunar.Atatürk Havalimanı LED ışıklandırma sistemi projesi, BARSAV tarafından tamamlanan en geniş kapsamlı havaalanı ışıklandırması projesidir. Proje, eski halojenleri modern LED teknolojisiyle değiştirerek enerji tasarrufunu %60 oranında artırmıştır. Sistem, all-weather operasyonu destekler ve 24/7 güvenilir hizmet sunar.Atatürk Havalimanı LED ışıklandırma sistemi projesi, BARSAV tarafından tamamlanan en geniş kapsamlı havaalanı ışıklandırması projesidir. Proje, eski halojenleri modern LED teknolojisiyle değiştirerek enerji tasarrufunu %60 oranında artırmıştır. Sistem, all-weather operasyonu destekler ve 24/7 güvenilir hizmet sunar.Atatürk Havalimanı LED ışıklandırma sistemi projesi, BARSAV tarafından tamamlanan en geniş kapsamlı havaalanı ışıklandırması projesidir. Proje, eski halojenleri modern LED teknolojisiyle değiştirerek enerji tasarrufunu %60 oranında artırmıştır. Sistem, all-weather operasyonu destekler ve 24/7 güvenilir hizmet sunar.",
+      "title": "Havaalanı LED Aydınlatma Projesi",
+      "category": "Havaalanı Aydınlatması",
+      "fullDescription": "Türkiye'nin en büyük havaalanlarından biri için yapılan LED aydınlatma sistemi projesi. Başlangıç, iniş ve gemi güvenliği için optimize edilmiş sistemler.",
       "year": "2023",
       "status": "Tamamlandı",
-      "client": "Türkiye Havalimanları İşletmesi",
-      "image": "/placeholder.svg?height=400&width=600"
+      "client": "Önde Gelen Havaalanı Operatörü",
+      "image": "/airport-led-lighting-system.jpg"
     },
     {
       "id": 2,
-      "title": "Hava Savunma Sistemleri",
-      "category": "Savunma Teknolojisi",
-      "shortDescription": "Milli hava savunma sistemleri için ileri kontrol ve elektronik platformu",
-      "fullDescription": "Bu proje, Türk savunma sanayisinin kritik bir bileşenini oluşturmaktadır. BARSAV, hava savunma sisteminin kontrol elektroniklerinin tasarımı ve üretiminde lider rol oynamıştır. Sistem, yüksek güvenilirlik ve gerçek zamanlı işleme kapasitesiyle karakterize edilir.",
-      "year": "2022-2024",
-      "status": "Devam Ediyor",
-      "client": "Savunma Sanayi Müsteşarlığı",
-      "image": "/placeholder.svg?height=400&width=600"
+      "title": "Askeri Tanksimülatörü Sistemi",
+      "category": "Askeri Simülasyon",
+      "fullDescription": "Gelişmiş tank simülatörü sistemi. Gerçekçi fizik motoru, çoklu kanalı görsel sistem ve hareket platformuyla donatılmış. Eğitim ve operasyon planlama için kullanıldı.",
+      "year": "2022",
+      "status": "Tamamlandı",
+      "client": "Türk Silahlı Kuvvetleri",
+      "image": "/military-tank-simulator.jpg"
     },
     {
       "id": 3,
-      "title": "Pilot Eğitim Simülatörü",
-      "category": "Simülasyon Platformu",
-      "shortDescription": "Sivil pilot adayları için gelişmiş uçuş simülatörü platformu",
-      "fullDescription": "Pilot eğitim simülatörü, sivil havacılık kuruluşları için geliştirilen en son teknoloji platformudur. Gerçekçi sabin tasarımı, yüksek sadakat grafikleri ve dinamik hareket sistemi ile tam immersize eğitim ortamı sağlanır. Sistem, havacılık otoritesi tarafından sertifiye edilmiştir.",
+      "title": "Elektronik Kontrol Sistemi",
+      "category": "Elektronik Üretim",
+      "fullDescription": "Çok kanallı elektronik kontrol sistemi tasarımı ve üretimi. Savunma endüstrisi standartlarına uygun, teste tabi tutulmuş ve onaylanmış.",
       "year": "2023",
-      "status": "Tamamlandı",
-      "client": "Türk Havacılık Akademisi",
-      "image": "/placeholder.svg?height=400&width=600"
+      "status": "Devam Ediyor",
+      "client": "Savunma Kontraktörü",
+      "image": "/electronic-control-system.jpg"
     },
     {
       "id": 4,
-      "title": "Elektronik Bileşen Üretim",
-      "category": "Üretim Teknolojisi",
-      "shortDescription": "Yüksek teknoloji elektronik bileşenleri için modern üretim tesisi",
-      "fullDescription": "BARSAV üretim tesisi, hassas elektronik bileşenlerinin üretilmesi için özel olarak tasarlanmıştır. Tam otomatik yönetim sistemi ile kalite kontrol sağlanır. Tesis, yılda 50,000+ bileşen üretim kapasitesine sahiptir.",
-      "year": "2021-2024",
-      "status": "Operasyonel",
-      "client": "Yerli Üretim Programı",
-      "image": "/placeholder.svg?height=400&width=600"
+      "title": "Havacılık Simülatörü Eğitim Sistemi",
+      "category": "Sivil Simülasyon",
+      "fullDescription": "FSTD sertifikalı havacılık simülatörü. Gerçekçi gösterge paneli, hareket sistemi ve tam entegre kontrol yapısıyla. Pilot eğitim programları için kullanılıyor.",
+      "year": "2023",
+      "status": "Tamamlandı",
+      "client": "Havacılık Eğitim Merkezi",
+      "image": "/aviation-simulator-training.jpg"
     }
   ]
 }

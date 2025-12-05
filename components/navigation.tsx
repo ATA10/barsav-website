@@ -46,6 +46,9 @@ export default function Navigation() {
             <Link href="/about" className="text-foreground hover:text-accent transition">
               Hakkımızda
             </Link>
+            <Link href="/products" className="text-foreground hover:text-accent transition">
+              Ürünler
+            </Link>
             <a href="#services" onClick={(e) => handleAnchorClick(e, '#services')} className="text-foreground hover:text-accent transition cursor-pointer">
               Hizmetler
             </a>
@@ -74,6 +77,9 @@ export default function Navigation() {
           <div className="md:hidden pb-4 space-y-2 bg-background/80 backdrop-blur-sm">
             <Link href="/about" className="block text-foreground hover:text-accent transition py-2">
               Hakkımızda
+            </Link>
+            <Link href="/products" className="block text-foreground hover:text-accent transition py-2">
+              Ürünler
             </Link>
             <a href="#services" onClick={(e) => { handleAnchorClick(e, '#services'); setIsOpen(false); }} className="block text-foreground hover:text-accent transition py-2 cursor-pointer">
               Hizmetler
