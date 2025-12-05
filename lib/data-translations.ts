@@ -309,8 +309,106 @@ const serviceTranslations: Record<Language, Record<number, any>> = {
       ]
     }
   },
-  ru: {},
-  de: {}
+  ru: {
+    1: {
+      title: "Аэропортовое освещение",
+      shortDescription: "Эффективное и безопасное освещение аэродромов с помощью современных LED-систем",
+      fullDescription: "Системы освещения аэропортов BARSAV разработаны и реализованы в соответствии с международными стандартами. Высокая эффективность и экономия энергии достигаются с использованием LED-технологии. Система гарантирует высочайшее качество видимости даже ночью и в погодных условиях.",
+      features: [
+        "Современная технология на основе LED",
+        "Энергосбережение и устойчивость",
+        "Автоматические системы управления",
+        "Соответствие международным стандартам",
+        "Надежность работы 24/7"
+      ]
+    },
+    2: {
+      title: "Электронные системы",
+      shortDescription: "Высокопроизводительные электронные компоненты и системы управления",
+      fullDescription: "Подразделение электроники BARSAV производит высокопроизводительные системы управления для военных и гражданских применений. Каждый продукт поставляется в соответствии с высочайшими стандартами с точной инженерией и контролем качества. Доступна кастомизация в соответствии с особыми требованиями.",
+      features: [
+        "Индивидуальный дизайн и разработка",
+        "Высокая надежность и долговечность",
+        "Точный контроль качества",
+        "Быстрое прототипирование и тестирование",
+        "Полная техническая поддержка"
+      ]
+    },
+    3: {
+      title: "Симуляторы транспортных средств",
+      shortDescription: "Передовые платформы симуляции и обучения для военных и гражданских транспортных средств",
+      fullDescription: "Системы симуляции BARSAV обеспечивают реалистичные и полностью контролируемые среды для обучения пилотов и операторов. Эффективность максимизируется с помощью высококачественной графики и сценариев на базе ИИ. Система минимизирует затраты на обучение, предоставляя опыт симуляции реального транспортного средства.",
+      features: [
+        "Высококачественная графика",
+        "Реалистичные физические движки",
+        "Сценарии на базе ИИ",
+        "Поддержка многопользовательского обучения",
+        "Международная сертификация"
+      ]
+    },
+    4: {
+      title: "Производство электроники",
+      shortDescription: "Современные производственные объекты и системы управления, соответствующие стандартам ISO",
+      fullDescription: "Производственные объекты BARSAV оснащены самыми современными технологиями и системами контроля качества. Стандарты качества и окружающей среды соблюдаются с сертификатами ISO 9001 и ISO 14001. Крупномасштабные проекты выполняются с производственными линиями высокой мощности.",
+      features: [
+        "Сертификаты ISO",
+        "Автоматические производственные линии",
+        "Точный контроль качества",
+        "Экологически чистое производство",
+        "Гибкая и быстрая производственная мощность"
+      ]
+    }
+  },
+  de: {
+    1: {
+      title: "Flughafenbeleuchtung",
+      shortDescription: "Effektive und sichere Beleuchtung von Flugplätzen mit modernsten LED-Systemen",
+      fullDescription: "Die Flughafenbeleuchtungssysteme von BARSAV sind in Übereinstimmung mit internationalen Standards entwickelt und implementiert. Hohe Effizienz und Energieeinsparungen werden durch den Einsatz von LED-Technologie erreicht. Das System garantiert höchste Sichtqualität auch bei Nacht und bei Wetterbedingungen.",
+      features: [
+        "Moderne Technologie auf LED-Basis",
+        "Energieeinsparung und Nachhaltigkeit",
+        "Automatische Steuerungssysteme",
+        "Konform mit internationalen Standards",
+        "Betriebszuverlässigkeit 24/7"
+      ]
+    },
+    2: {
+      title: "Elektronische Systeme",
+      shortDescription: "Hochleistungselektronikkomponenten und Steuerungssysteme",
+      fullDescription: "Die Elektronikabteilung von BARSAV produziert hochleistungsfähige Steuerungssysteme für militärische und zivile Anwendungen. Jedes Produkt wird nach höchsten Standards mit Präzisionsingenieurwesen und Qualitätskontrolle geliefert. Anpassung ist nach besonderen Anforderungen verfügbar.",
+      features: [
+        "Individuelles Design und Entwicklung",
+        "Hohe Zuverlässigkeit und Haltbarkeit",
+        "Präzise Qualitätskontrolle",
+        "Schnelles Prototyping und Testing",
+        "Vollständige technische Unterstützung"
+      ]
+    },
+    3: {
+      title: "Fahrzeugsimulationen",
+      shortDescription: "Fortgeschrittene Simulations- und Trainingsplattformen für militärische und zivile Fahrzeuge",
+      fullDescription: "Die Simulationssysteme von BARSAV bieten realistische und vollständig kontrollierte Umgebungen für Pilot- und Operatortraining. Die Effektivität wird mit hochwertiger Grafik und KI-gestützten Szenarien maximiert. Das System minimiert Trainingskosten, indem es eine echte Fahrzeugsimulationserfahrung bietet.",
+      features: [
+        "Hochwertige Grafik",
+        "Realistische Physik-Engines",
+        "KI-gestützte Szenarien",
+        "Multi-Player-Trainingsunterstützung",
+        "Internationale Zertifizierung"
+      ]
+    },
+    4: {
+      title: "Elektronikfertigung",
+      shortDescription: "Moderne Produktionsanlagen und Steuerungssysteme, die ISO-Standards entsprechen",
+      fullDescription: "Die Produktionsanlagen von BARSAV sind mit modernsten Technologien und Qualitätskontrollsystemen ausgestattet. Qualitäts- und Umweltstandards werden mit ISO 9001- und ISO 14001-Zertifizierungen erfüllt. Großprojekte werden mit Hochleistungsproduktionslinien durchgeführt.",
+      features: [
+        "ISO-Zertifizierungen",
+        "Automatische Produktionslinien",
+        "Präzise Qualitätskontrolle",
+        "Umweltfreundliche Produktion",
+        "Flexible und schnelle Produktionskapazität"
+      ]
+    }
+  }
 }
 
 // Projects çevirileri
@@ -346,8 +444,66 @@ const projectTranslations: Record<Language, Record<number, any>> = {
       client: "Aviation Training Center"
     }
   },
-  ru: {},
-  de: {}
+  ru: {
+    1: {
+      title: "Проект LED-освещения аэропорта",
+      category: "Аэропортовое освещение",
+      fullDescription: "Проект системы LED-освещения для одного из крупнейших аэропортов Турции. Системы оптимизированы для безопасности захода на посадку, посадки и взлетно-посадочной полосы.",
+      status: "Завершен",
+      client: "Ведущий оператор аэропорта"
+    },
+    2: {
+      title: "Система симулятора военного танка",
+      category: "Военная симуляция",
+      fullDescription: "Передовая система симулятора танка. Оснащена реалистичным физическим движком, многоканальной визуальной системой и платформой движения. Используется для обучения и планирования операций.",
+      status: "Завершен",
+      client: "Вооруженные силы Турции"
+    },
+    3: {
+      title: "Электронная система управления",
+      category: "Производство электроники",
+      fullDescription: "Проектирование и производство многоканальной электронной системы управления. Соответствует стандартам оборонной промышленности, протестирована и одобрена.",
+      status: "В процессе",
+      client: "Оборонный подрядчик"
+    },
+    4: {
+      title: "Система обучения авиационному симулятору",
+      category: "Гражданская симуляция",
+      fullDescription: "Сертифицированный FSTD авиационный симулятор. С реалистичной приборной панелью, системой движения и полностью интегрированной структурой управления. Используется для программ обучения пилотов.",
+      status: "Завершен",
+      client: "Центр авиационного обучения"
+    }
+  },
+  de: {
+    1: {
+      title: "Flughafen-LED-Beleuchtungsprojekt",
+      category: "Flughafenbeleuchtung",
+      fullDescription: "LED-Beleuchtungssystemprojekt für einen der größten Flughäfen der Türkei. Systeme optimiert für Anflug-, Lande- und Startbahn-Sicherheit.",
+      status: "Abgeschlossen",
+      client: "Führender Flughafenbetreiber"
+    },
+    2: {
+      title: "Militärisches Panzersimulatorsystem",
+      category: "Militärische Simulation",
+      fullDescription: "Fortgeschrittenes Panzersimulatorsystem. Ausgestattet mit realistischer Physik-Engine, Mehrkanal-Visualsystem und Bewegungsplattform. Verwendet für Training und Operationsplanung.",
+      status: "Abgeschlossen",
+      client: "Türkische Streitkräfte"
+    },
+    3: {
+      title: "Elektronisches Steuerungssystem",
+      category: "Elektronikfertigung",
+      fullDescription: "Design und Fertigung eines Mehrkanal-Elektroniksteuerungssystems. Konform mit Verteidigungsindustriestandards, getestet und genehmigt.",
+      status: "Laufend",
+      client: "Verteidigungsunternehmer"
+    },
+    4: {
+      title: "Luftfahrtsimulator-Trainingssystem",
+      category: "Zivile Simulation",
+      fullDescription: "FSTD-zertifizierter Luftfahrtsimulator. Mit realistischer Instrumententafel, Bewegungssystem und vollständig integrierter Steuerungsstruktur. Verwendet für Pilotenausbildungsprogramme.",
+      status: "Abgeschlossen",
+      client: "Luftfahrtausbildungszentrum"
+    }
+  }
 }
 
 // Services verilerini dil desteği ile getir
@@ -428,8 +584,90 @@ const blogTranslations: Record<Language, Record<number, any>> = {
       author: "BARSAV Innovation Team"
     }
   },
-  ru: {},
-  de: {}
+  ru: {
+    1: {
+      title: "Место LED-технологии в авиационной промышленности",
+      date: "15 ноября 2024",
+      category: "Технология",
+      excerpt: "Роль и преимущества систем LED-освещения в современной авиационной промышленности...",
+      content: "LED-технология произвела революцию в авиационной промышленности. Она предлагает множество преимуществ от энергоэффективности до надежности. Современные LED-системы, используемые в аэропортах, потребляют на 60% меньше энергии по сравнению с традиционными решениями освещения. В то же время затраты на обслуживание значительно снижаются благодаря их более длительному сроку службы. Эти технологии предоставляют значительные преимущества операторам аэропортов, предлагая решения, оптимизированные для дневных и ночных операций.",
+      author: "Команда BARSAV Technology"
+    },
+    2: {
+      title: "Применение искусственного интеллекта в военных симуляторах",
+      date: "10 ноября 2024",
+      category: "Искусственный интеллект",
+      excerpt: "Использование и достижения технологии искусственного интеллекта в военных учебных симуляторах...",
+      content: "Применение искусственного интеллекта в военных симуляторах значительно повысило качество и реалистичность обучения. Сегодня искусственный интеллект в передовых военных симуляторах может создавать реалистичные боевые сценарии и предоставлять адаптивные программы обучения. Эта технология позволяет пилотам и военному персоналу получать более эффективное обучение, минимизируя вероятность ошибок перед операциями. Симуляторы на базе ИИ могут быстро адаптироваться к различным сценариям и предоставлять обратную связь в реальном времени.",
+      author: "Команда BARSAV R&D"
+    },
+    3: {
+      title: "Стандарты контроля качества в производстве электроники",
+      date: "5 ноября 2024",
+      category: "Производство",
+      excerpt: "Стандарты качества, которые должны применяться в электронных продуктах оборонной промышленности...",
+      content: "Стандарты контроля качества для электронных продуктов, производимых в оборонной промышленности, очень строгие и всеобъемлющие. Эти стандарты были установлены для обеспечения надежности и долговечности продуктов. BARSAV стремится к высочайшему уровню качества, соблюдая международные стандарты во всем производстве электроники. Подробные тесты и проверки проводятся на каждом этапе производства, и даже малейшее отклонение может остановить процесс. Этот тщательный подход гарантирует, что наши продукты долговечны и надежны.",
+      author: "Команда BARSAV Quality"
+    },
+    4: {
+      title: "Кибербезопасность в оборонной промышленности",
+      date: "1 ноября 2024",
+      category: "Безопасность",
+      excerpt: "Важность кибербезопасности в современных оборонных системах и меры, которые необходимо принять...",
+      content: "Кибербезопасность в оборонной промышленности имеет критическое значение. С оцифровкой военных систем киберугрозы также возросли. BARSAV применяет высочайшие стандарты кибербезопасности во всех своих продуктах. Мы защищаем наши системы многоуровневыми протоколами безопасности, системами непрерывного мониторинга и регулярными тестами безопасности.",
+      author: "Команда BARSAV Security"
+    },
+    5: {
+      title: "Технологии симуляторов следующего поколения",
+      date: "28 октября 2024",
+      category: "Инновации",
+      excerpt: "Использование технологий виртуальной и дополненной реальности в военном обучении...",
+      content: "Технологии симуляторов следующего поколения полностью преобразуют военное обучение. Благодаря технологиям VR и AR персонал может получать обучение в условиях, гораздо более близких к реальным боевым средам. Эти технологии значительно повышают качество обучения, одновременно снижая затраты на обучение. Как BARSAV, мы следим за последними разработками в этой области и интегрируем их в наши продукты.",
+      author: "Команда BARSAV Innovation"
+    }
+  },
+  de: {
+    1: {
+      title: "Der Platz der LED-Technologie in der Luftfahrtindustrie",
+      date: "15. November 2024",
+      category: "Technologie",
+      excerpt: "Die Rolle und Vorteile von LED-Beleuchtungssystemen in der modernen Luftfahrtindustrie...",
+      content: "LED-Technologie hat die Luftfahrtindustrie revolutioniert. Sie bietet viele Vorteile von Energieeffizienz bis Zuverlässigkeit. Moderne LED-Systeme, die in Flughäfen verwendet werden, verbrauchen 60% weniger Energie im Vergleich zu herkömmlichen Beleuchtungslösungen. Gleichzeitig werden die Wartungskosten aufgrund ihrer längeren Lebensdauer erheblich reduziert. Diese Technologien bieten erhebliche Vorteile für Flughafenbetreiber, indem sie Lösungen bieten, die für Tag- und Nachtbetrieb optimiert sind.",
+      author: "BARSAV Technology Team"
+    },
+    2: {
+      title: "Künstliche Intelligenz-Anwendungen in militärischen Simulatoren",
+      date: "10. November 2024",
+      category: "Künstliche Intelligenz",
+      excerpt: "Die Verwendung und Fortschritte der Künstlichen Intelligenz-Technologie in militärischen Trainingssimulatoren...",
+      content: "Künstliche Intelligenz-Anwendungen in militärischen Simulatoren haben die Trainingsqualität und Realismus erheblich erhöht. Heute kann künstliche Intelligenz in fortschrittlichen militärischen Simulatoren realistische Kampfszenarien erstellen und adaptive Trainingsprogramme bereitstellen. Diese Technologie ermöglicht es Piloten und militärischem Personal, effektiveres Training zu erhalten und die Fehlerquote vor Operationen zu minimieren. KI-gestützte Simulatoren können sich schnell an verschiedene Szenarien anpassen und Echtzeit-Feedback liefern.",
+      author: "BARSAV R&D Team"
+    },
+    3: {
+      title: "Qualitätskontrollstandards in der Elektronikfertigung",
+      date: "5. November 2024",
+      category: "Fertigung",
+      excerpt: "Qualitätsstandards, die in elektronischen Produkten der Verteidigungsindustrie angewendet werden müssen...",
+      content: "Qualitätskontrollstandards für elektronische Produkte, die in der Verteidigungsindustrie hergestellt werden, sind sehr streng und umfassend. Diese Standards wurden festgelegt, um die Zuverlässigkeit und Haltbarkeit der Produkte sicherzustellen. BARSAV strebt das höchste Qualitätsniveau an, indem es internationale Standards in der gesamten Elektronikfertigung einhält. Detaillierte Tests und Kontrollen werden in jeder Produktionsphase durchgeführt, und selbst die kleinste Abweichung kann den Prozess stoppen. Dieser sorgfältige Ansatz garantiert, dass unsere Produkte langlebig und zuverlässig sind.",
+      author: "BARSAV Quality Team"
+    },
+    4: {
+      title: "Cybersicherheit in der Verteidigungsindustrie",
+      date: "1. November 2024",
+      category: "Sicherheit",
+      excerpt: "Die Bedeutung der Cybersicherheit in modernen Verteidigungssystemen und zu ergreifende Maßnahmen...",
+      content: "Cybersicherheit in der Verteidigungsindustrie ist von entscheidender Bedeutung. Mit der Digitalisierung militärischer Systeme haben auch Cyber-Bedrohungen zugenommen. BARSAV wendet die höchsten Cybersicherheitsstandards in allen seinen Produkten an. Wir schützen unsere Systeme mit mehrschichtigen Sicherheitsprotokollen, kontinuierlichen Überwachungssystemen und regelmäßigen Sicherheitstests.",
+      author: "BARSAV Security Team"
+    },
+    5: {
+      title: "Simulatortechnologien der nächsten Generation",
+      date: "28. Oktober 2024",
+      category: "Innovation",
+      excerpt: "Die Verwendung von Virtual Reality und Augmented Reality Technologien im militärischen Training...",
+      content: "Simulatortechnologien der nächsten Generation transformieren das militärische Training vollständig. Dank VR- und AR-Technologien kann Personal unter Bedingungen trainieren, die viel näher an realen Kampfumgebungen liegen. Diese Technologien erhöhen die Trainingsqualität erheblich und senken gleichzeitig die Trainingskosten. Als BARSAV verfolgen wir die neuesten Entwicklungen auf diesem Gebiet und integrieren sie in unsere Produkte.",
+      author: "BARSAV Innovation Team"
+    }
+  }
 }
 
 // Blog verilerini dil desteği ile getir
@@ -446,4 +684,5 @@ export function getLocalizedBlogPosts(lang: Language) {
     return post
   })
 }
+
 
