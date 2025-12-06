@@ -184,13 +184,13 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm">
               {getTranslation(language, "footer.description")}
             </p>
-            {/* Logo için genişliği artırdım ve aspect ratio'yu korudum */}
-            <div className="relative w-full max-w-[560px] h-40 mt-4">
+            {/* Logo 590x260 boyutunda - küçültülmüş hali */}
+            <div className="relative w-[250px] h-[90px] mt-4">
               <ImageWithBasePath
                 src="/logo.jpg"
                 alt="Barsav Logo"
                 fill
-                className="object-contain object-left"
+                className="object-contain"
               />
             </div>
           </div>

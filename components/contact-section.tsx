@@ -1,6 +1,200 @@
+// "use client"
+
+// import React from "react"
+// import { useLanguage } from "@/contexts/language-context"
+// import { getTranslation } from "@/lib/translations"
+
+// interface ContactSectionProps {
+//   onContactClick?: () => void
+// }
+
+// export default function ContactSection({ onContactClick }: ContactSectionProps) {
+//   const { language } = useLanguage()
+//   const [formData, setFormData] = React.useState({
+//     name: "",
+//     email: "",
+//     subject: "",
+//     message: "",
+//   })
+//   const [isSubmitting, setIsSubmitting] = React.useState(false)
+//   const [submitStatus, setSubmitStatus] = React.useState<"idle" | "success" | "error">("idle")
+
+//   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+//     const { name, value } = e.target
+//     setFormData((prev) => ({
+//       ...prev,
+//       [name]: value,
+//     }))
+//   }
+
+//   const handleSubmit = async (e: React.FormEvent) => {
+//     e.preventDefault()
+//     setIsSubmitting(true)
+
+//     try {
+//       const response = await fetch("/api/send-email", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(formData),
+//       })
+
+//       if (response.ok) {
+//         setSubmitStatus("success")
+//         setFormData({
+//           name: "",
+//           email: "",
+//           subject: "",
+//           message: "",
+//         })
+//         setTimeout(() => {
+//           setSubmitStatus("idle")
+//         }, 3000)
+//       } else {
+//         setSubmitStatus("error")
+//       }
+//     } catch (error) {
+//       console.log("Email error:", error)
+//       setSubmitStatus("error")
+//     } finally {
+//       setIsSubmitting(false)
+//     }
+//   }
+
+//   return (
+//     <section id="contact" className="py-24 bg-card/50">
+//       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="text-center mb-12">
+//           <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "contact.title")}</h2>
+//           <p className="text-lg text-muted-foreground">{getTranslation(language, "contact.subtitle")}</p>
+//         </div>
+
+//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+//           {/* Sol taraf - Harita ve İletişim Bilgileri */}
+//           <div className="space-y-6">
+//             <div>
+//               <h3 className="text-2xl font-bold text-foreground mb-4">{getTranslation(language, "contact.contactInfo")}</h3>
+//               <div className="bg-background rounded-lg p-4 mb-6">
+//                 <iframe
+//                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6262506623846!2d29.00596!3d41.04733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7c0e3f0001%3A0x1234567890abc!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890"
+//                   width="100%"
+//                   height="300"
+//                   style={{ border: 0, borderRadius: "8px" }}
+//                   allowFullScreen
+//                   loading="lazy"
+//                   referrerPolicy="no-referrer-when-downgrade"
+//                 />
+//               </div>
+//             </div>
+
+//             {/* İletişim Detayları */}
+//             <div className="space-y-4">
+//               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
+//                 <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.address")}</p>
+//                 <p className="text-foreground">
+//                   Barsav Teknoloji A.Ş.
+//                   <br />
+//                   İstanbul, Türkiye
+//                 </p>
+//               </div>
+
+//               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
+//                 <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.phone")}</p>
+//                 <p className="text-foreground">+90 (212) 555-0123</p>
+//               </div>
+
+//               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
+//                 <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.email")}</p>
+//                 <p className="text-foreground">info@barsav.com</p>
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Sağ taraf - İletişim Formu */}
+//           <div>
+//             <h3 className="text-2xl font-bold text-foreground mb-6">{getTranslation(language, "contact.sendMessage")}</h3>
+
+//             <form onSubmit={handleSubmit} className="space-y-4">
+//               <div>
+//                 <input
+//                   type="text"
+//                   name="name"
+//                   placeholder={getTranslation(language, "contact.namePlaceholder")}
+//                   value={formData.name}
+//                   onChange={handleChange}
+//                   required
+//                   className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
+//                 />
+//               </div>
+
+//               <div>
+//                 <input
+//                   type="email"
+//                   name="email"
+//                   placeholder={getTranslation(language, "contact.emailPlaceholder")}
+//                   value={formData.email}
+//                   onChange={handleChange}
+//                   required
+//                   className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
+//                 />
+//               </div>
+
+//               <div>
+//                 <input
+//                   type="text"
+//                   name="subject"
+//                   placeholder={getTranslation(language, "contact.subjectPlaceholder")}
+//                   value={formData.subject}
+//                   onChange={handleChange}
+//                   required
+//                   className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
+//                 />
+//               </div>
+
+//               <div>
+//                 <textarea
+//                   name="message"
+//                   placeholder={getTranslation(language, "contact.messagePlaceholder")}
+//                   value={formData.message}
+//                   onChange={handleChange}
+//                   required
+//                   rows={15}
+//                   className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none transition"
+//                 />
+//               </div>
+
+//               {submitStatus === "success" && (
+//                 <div className="bg-green-500/20 border border-green-500/50 rounded-lg p-3 text-green-400">
+//                   {getTranslation(language, "contact.success")}
+//                 </div>
+//               )}
+
+//               {submitStatus === "error" && (
+//                 <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-3 text-red-400">
+//                   {getTranslation(language, "contact.error")}
+//                 </div>
+//               )}
+
+//               <button
+//                 type="submit"
+//                 disabled={isSubmitting}
+//                 className="w-full px-8 py-3 bg-accent hover:bg-accent/90 disabled:bg-accent/50 text-accent-foreground rounded-lg font-semibold transition"
+//               >
+//                 {isSubmitting ? getTranslation(language, "contact.sending") : getTranslation(language, "contact.send")}
+//               </button>
+//             </form>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
+
 "use client"
 
 import React from "react"
+import emailjs from "emailjs-com"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
 
@@ -10,14 +204,21 @@ interface ContactSectionProps {
 
 export default function ContactSection({ onContactClick }: ContactSectionProps) {
   const { language } = useLanguage()
+
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   })
+
   const [isSubmitting, setIsSubmitting] = React.useState(false)
   const [submitStatus, setSubmitStatus] = React.useState<"idle" | "success" | "error">("idle")
+
+  // EmailJS init
+  React.useEffect(() => {
+    emailjs.init("TcEw31LxJWDSlk_N4") // <- BURAYA PUBLIC KEY
+  }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -32,28 +233,29 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
     setIsSubmitting(true)
 
     try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      await emailjs.send(
+        "service_qrtcel9",   // <- BURAYA SERVICE ID
+        "template_vl76jvt",  // <- BURAYA TEMPLATE ID
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }
+      )
+
+      setSubmitStatus("success")
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
       })
 
-      if (response.ok) {
-        setSubmitStatus("success")
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        })
-        setTimeout(() => {
-          setSubmitStatus("idle")
-        }, 3000)
-      } else {
-        setSubmitStatus("error")
-      }
+      setTimeout(() => {
+        setSubmitStatus("idle")
+      }, 3000)
     } catch (error) {
       console.log("Email error:", error)
       setSubmitStatus("error")
@@ -66,15 +268,23 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
     <section id="contact" className="py-24 bg-card/50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "contact.title")}</h2>
-          <p className="text-lg text-muted-foreground">{getTranslation(language, "contact.subtitle")}</p>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            {getTranslation(language, "contact.title")}
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            {getTranslation(language, "contact.subtitle")}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Sol taraf - Harita ve İletişim Bilgileri */}
+          
+          {/* SOL TARAF */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">{getTranslation(language, "contact.contactInfo")}</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                {getTranslation(language, "contact.contactInfo")}
+              </h3>
+
               <div className="bg-background rounded-lg p-4 mb-6">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6262506623846!2d29.00596!3d41.04733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7c0e3f0001%3A0x1234567890abc!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890"
@@ -88,10 +298,11 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
               </div>
             </div>
 
-            {/* İletişim Detayları */}
             <div className="space-y-4">
               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
-                <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.address")}</p>
+                <p className="text-accent font-semibold mb-1">
+                  {getTranslation(language, "contact.address")}
+                </p>
                 <p className="text-foreground">
                   Barsav Teknoloji A.Ş.
                   <br />
@@ -100,69 +311,67 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
               </div>
 
               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
-                <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.phone")}</p>
+                <p className="text-accent font-semibold mb-1">
+                  {getTranslation(language, "contact.phone")}
+                </p>
                 <p className="text-foreground">+90 (212) 555-0123</p>
               </div>
 
               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">
-                <p className="text-accent font-semibold mb-1">{getTranslation(language, "contact.email")}</p>
+                <p className="text-accent font-semibold mb-1">
+                  {getTranslation(language, "contact.email")}
+                </p>
                 <p className="text-foreground">info@barsav.com</p>
               </div>
             </div>
           </div>
 
-          {/* Sağ taraf - İletişim Formu */}
+          {/* SAĞ TARAF - FORM */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">{getTranslation(language, "contact.sendMessage")}</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-6">
+              {getTranslation(language, "contact.sendMessage")}
+            </h3>
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder={getTranslation(language, "contact.namePlaceholder")}
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
-                />
-              </div>
+              <input
+                type="text"
+                name="name"
+                placeholder={getTranslation(language, "contact.namePlaceholder")}
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
+              />
 
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder={getTranslation(language, "contact.emailPlaceholder")}
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
-                />
-              </div>
+              <input
+                type="email"
+                name="email"
+                placeholder={getTranslation(language, "contact.emailPlaceholder")}
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
+              />
 
-              <div>
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder={getTranslation(language, "contact.subjectPlaceholder")}
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
-                />
-              </div>
+              <input
+                type="text"
+                name="subject"
+                placeholder={getTranslation(language, "contact.subjectPlaceholder")}
+                value={formData.subject}
+                onChange={handleChange}
+                required
+                className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent transition"
+              />
 
-              <div>
-                <textarea
-                  name="message"
-                  placeholder={getTranslation(language, "contact.messagePlaceholder")}
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={15}
-                  className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none transition"
-                />
-              </div>
+              <textarea
+                name="message"
+                placeholder={getTranslation(language, "contact.messagePlaceholder")}
+                value={formData.message}
+                onChange={handleChange}
+                required
+                rows={15}
+                className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none transition"
+              />
 
               {submitStatus === "success" && (
                 <div className="bg-green-500/20 border border-green-500/50 rounded-lg p-3 text-green-400">
@@ -181,10 +390,13 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 disabled={isSubmitting}
                 className="w-full px-8 py-3 bg-accent hover:bg-accent/90 disabled:bg-accent/50 text-accent-foreground rounded-lg font-semibold transition"
               >
-                {isSubmitting ? getTranslation(language, "contact.sending") : getTranslation(language, "contact.send")}
+                {isSubmitting
+                  ? getTranslation(language, "contact.sending")
+                  : getTranslation(language, "contact.send")}
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>

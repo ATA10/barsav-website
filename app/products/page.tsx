@@ -163,7 +163,6 @@ export default function ProductsPage() {
                       <span className="text-xs text-accent bg-accent/10 px-3 py-1 rounded-full">
                         {product.category}
                       </span>
-                      <span className="text-xs text-muted-foreground">{product.year}</span>
                     </div>
                     <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition">
                       {product.name}

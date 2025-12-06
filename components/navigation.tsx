@@ -16,7 +16,7 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 100)
+      setIsVisible(window.scrollY > 10)
     }
 
     window.addEventListener("scroll", handleScroll)

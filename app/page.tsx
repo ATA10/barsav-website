@@ -37,10 +37,9 @@ export default function Home() {
     }, 5000)
   }
 
-  // Scroll ile navigation göster
   useEffect(() => {
     const handleScroll = () => {
-      setShowNav(window.scrollY > 200)
+      setShowNav(window.scrollY > 20)
       handleUserInteraction() // Scroll da bir etkileşimdir
     }
 
@@ -48,9 +47,7 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Sayfa yüklendiğinde timer'ı başlat
   useEffect(() => {
-    // İlk yüklemede 8 saniye sonra scroll indicator'ı göster
     inactivityTimerRef.current = setTimeout(() => {
       if (!userInteractedRef.current) {
         setShowScrollIndicator(true)
@@ -64,7 +61,6 @@ export default function Home() {
     }
   }, [])
 
-  // Tüm etkileşimleri dinle
   useEffect(() => {
     const events = ["click", "scroll", "keydown", "touchstart"]
     
@@ -79,7 +75,6 @@ export default function Home() {
     }
   }, [])
 
-  // Hash change ve initial hash için
   useEffect(() => {
     const scrollToHash = (hash: string) => {
       const element = document.getElementById(hash.replace('#', ''))
@@ -99,7 +94,6 @@ export default function Home() {
       }
     }
 
-    // Sayfa yüklendiğinde hash varsa scroll yap
     if (window.location.hash) {
       handleHashChange()
     }

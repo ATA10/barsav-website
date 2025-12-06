@@ -71,9 +71,6 @@ export default function ProductDetailClient({ product: initialProduct }: Product
             <span className="text-xs text-accent bg-accent/10 px-3 py-1 rounded-full">
               {product.category}
             </span>
-            <span className="text-xs text-muted-foreground bg-background px-3 py-1 rounded-full">
-              {product.year}
-            </span>
             <span className="text-xs bg-accent/90 text-accent-foreground px-3 py-1 rounded-full">
               {product.status}
             </span>

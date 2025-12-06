@@ -34,17 +34,22 @@
             src="/a.png"
             alt="Background"
             fill
-            className="object-cover"
+            className="object-cover blur-sm"
           />
+          <div className="absolute inset-0 backdrop-blur-sm bg-black/30" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <h1 className="text-6xl md:text-8xl font-bold text-foreground text-balance leading-tight">{getTranslation(language, "hero.title")}</h1>
-              <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-blue-500 mx-auto rounded-full" />
-              <p className="text-2xl md:text-3xl text-blue-700 font-semibold">{getTranslation(language, "hero.subtitle")}</p>
-              <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto text-balance">
+              <h1 className="text-7xl md:text-9xl font-bold text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] text-balance leading-tight">
+                {getTranslation(language, "hero.title")}
+              </h1>
+              <div className="h-1 w-24 bg-gradient-to-r from-white to-blue-200 mx-auto rounded-full shadow-[0_0_20px_rgba(255,255,255,0.8)]" />
+              <p className="text-3xl md:text-4xl text-white font-bold drop-shadow-[0_0_20px_rgba(255,255,255,0.6)]">
+                {getTranslation(language, "hero.subtitle")}
+              </p>
+              <p className="text-xl md:text-2xl text-white font-medium max-w-3xl mx-auto text-balance drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
                 {getTranslation(language, "hero.description")}
               </p>
             </div>
@@ -56,25 +61,24 @@
                 </button>
               </a>
               <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="cursor-pointer">
-                <button className="px-8 py-4 border-2 border-blue-500 text-blue-700 hover:bg-blue-500/20 rounded-lg font-semibold transition">
+                <button className="px-8 py-4 border-2 border-white text-white hover:bg-white/20 rounded-lg font-semibold transition shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                   {getTranslation(language, "hero.contactButton")}
                 </button>
               </a>
-
             </div>
 
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-12">
-              <div className="space-y-2 backdrop-blur-md bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
-                <p className="text-4xl md:text-5xl font-bold text-blue-700">50+</p>
-                <p className="text-gray-600">{getTranslation(language, "hero.projects")}</p>
+              <div className="space-y-2 backdrop-blur-md bg-white/20 p-4 rounded-lg border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">50+</p>
+                <p className="text-white font-semibold">{getTranslation(language, "hero.projects")}</p>
               </div>
-              <div className="space-y-2 backdrop-blur-md bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
-                <p className="text-4xl md:text-5xl font-bold text-blue-700">20+</p>
-                <p className="text-gray-600">{getTranslation(language, "hero.years")}</p>
+              <div className="space-y-2 backdrop-blur-md bg-white/20 p-4 rounded-lg border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">20+</p>
+                <p className="text-white font-semibold">{getTranslation(language, "hero.years")}</p>
               </div>
-              <div className="space-y-2 backdrop-blur-md bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
-                <p className="text-4xl md:text-5xl font-bold text-blue-700">500+</p>
-                <p className="text-gray-600">{getTranslation(language, "hero.professionals")}</p>
+              <div className="space-y-2 backdrop-blur-md bg-white/20 p-4 rounded-lg border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">500+</p>
+                <p className="text-white font-semibold">{getTranslation(language, "hero.professionals")}</p>
               </div>
             </div>
           </div>
