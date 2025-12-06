@@ -77,9 +77,9 @@ export default function Navigation() {
             <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="text-foreground hover:text-accent transition cursor-pointer">
               {getTranslation(language, "nav.blog")}
             </a>
-            <a href="#career" onClick={(e) => handleAnchorClick(e, '#career')} className="text-foreground hover:text-accent transition cursor-pointer">
+            {/* <a href="#career" onClick={(e) => handleAnchorClick(e, '#career')} className="text-foreground hover:text-accent transition cursor-pointer">
               {getTranslation(language, "nav.career")}
-            </a>
+            </a> */}
             <a href="#contact" onClick={(e) => handleAnchorClick(e, '#contact')} className="text-foreground hover:text-accent transition cursor-pointer">
               {getTranslation(language, "nav.contact")}
             </a>

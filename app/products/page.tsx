@@ -89,7 +89,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Filters Section */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-card/50 border-b border-[color:var(--border)]">
+      <section className="py-8 px-4 sm:px-6 lg:px-8  border-b border-[color:var(--border)]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
             {/* Search */}
@@ -129,7 +129,8 @@ export default function ProductsPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-24 px-4 sm:px-6 lg:px-8"> */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-card/50">
         <div className="max-w-7xl mx-auto">
           {filteredProducts.length === 0 ? (
             <div className="text-center py-20">

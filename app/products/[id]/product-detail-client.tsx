@@ -22,13 +22,10 @@ interface Product {
   status: string
   year: string
   technicalSpecs?: Record<string, string>
-  reviews?: Array<{
-    id: number
-    author: string
-    rating: number
-    comment: string
-    date: string
-  }>
+  documents?: {
+    title: string
+    file: string
+  }[]
 }
 
 interface ProductDetailClientProps {
@@ -71,6 +68,9 @@ export default function ProductDetailClient({ product: initialProduct }: Product
             <span className="text-xs text-accent bg-accent/10 px-3 py-1 rounded-full">
               {product.category}
             </span>
+            <span className="text-xs text-muted-foreground bg-background px-3 py-1 rounded-full">
+              {product.year}
+            </span>
             <span className="text-xs bg-accent/90 text-accent-foreground px-3 py-1 rounded-full">
               {product.status}
             </span>
@@ -81,7 +81,7 @@ export default function ProductDetailClient({ product: initialProduct }: Product
       </section>
 
       {/* Product Content */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-card/50 ">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Images Section */}
@@ -172,7 +172,7 @@ export default function ProductDetailClient({ product: initialProduct }: Product
           )}
 
           {/* Reviews Section */}
-          {product.reviews && product.reviews.length > 0 && (
+          {/* {product.reviews && product.reviews.length > 0 && (
             <div className="mt-16">
               <h2 className="text-3xl font-bold text-foreground mb-8">
                 {getTranslation(language, "products.reviews")}
@@ -206,7 +206,47 @@ export default function ProductDetailClient({ product: initialProduct }: Product
                 ))}
               </div>
             </div>
-          )}
+          )} */}
+          {/* Documents Section */}
+{product.documents && product.documents.length > 0 && (
+  <div className="mt-16">
+    <h2 className="text-3xl font-bold text-foreground mb-8">
+      Dokümanlar
+    </h2>
+
+    <div className="space-y-10">
+      {product.documents.map((doc, index) => (
+        <div
+          key={index}
+          className="bg-card border border-[color:var(--border)] rounded-lg p-6"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-xl font-semibold text-foreground">
+              {doc.title}
+            </h3>
+
+            <a
+              href={doc.file}
+              download
+              className="px-5 py-2 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition"
+            >
+              PDF İndir
+            </a>
+          </div>
+
+          <div className="w-full h-[600px] border border-[color:var(--border)] rounded-lg overflow-hidden bg-background">
+            <iframe
+              src={doc.file}
+              className="w-full h-full"
+              title={doc.title}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
         </div>
       </section>
 

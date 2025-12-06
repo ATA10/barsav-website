@@ -31,20 +31,14 @@
         "Çalışma Sıcaklığı": "-40°C ile +60°C",
         "Standartlar": "ICAO Annex 14, FAA AC 150/5345-46"
       },
-      "reviews": [
+      "documents": [
         {
-          "id": 1,
-          "author": "Mehmet Yılmaz",
-          "rating": 5,
-          "comment": "Mükemmel bir sistem. Enerji tasarrufu sağladı ve bakım maliyetleri düştü.",
-          "date": "2024-01-15"
+          "title": "Teknik Şartname",
+          "file": "/docs/airport-technical.pdf"
         },
         {
-          "id": 2,
-          "author": "Ayşe Demir",
-          "rating": 5,
-          "comment": "Uluslararası standartlara tam uyumlu. Çok memnunuz.",
-          "date": "2024-02-20"
+          "title": "Kullanım Kılavuzu",
+          "file": "/docs/airport-manual.pdf"
         }
       ]
     },
@@ -79,15 +73,16 @@
         "AI Senaryoları": "100+",
         "Eşzamanlı Kullanıcı": "1-4 kişi"
       },
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Ali Kaya",
-          "rating": 5,
-          "comment": "Eğitim kalitesini önemli ölçüde artırdı. Gerçekçi simülasyon deneyimi.",
-          "date": "2024-03-10"
-        }
-      ]
+      "documents": [
+  {
+    "title": "Teknik Şartname",
+    "file": "/docs/airport-technical.pdf"
+  },
+  {
+    "title": "Kullanım Kılavuzu",
+    "file": "/docs/airport-manual.pdf"
+  }
+]
     },
     {
       "id": 3,
@@ -120,22 +115,16 @@
         "Hava Dinamiği": "Gerçek zamanlı",
         "Gösterge Paneli": "Tam fonksiyonel"
       },
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Pilot Ahmet Şahin",
-          "rating": 5,
-          "comment": "FSTD sertifikalı sistem gerçek uçuş deneyimine çok yakın. Mükemmel eğitim aracı.",
-          "date": "2024-01-25"
-        },
-        {
-          "id": 2,
-          "author": "Eğitim Müdürü Zeynep Öz",
-          "rating": 5,
-          "comment": "Pilot eğitim programlarımızda kullanıyoruz. Çok başarılı sonuçlar alıyoruz.",
-          "date": "2024-02-14"
-        }
-      ]
+      "documents": [
+  {
+    "title": "Teknik Şartname",
+    "file": "/docs/airport-technical.pdf"
+  },
+  {
+    "title": "Kullanım Kılavuzu",
+    "file": "/docs/airport-manual.pdf"
+  }
+]
     },
     {
       "id": 4,
@@ -168,15 +157,16 @@
         "Standartlar": "MIL-STD-810G, DO-160",
         "Arayüz": "CAN, RS485, Ethernet"
       },
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Mühendis Can Arslan",
-          "rating": 5,
-          "comment": "Savunma projelerimizde kullanıyoruz. Çok güvenilir ve dayanıklı sistem.",
-          "date": "2024-02-05"
-        }
-      ]
+      "documents": [
+  {
+    "title": "Teknik Şartname",
+    "file": "/docs/airport-technical.pdf"
+  },
+  {
+    "title": "Kullanım Kılavuzu",
+    "file": "/docs/airport-manual.pdf"
+  }
+]
     },
     {
       "id": 5,
@@ -209,15 +199,16 @@
         "Hava Trafiği": "Gerçek zamanlı",
         "Hava Durumu": "Dinamik"
       },
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Eğitim Koordinatörü Fatma Yıldız",
-          "rating": 5,
-          "comment": "Pilot eğitimlerimizde kullanıyoruz. Çok etkili bir eğitim aracı.",
-          "date": "2024-03-01"
-        }
-      ]
+      "documents": [
+  {
+    "title": "Teknik Şartname",
+    "file": "/docs/airport-technical.pdf"
+  },
+  {
+    "title": "Kullanım Kılavuzu",
+    "file": "/docs/airport-manual.pdf"
+  }
+]
     },
     {
       "id": 6,
@@ -250,15 +241,16 @@
         "Temiz Oda": "ISO 7 (Class 10,000)",
         "Çalışma Alanı": "2,500 m²"
       },
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Üretim Müdürü Serkan Doğan",
-          "rating": 5,
-          "comment": "Modern ve verimli bir üretim hattı. Kalite standartlarımızı karşılıyor.",
-          "date": "2024-01-10"
-        }
-      ]
+      "documents": [
+  {
+    "title": "Teknik Şartname",
+    "file": "/docs/CV_ANILTAHAADAK(TR)"
+  },
+  {
+    "title": "Kullanım Kılavuzu",
+    "file": "/docs/CV_ANILTAHAADAK(EN)"
+  }
+]
     }
   ]
 }

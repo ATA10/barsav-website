@@ -9,7 +9,7 @@
 //   useEffect(() => {
 //     const timer = setTimeout(() => {
 //       setIsVisible(false)
-//     }, 3000)
+//     }, 6000)
 
 //     const handleScroll = () => {
 //       setIsVisible(false)
@@ -29,11 +29,11 @@
 //   }
 
 //   return (
-//     <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 animate-bounce">
+//     <div className="fixed bottom-8 right-8 z-40 animate-bounce">
 //       <button
 //         onClick={scrollToNext}
 //         className="flex flex-col items-center gap-2 text-accent hover:text-accent/80 transition"
-//         aria-label="Aşağı kaydır"
+//         aria-label="Aşağı kaydırın"
 //       >
 //         <span className="text-sm font-medium">Aşağı Kaydır</span>
 //         <ChevronDown className="w-6 h-6" />
@@ -41,7 +41,6 @@
 //     </div>
 //   )
 // }
-
 
 "use client"
 
@@ -52,7 +51,6 @@ export default function ScrollDownIndicator() {
   const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
-    // Süreyi 6 saniyeye çıkar (6000ms)
     const timer = setTimeout(() => {
       setIsVisible(false)
     }, 6000)
@@ -78,11 +76,25 @@ export default function ScrollDownIndicator() {
     <div className="fixed bottom-8 right-8 z-40 animate-bounce">
       <button
         onClick={scrollToNext}
-        className="flex flex-col items-center gap-2 text-accent hover:text-accent/80 transition"
         aria-label="Aşağı kaydırın"
+        className="
+          flex flex-col items-center gap-2
+          px-4 py-2
+          rounded-full
+          bg-accent/20
+          backdrop-blur-lg
+          border border-accent/40
+          shadow-xl shadow-accent/30
+          text-accent
+          hover:bg-accent/30
+          hover:shadow-accent/50
+          transition-all duration-300
+        "
       >
-        <span className="text-sm font-medium">Aşağı Kaydır</span>
-        <ChevronDown className="w-6 h-6" />
+        <span className="text-base font-semibold tracking-wide">
+          Aşağı Kaydır
+        </span>
+        <ChevronDown className="w-12 h-10" />
       </button>
     </div>
   )

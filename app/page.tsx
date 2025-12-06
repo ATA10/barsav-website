@@ -6,7 +6,7 @@ import HeroSection from "@/components/hero-section"
 import FeaturesSection from "@/components/features-section"
 import BenefitsSection from "@/components/benefits-section"
 import ProjectsSection from "@/components/projects-section"
-import CareerSection from "@/components/career-section"
+// import CareerSection from "@/components/career-section"
 import BlogSection from "@/components/blog-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
@@ -19,23 +19,18 @@ export default function Home() {
   const inactivityTimerRef = useRef<NodeJS.Timeout | null>(null)
   const userInteractedRef = useRef(false)
 
-  // Kullanıcı etkileşimlerini izle
   const handleUserInteraction = () => {
-    userInteractedRef.current = true
-    setShowScrollIndicator(false)
-    
-    // Timer'ı sıfırla
-    if (inactivityTimerRef.current) {
-      clearTimeout(inactivityTimerRef.current)
-    }
-    
-    // 5 saniye etkileşim olmazsa scroll indicator'ı göster
-    inactivityTimerRef.current = setTimeout(() => {
-      if (!userInteractedRef.current) {
-        setShowScrollIndicator(true)
-      }
-    }, 5000)
+  setShowScrollIndicator(false)
+
+  if (inactivityTimerRef.current) {
+    clearTimeout(inactivityTimerRef.current)
   }
+
+  inactivityTimerRef.current = setTimeout(() => {
+    setShowScrollIndicator(true)
+  }, 5000)
+}
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,7 +105,7 @@ export default function Home() {
       <FeaturesSection />
       <BenefitsSection />
       <ProjectsSection />
-      <CareerSection />
+      {/* <CareerSection /> */}
       <BlogSection />
       <ContactSection />
       <Footer />
