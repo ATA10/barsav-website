@@ -41,7 +41,7 @@ export default function Footer() {
             {/* Logo 590x260 boyutunda - küçültülmüş hali */}
             <div className="relative w-[250px] h-[90px] mt-4">
               <ImageWithBasePath
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Barsav Logo"
                 fill
                 className="object-contain"

@@ -52,7 +52,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="relative w-36 h-12">
               <ImageWithBasePath
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Barsav Logo"
                 fill
                 className="object-contain"
