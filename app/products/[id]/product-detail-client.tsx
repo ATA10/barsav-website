@@ -8,6 +8,7 @@ import ImageWithBasePath from "@/components/image-with-basepath"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
 import { getLocalizedProduct } from "@/lib/data-translations"
+import { withBasePath } from "@/lib/base-path"
 
 interface Product {
   id: number
@@ -236,7 +237,7 @@ export default function ProductDetailClient({ product: initialProduct }: Product
 
           <div className="w-full h-[600px] border border-[color:var(--border)] rounded-lg overflow-hidden bg-background">
             <iframe
-              src={doc.file}
+              src={withBasePath(doc.file)}
               className="w-full h-full"
               title={doc.title}
             />
