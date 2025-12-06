@@ -79,13 +79,6 @@ export default function ServiceModal({
                 ))}
               </ul>
             </div>
-
-            {/* Footer */}
-            {/* <div className="mt-8 pt-6 border-t border-[color:var(--border)]">
-              <Button onClick={onClose} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                Kapat
-              </Button>
-            </div> */}
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ export default function ProductDetailClient({ product: initialProduct }: Product
       {showNav && <Navigation />}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#dbeafe] via-[#bfdbfe] to-[#93c5fd]">
+      {/* <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#dbeafe] via-[#bfdbfe] to-[#93c5fd]">
         <div className="max-w-7xl mx-auto">
           <button
             onClick={() => router.push("/products")}
@@ -78,6 +78,38 @@ export default function ProductDetailClient({ product: initialProduct }: Product
           </div>
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6">{product.name}</h1>
           <p className="text-xl text-gray-700 max-w-3xl">{product.description}</p>
+        </div>
+      </section> */}
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute inset-0">
+          <ImageWithBasePath
+            src={product.image || "/placeholder.svg"}
+            alt={product.name}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/40" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto">
+          <button
+            onClick={() => router.push("/products")}
+            className="mb-6 text-accent hover:text-accent/80 flex items-center gap-2 transition bg-background/80 backdrop-blur-sm px-4 py-2 rounded-lg"
+          >
+            <span>←</span> {getTranslation(language, "products.back")}
+          </button>
+          <div className="flex gap-2 mb-4">
+            <span className="text-xs text-accent bg-accent/10 backdrop-blur-sm px-3 py-1 rounded-full border border-accent/20">
+              {product.category}
+            </span>
+            <span className="text-xs text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full">
+              {product.year}
+            </span>
+            <span className="text-xs bg-accent/90 text-accent-foreground px-3 py-1 rounded-full">
+              {product.status}
+            </span>
+          </div>
+          <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 drop-shadow-sm">{product.name}</h1>
+          <p className="text-xl text-foreground/90 max-w-3xl drop-shadow-sm">{product.description}</p>
         </div>
       </section>
 

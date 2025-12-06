@@ -58,7 +58,6 @@ export default function Navigation() {
                 className="object-contain"
               />
             </div>
-            <span className="hidden sm:inline text-foreground font-semibold">Barsav</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

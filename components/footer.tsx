@@ -34,7 +34,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-3xl text-foreground font-semibold mb-4">{getTranslation(language, "footer.company")}</h3>
+            {/* <h3 className="text-3xl text-foreground font-semibold mb-4">{getTranslation(language, "footer.company")}</h3> */}
             <p className="text-muted-foreground text-sm">
               {getTranslation(language, "footer.description")}
             </p>
