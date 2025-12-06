@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { useLanguage } from "@/contexts/language-context"
 import { getTranslation } from "@/lib/translations"
+import ImageWithBasePath from "./image-with-basepath"
 import { getLocalizedBlogPosts } from "@/lib/data-translations"
 
 interface BlogPost {
@@ -26,6 +27,17 @@ function BlogModal({
   isOpen: boolean
   onClose: () => void
 }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [isOpen])
+
   if (!isOpen || !post) return null
 
   return (
@@ -34,9 +46,23 @@ function BlogModal({
       onClick={onClose}
     >
       <div
-        className="bg-background rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-border"
+        className="bg-background rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-border scrollbar-hide"
         onClick={(e) => e.stopPropagation()}
+        style={{
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none',
+        }}
       >
+        {/* Görsel */}
+        <div className="relative h-72 lg:h-96 overflow-hidden rounded-t-lg">
+          <ImageWithBasePath
+            src={post.image || "/placeholder.svg"}
+            alt={post.title}
+            fill
+            className="object-cover"
+          />
+        </div>
+
         <div className="p-8 space-y-4">
           <div className="flex justify-between items-start">
             <span className="text-xs bg-accent/20 text-accent px-3 py-1 rounded-full">
@@ -61,11 +87,25 @@ function BlogModal({
             <span>{post.date}</span>
           </div>
 
-          <p className="text-muted-foreground leading-relaxed">
-            {post.content}
+          {/* Özet */}
+          <p className="text-lg text-muted-foreground italic border-l-4 border-accent pl-4 py-2">
+            {post.excerpt}
           </p>
+
+          {/* İçerik */}
+          <div className="text-foreground space-y-4 leading-relaxed">
+            {post.content.split("\n\n").map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
         </div>
       </div>
+      
+      <style jsx>{`
+        div::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </div>
   )
 }
@@ -166,28 +206,39 @@ export default function BlogSection() {
                 <div
                   key={post.id}
                   onClick={() => handlePostClick(post)}
-                  className="cursor-pointer h-full rounded-lg border border-border bg-background p-6 transition hover:border-accent hover:shadow-lg flex flex-col"
+                  className="cursor-pointer h-full rounded-lg border border-border bg-background overflow-hidden transition hover:border-accent hover:shadow-lg flex flex-col"
                 >
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="text-xs bg-accent/20 text-accent px-3 py-1 rounded-full">
-                      {post.category}
-                    </span>
-                    <span className="text-xs text-muted-foreground">
-                      {post.date}
-                    </span>
+                  <div className="relative h-48 overflow-hidden bg-card">
+                    <ImageWithBasePath
+                      src={post.image || "/placeholder.svg"}
+                      alt={post.title}
+                      fill
+                      className="object-cover hover:scale-105 transition duration-300"
+                    />
                   </div>
 
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
-                    {post.title}
-                  </h3>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="text-xs bg-accent/20 text-accent px-3 py-1 rounded-full">
+                        {post.category}
+                      </span>
+                      <span className="text-xs text-muted-foreground">
+                        {post.date}
+                      </span>
+                    </div>
 
-                  <p className="text-muted-foreground text-sm flex-grow">
-                    {post.excerpt}
-                  </p>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      {post.title}
+                    </h3>
 
-                  <span className="mt-4 text-sm font-semibold text-accent">
-                    {getTranslation(language, "blog.readMore")}
-                  </span>
+                    <p className="text-muted-foreground text-sm flex-grow">
+                      {post.excerpt}
+                    </p>
+
+                    <span className="mt-4 text-sm font-semibold text-accent">
+                      {getTranslation(language, "blog.readMore")}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>

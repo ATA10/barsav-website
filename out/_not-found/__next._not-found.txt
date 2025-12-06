@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[39756,["/barsav-website/_next/static/chunks/fa1a41e8de440d3a.js","/barsav-website/_next/static/chunks/247eb132b7f7b574.js"],"default"]
 3:I[37457,["/barsav-website/_next/static/chunks/fa1a41e8de440d3a.js","/barsav-website/_next/static/chunks/247eb132b7f7b574.js"],"default"]
-0:{"buildId":"siFpL_P0321qkdcLuqJFJ","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"D8QhvWabt3Xf5udVvAZhp","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
