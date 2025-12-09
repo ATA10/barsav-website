@@ -1,0 +1,116 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Flughafenbeleuchtung",
+      "shortDescription": "Effektive und sichere Beleuchtung von Flugplätzen mit modernsten LED-Systemen.",
+      "fullDescription": "Die Flughafenbeleuchtungssysteme von BARSAV werden in Übereinstimmung mit internationalen Standards entworfen und implementiert. Durch den Einsatz von LED-Technologie werden hohe Effizienz und Energieeinsparungen erzielt. Das System garantiert auch bei Nacht und schlechten Wetterbedingungen höchste Sichtqualität.",
+      "features": [
+        "LED-basierte moderne Technologie",
+        "Energieeinsparung und Nachhaltigkeit",
+        "Automatische Steuerungssysteme",
+        "Konformität mit internationalen Standards",
+        "24/7 Betriebs-Zuverlässigkeit"
+      ],
+      "image": "/airport-lighting.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Netzwerklösungen",
+      "shortDescription": "Wir bieten Lösungen für lokale (LAN), globale (WAN) und drahtlose (WLAN) Netzwerke, indem wir die Anforderungen und Bedürfnisse von Organisationen im Bereich Networking bewerten.",
+      "fullDescription": "Wir analysieren alle Netzwerkanforderungen von Organisationen und planen, installieren und verwalten die am besten geeigneten Lösungen für lokale Netzwerke (LAN), globale Netzwerke (WAN) und drahtlose Netzwerke (WLAN). Wir unterstützen die Geschäftskontinuität durch den Aufbau hochschneller, zuverlässiger und skalierbarer Netzwerkinfrastrukturen.",
+      "features": [
+        "Installation Lokaler Netzwerke (LAN)",
+        "Anbindung an Globale Netzwerke (WAN)",
+        "Dienstleistungen für Drahtlose Netzwerke (WLAN)",
+        "Netzwerksicherheit und -überwachung",
+        "Skalierbares Infrastrukturdesign"
+      ],
+      "image": "/network-solutions.png"
+    },
+    {
+      "id": 3,
+      "title": "Rechenzentrumslösungen",
+      "shortDescription": "Wir bieten Produkte und Dienstleistungen für Rechenzentren, die Ihre Organisation benötigt, von der Planungsphase über Design, Implementierung bis hin zu Verwaltungsaspekten. Als Ergebnis erhalten Sie hohe Leistung, geringe Investitionskosten, reduziertes Risiko, einfache Verwaltung, Flexibilität und Skalierbarkeit.",
+      "fullDescription": "Wir bieten schlüsselfertige Rechenzentrumslösungen, die Planung, Design, Implementierung und Management umfassen. Wir maximieren die Energieeffizienz mit Hochleistungs-Hardware und -Software und stellen gleichzeitig eine flexible und skalierbare Struktur mit niedrigen Investitions- und Betriebskosten sicher. ",
+      "features": [
+        "Hochleistungs-Serverlösungen",
+        "Speicher- und Sicherungssysteme",
+        "Energieeffiziente Kühl- und Strominfrastruktur",
+        "Einfache Verwaltungs- und Überwachungstools",
+        "Physische und Cyber-Sicherheit"
+      ],
+      "image": "/data-center-solutions.png"
+    },
+    {
+      "id": 4, 
+      "title": "Sicherheitslösungen",
+      "shortDescription": "Die Vertraulichkeit und Verfügbarkeit von Informationen, dem wertvollsten Gut von Organisationen, ist durch böswillige oder unbewusste Benutzer bedroht.",
+      "fullDescription": "Wir bieten umfassende Cyber-Sicherheitslösungen, um die Informationssicherheit zu gewährleisten. Wir schützen Ihre Organisation vor böswilligen Angriffen, Datenlecks und unbewussten Benutzerfehlern, indem wir die Vertraulichkeit, Integrität und Verfügbarkeit der Daten schützen. Risikoanalyse und regelmäßige Audits sind Teil dieses Prozesses.",
+      "features": [
+        "Cyber-Sicherheitsberatung",
+        "Netzwerk- und Anwendungssicherheit",
+        "Datenverschlüsselung und Zugriffskontrolle",
+        "Planung der Notfallwiederherstellung (DRP)",
+        "Sicherheitsinformations- und Ereignismanagement (SIEM)"
+      ],
+      "image": "/security-solutions.png"
+    },
+    {
+      "id": 5,
+      "title": "FKM-Lösungen (Katastrophenschutzzentrum)",
+      "shortDescription": "Im Notfall soll die Katastrophe so reibungslos und verlustfrei wie möglich überwunden und das System mit minimalem Schaden wiederhergestellt werden. Gemeinsam mit unseren globalen Partnern bieten wir maßgeschneiderte Lösungen für Organisationen durch Arbeiten wie Planung, Risikoanalyse und Datenanalyse.",
+      "fullDescription": "Mit unseren Lösungen für das Katastrophenschutzzentrum (FKM) sichern wir die Geschäftskontinuität. Durch detaillierte Planung, Risikoanalyse und Datensicherungsstrategien stellen wir sicher, dass kritische Systeme im Katastrophenfall mit minimalem Verlust und in kürzester Zeit wieder betriebsbereit sind. Unser Ziel ist die vollständige Systemwiederherstellung und ein unterbrechungsfreier Service.",
+      "features": [
+        "Planung der Geschäftskontinuität und Wiederherstellung",
+        "Externe Datensicherung (Off-site Backup)",
+        "Systemreplikation und -synchronisation",
+        "RPO/RTO-Optimierung für kritische Systeme",
+        "Tests von Katastrophenszenarien"
+      ],
+      "image": "/disaster-recovery-solutions.png"
+    },
+    {
+      "id": 6,
+      "title": "Integrationslösungen",
+      "shortDescription": "Wir bieten die notwendigen Produkte und Dienstleistungen, damit unabhängig voneinander arbeitende Systeme als Ganzes nahtlos funktionieren.",
+      "fullDescription": "Wir entwickeln Integrationslösungen, die eine kompatible und unterbrechungsfreie Zusammenarbeit verschiedener Software, Hardware und Plattformen in Ihrer Organisation gewährleisten. Dadurch wird der Datenfluss beschleunigt, die Betriebseffizienz gesteigert und die durch unabhängige Systeme verursachte Komplexität beseitigt. API-basierte (Application Programming Interface) Integrationen sind unsere bevorzugte Wahl.",
+      "features": [
+        "Integration des Datenflusses zwischen Systemen",
+        "API-Entwicklung und -Management",
+        "Integration von Unternehmensanwendungen (EAI)",
+        "Datentransformation und Synchronisation",
+        "Erstellung einer einzigen zentralen Plattform"
+      ],
+      "image": "/integration-solutions.png"
+    },
+    {
+      "id": 7,
+      "title": "Infrastrukturlösungen",
+      "shortDescription": "Wir bieten Verkabelungssysteme, die bei richtiger Planung und Implementierung jahrelang genutzt werden können, sowie Infrastrukturlösungen, die für Erweiterungen geeignet sind.",
+      "fullDescription": "Wir entwerfen und implementieren strukturierte Verkabelungs-, Elektro- und mechanische Systeme, um die Anforderungen an die physische Infrastruktur zu erfüllen. Wir schaffen eine langlebige, standardkonforme und verwaltbare Basisinfrastruktur, indem wir zukünftige Erweiterungsbedürfnisse antizipieren.",
+      "features": [
+        "Strukturierte Verkabelungssysteme (Glasfaser/Kupfer)",
+        "Lösungen für die Elektro- und Strominfrastruktur",
+        "USV (Unterbrechungsfreie Stromversorgung) Systeme",
+        "Branderkennungs- und Löschanlagen",
+        "Klima- und Kühllösungen"
+      ],
+      "image": "/infrastructure-solutions.png"
+    },
+    {
+      "id": 8,
+      "title": "Elektronische Systeme",
+      "shortDescription": "Hochleistungselektronikkomponenten und Steuerungssysteme",
+      "fullDescription": "Die Elektronikabteilung von BARSAV produziert Hochleistungssteuerungssysteme für militärische und zivile Anwendungen. Durch Präzisionstechnik und Qualitätskontrolle wird jedes Produkt nach höchsten Standards geliefert. Eine Anpassung an spezielle Anforderungen ist möglich.",
+      "features": [
+        "Sonderanfertigung und Entwicklung",
+        "Hohe Zuverlässigkeit und Langlebigkeit",
+        "Präzise Qualitätskontrolle",
+        "Schnelles Prototyping und Testen",
+        "Umfassender technischer Support"
+      ],
+      "image": "/electronic-control-system.jpg"
+    }
+  ]
+}

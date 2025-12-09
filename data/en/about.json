@@ -1,0 +1,142 @@
+{
+  "about": {
+    "title": "About Us",
+    "subtitle": "We offer innovative technology solutions in the fields of aviation, electronics, and defense industry.",
+    "whoWeAre": "Who Are We?",
+    "description1": "Established in 2016, BARSAV Aviation Electronics and Defence Industry Trading Limited Company continues its production activities with the goal of pioneering the global and Turkish markets in its sector.",
+    "description2": "Our production focuses on the needs of the defense industry and specific products, as well as airport and helicopter landing pad lighting systems. The sale and installation of aerosol fire suppression systems, along with our corporate services, include data center solutions, network solutions, security solutions, DRP solutions (Disaster Recovery Planning), integration solutions, infrastructure solutions, R&D / P&D (Product Development), and logistics services.",
+    "description3": "Our productions and services are carried out in compliance with relevant legislation, standards, and specifications.",
+    "description4": "Our efforts continue with our expert team to obtain reliable products based on the **lowest cost** and **highest efficiency**. Solutions for LED systems are being produced and developed to ensure energy savings.",
+    "description5": "Our facility has 350 m² of indoor space and 50 m² of outdoor area. Our facility, located in the city center within an industrial zone and surrounded by wire fences, is centrally located. Our top floor has been established as a **Controlled Zone** and holds the **National and NATO Facility Security Certificate**.",
+    "mission": "Mission",
+    "missionText": "To offer high-quality and reliable products and services in the fields of aviation, electronics, and the defense industry that exceed customer expectations. To contribute to the development of the industry by closely following technological innovations and to support our country's technological independence in these areas.",
+    "vision": "Vision",
+    "visionText": "To become one of the most respected technology companies in the region and the world. To become a pioneering organization known, preferred, and exporting technology in international markets with its innovative products and services.",
+    "values": "Our Values",
+    "valuesList": [
+      {
+        "title": "Quality",
+        "description": "We adhere to the highest quality standards in every product and service.",
+        "icon": "Award"
+      },
+      {
+        "title": "Innovation",
+        "description": "We continuously research and develop new technologies.",
+        "icon": "Lightbulb"
+      },
+      {
+        "title": "Reliability",
+        "description": "We always strive to maintain the trust our customers place in us.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Collaboration",
+        "description": "We believe in teamwork and cooperation.",
+        "icon": "Users"
+      },
+      {
+        "title": "Responsibility",
+        "description": "We act responsibly towards the environment and society.",
+        "icon": "Building2"
+      },
+      {
+        "title": "Customer Satisfaction",
+        "description": "Customer satisfaction is the most important measure of success for us.",
+        "icon": "Heart"
+      }
+    ],
+    "referencesTitle": "Our References",
+    "references": [
+      {
+        "name": "Ministry of Transport and Infrastructure",
+        "category": "Public"
+      },
+      {
+        "name": "General Directorate of State Airports Authority (DHMİ)",
+        "category": "Public"
+      },
+      {
+        "name": "General Directorate of DLH (Infrastructure Investments)",
+        "category": "Public"
+      },
+      {
+        "name": "Ministry of National Defence",
+        "category": "Defence"
+      },
+      {
+        "name": "General Staff",
+        "category": "Defence"
+      },
+      {
+        "name": "Air Force Command",
+        "category": "Defence"
+      },
+      {
+        "name": "Air Logistics Command",
+        "category": "Defence"
+      },
+      {
+        "name": "Naval Forces Command",
+        "category": "Defence"
+      },
+      {
+        "name": "Land Forces Command",
+        "category": "Defence"
+      },
+      {
+        "name": "Heliports of the Ministry of Health",
+        "category": "Health"
+      },
+      {
+        "name": "Heliports of Training and Research Hospitals",
+        "category": "Health"
+      },
+      {
+        "name": "Heliports of Provincial Health Directorates",
+        "category": "Health"
+      },
+      {
+        "name": "112 Emergency Service Heliports",
+        "category": "Health"
+      },
+      {
+        "name": "Private Heliports",
+        "category": "Private Sector"
+      },
+      {
+        "name": "Private and Legal Entities",
+        "category": "Private Sector"
+      }
+    ],
+    "team": "Our Experienced Team",
+    "teamDesc": "BARSAV's success is the result of the diligence and dedication of its team, which consists of professionals who are experts and experienced in their fields.",
+    "teamImages": [
+      {
+        "src": "/aerospace-engineer-team.jpg",
+        "alt": "Engineering Team"
+      },
+      {
+        "src": "/manufacturing-facility-workers.jpg",
+        "alt": "Production Facility"
+      },
+      {
+        "src": "/simulation-control-room.jpg",
+        "alt": "Simulation Center"
+      }
+    ],
+    "statistics": [
+      {
+        "value": "10+",
+        "label": "Employees"
+      },
+      {
+        "value": "25+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": "100+",
+        "label": "Projects"
+      }
+    ]
+  }
+}

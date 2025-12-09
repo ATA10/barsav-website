@@ -94,7 +94,8 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
 
               <div className="bg-background rounded-lg p-4 mb-6">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6262506623846!2d29.00596!3d41.04733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7c0e3f0001%3A0x1234567890abc!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890"
+                  // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6262506623846!2d29.00596!3d41.04733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7c0e3f0001%3A0x1234567890abc!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5325.439293731519!2d32.76094523667606!3d39.94895447762949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3490200415bb9%3A0x9907b73c659b599c!2sBARSAV%20HAVACILIK%20ELEKTRON%C4%B0K%20VE%20SAVUNMA%20SANAY%C4%B0%20T%C4%B0C.LTD.%C5%9ET%C4%B0.!5e0!3m2!1str!2str!4v1765100101926!5m2!1str!2str"
                   width="100%"
                   height="300"
                   style={{ border: 0, borderRadius: "8px" }}
@@ -111,9 +112,9 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                   {getTranslation(language, "contact.address")}
                 </p>
                 <p className="text-foreground">
-                  Barsav Teknoloji A.Ş.
+                   Barsav Havacılık Elektronik Savunma Sanayi Ticaret Limited Şirketi
                   <br />
-                  İstanbul, Türkiye
+                  Ankara, Türkiye
                 </p>
               </div>
 
@@ -121,7 +122,8 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 <p className="text-accent font-semibold mb-1">
                   {getTranslation(language, "contact.phone")}
                 </p>
-                <p className="text-foreground">+90 (212) 555-0123</p>
+                <p className="text-foreground">+90 (312) 232 61 11</p>
+                <p className="text-foreground">+90 535 932 55 70</p>
               </div>
 
               <div className="bg-background/50 rounded-lg p-4 border border-[color:var(--border)]">

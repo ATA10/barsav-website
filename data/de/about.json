@@ -1,0 +1,142 @@
+{
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Wir bieten innovative Technologielösungen in den Bereichen Luftfahrt, Elektronik und Verteidigungsindustrie.",
+    "whoWeAre": "Wer sind wir?",
+    "description1": "Die 2016 gegründete BARSAV Aviation Electronics and Defence Industry Trading Limited Company setzt ihre Produktion fort mit dem Ziel, den Welt- und den türkischen Markt in ihrem Sektor anzuführen.",
+    "description2": "Unsere Produktion konzentriert sich auf die Bedürfnisse der Verteidigungsindustrie und spezifische Produkte, umfasst aber auch Beleuchtungssysteme für Flughäfen und Hubschrauberlandeplätze. Zu unseren Unternehmensdienstleistungen gehören der Verkauf und die Installation von Aerosol-Feuerlöschsystemen sowie Lösungen für Rechenzentren, Netzwerklösungen, Sicherheitslösungen, FKM-Lösungen (Katastrophenschutzzentrum), Integrationslösungen, Infrastrukturlösungen, F&E / P&E (Forschung & Entwicklung / Produktentwicklung) und Logistikdienstleistungen.",
+    "description3": "Unsere Produktionen und Dienstleistungen werden in Übereinstimmung mit den einschlägigen Gesetzen, Normen und Spezifikationen durchgeführt.",
+    "description4": "Unsere Arbeit zielt darauf ab, zuverlässige Produkte mit unserem Expertenteam auf Basis der **niedrigsten Kosten** und **höchsten Effizienz** zu erzielen. Lösungen für LED-Systeme zur Energieeinsparung werden entwickelt und verbessert.",
+    "description5": "Unsere Anlage verfügt über 350 m² Innenfläche und 50 m² Außenfläche. Die Anlage befindet sich in einer Industriezone in zentraler Lage innerhalb der Stadtgrenzen, umgeben von einem Drahtzaun. Unser oberstes Stockwerk wurde als **Kontrollierte Zone** eingerichtet und verfügt über das **Nationale und NATO-Anlagensicherheitszertifikat**.",
+    "mission": "Mission",
+    "missionText": "Bereitstellung hochwertiger und zuverlässiger Produkte und Dienstleistungen in den Bereichen Luftfahrt, Elektronik und Verteidigungsindustrie, die die Erwartungen der Kunden übertreffen. Wir wollen zur Entwicklung der Branche beitragen, indem wir technologische Innovationen genau verfolgen, und die technologische Unabhängigkeit unseres Landes in diesen Bereichen unterstützen.",
+    "vision": "Vision",
+    "visionText": "Eines der angesehensten Technologieunternehmen in der Region und weltweit zu werden. Eine führende Organisation zu sein, die auf internationalen Märkten für ihre innovativen Produkte und Dienstleistungen bekannt, bevorzugt und ein Technologieexporteur ist.",
+    "values": "Unsere Werte",
+    "valuesList": [
+      {
+        "title": "Qualität",
+        "description": "Wir erfüllen die höchsten Qualitätsstandards bei jedem Produkt und jeder Dienstleistung.",
+        "icon": "Award"
+      },
+      {
+        "title": "Innovation",
+        "description": "Wir erforschen und entwickeln ständig neue Technologien.",
+        "icon": "Lightbulb"
+      },
+      {
+        "title": "Zuverlässigkeit",
+        "description": "Wir bemühen uns stets, das Vertrauen unserer Kunden in uns zu wahren.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Zusammenarbeit",
+        "description": "Wir glauben an Teamwork und Kooperation.",
+        "icon": "Users"
+      },
+      {
+        "title": "Verantwortung",
+        "description": "Wir handeln verantwortungsbewusst gegenüber der Umwelt und der Gesellschaft.",
+        "icon": "Building2"
+      },
+      {
+        "title": "Kundenzufriedenheit",
+        "description": "Die Kundenzufriedenheit ist unser wichtigstes Erfolgskriterium.",
+        "icon": "Heart"
+      }
+    ],
+    "referencesTitle": "Unsere Referenzen",
+    "references": [
+      {
+        "name": "Ministerium für Verkehr und Infrastruktur",
+        "category": "Öffentlich"
+      },
+      {
+        "name": "Generaldirektion der Staatlichen Flughafenbehörde (DHMI)",
+        "category": "Öffentlich"
+      },
+      {
+        "name": "Generaldirektion für Infrastrukturinvestitionen (DLH)",
+        "category": "Öffentlich"
+      },
+      {
+        "name": "Ministerium für Nationale Verteidigung",
+        "category": "Verteidigung"
+      },
+      {
+        "name": "Generalstab",
+        "category": "Verteidigung"
+      },
+      {
+        "name": "Kommando der Luftstreitkräfte",
+        "category": "Verteidigung"
+      },
+      {
+        "name": "Kommando der Luftlogistik",
+        "category": "Verteidigung"
+      },
+      {
+        "name": "Kommando der Seestreitkräfte",
+        "category": "Verteidigung"
+      },
+      {
+        "name": "Kommando der Landstreitkräfte",
+        "category": "Verteidigung"
+      },
+      {
+        "name": "Heliports des Gesundheitsministeriums",
+        "category": "Gesundheit"
+      },
+      {
+        "name": "Heliports der Lehr- und Forschungskrankenhäuser",
+        "category": "Gesundheit"
+      },
+      {
+        "name": "Heliports der Regionalen Gesundheitsdirektionen",
+        "category": "Gesundheit"
+      },
+      {
+        "name": "Heliports des Notdienstes 112",
+        "category": "Gesundheit"
+      },
+      {
+        "name": "Private Heliports",
+        "category": "Privatwirtschaft"
+      },
+      {
+        "name": "Private und juristische Organisationen",
+        "category": "Privatwirtschaft"
+      }
+    ],
+    "team": "Unser Erfahrenes Team",
+    "teamDesc": "Der Erfolg von BARSAV ist das Ergebnis der harten Arbeit und des Engagements unseres Teams aus erfahrenen Fachleuten auf ihrem Gebiet.",
+    "teamImages": [
+      {
+        "src": "/aerospace-engineer-team.jpg",
+        "alt": "Ingenieurteam"
+      },
+      {
+        "src": "/manufacturing-facility-workers.jpg",
+        "alt": "Produktionsanlage"
+      },
+      {
+        "src": "/simulation-control-room.jpg",
+        "alt": "Simulationszentrum"
+      }
+    ],
+    "statistics": [
+      {
+        "value": "10+",
+        "label": "Mitarbeiter"
+      },
+      {
+        "value": "25+",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": "100+",
+        "label": "Projekte"
+      }
+    ]
+  }
+}

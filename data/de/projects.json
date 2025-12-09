@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "LED-Beleuchtungsprojekt für Flughäfen",
+      "category": "Flughafenbeleuchtung",
+      "fullDescription": "LED-Beleuchtungssystemprojekt für einen der größten Flughäfen der Türkei. Systeme optimiert für Start, Landung und die Sicherheit von Luftfahrzeugen (Flugzeugen).",
+      "year": "2023",
+      "status": "Abgeschlossen",
+      "client": "Führender Flughafenbetreiber",
+      "image": "/airport-led-lighting-system.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Militärisches Panzersimulator-System",
+      "category": "Militärsimulation",
+      "fullDescription": "Fortschrittliches Panzersimulator-System. Ausgestattet mit realistischer Physik-Engine, Mehrkanal-Visualisierungssystem und Bewegungsplattform. Wird für Schulungen und Einsatzplanung verwendet.",
+      "year": "2022",
+      "status": "Abgeschlossen",
+      "client": "Türkische Streitkräfte",
+      "image": "/military-tank-simulator.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Elektronisches Steuerungssystem",
+      "category": "Elektronikfertigung",
+      "fullDescription": "Design und Produktion eines Mehrkanal-Elektronik-Steuerungssystems. Entspricht den Standards der Verteidigungsindustrie, getestet und zertifiziert.",
+      "year": "2023",
+      "status": "In Bearbeitung",
+      "client": "Verteidigungsunternehmen",
+      "image": "/electronic-control-system.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Schulungssystem für Luftfahrtsimulatoren",
+      "category": "Zivile Simulation",
+      "fullDescription": "FSTD-zertifizierter Luftfahrtsimulator. Mit realistischem Instrumentenpanel, Bewegungssystem und vollständig integrierter Steuerungsstruktur. Wird für Pilotenausbildungsprogramme verwendet.",
+      "year": "2023",
+      "status": "Abgeschlossen",
+      "client": "Luftfahrtausbildungszentrum",
+      "image": "/aviation-simulator-training.jpg"
+    }
+  ]
+}

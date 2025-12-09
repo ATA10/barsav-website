@@ -1,0 +1,116 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Airport Lighting",
+      "shortDescription": "Efficient and safe lighting of aerodromes with state-of-the-art LED systems",
+      "fullDescription": "BARSAV's airport lighting systems are designed and implemented in compliance with international standards. High efficiency and energy savings are achieved using LED technology. The system guarantees the highest visibility quality, even at night and under adverse weather conditions.",
+      "features": [
+        "LED-based modern technology",
+        "Energy saving and sustainability",
+        "Automatic control systems",
+        "Compliance with international standards",
+        "24/7 operational reliability"
+      ],
+      "image": "/airport-lighting.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Network Solutions",
+      "shortDescription": "In the network field, we evaluate the demands and needs of institutions and offer Local Area Network (LAN), Wide Area Network (WAN), and Wireless Local Area Network (WLAN) solutions.",
+      "fullDescription": "We analyze all networking needs of institutions and plan, establish, and manage the most suitable Local Area Network (LAN), Wide Area Network (WAN), and Wireless Network (WLAN) solutions. We support business continuity by creating high-speed, reliable, and scalable network infrastructures.",
+      "features": [
+        "Local Area Network (LAN) Installation",
+        "Wide Area Network (WAN) Connections",
+        "Wireless Local Area Network (WLAN) Services",
+        "Network Security and Monitoring",
+        "Scalable Infrastructure Design"
+      ],
+      "image": "/network-solutions.png"
+    },
+    {
+      "id": 3,
+      "title": "Data Center Solutions",
+      "shortDescription": "We offer the data center products and services your institution needs, from the planning stage, with design, implementation, and management components. As a result of this service, you gain high performance, low investment cost, reduced risk, easy management, flexibility, and scalability.",
+      "fullDescription": "We provide turnkey Data Center solutions covering the planning, design, implementation, and management processes. By maximizing energy efficiency with high-performance hardware and software, we provide a flexible and scalable structure with low investment and operating costs.",
+      "features": [
+        "High-Performance Server Solutions",
+        "Storage and Backup Systems",
+        "Energy Efficient Cooling and Power Infrastructure",
+        "Easy Management and Monitoring Tools",
+        "Physical and Cyber Security"
+      ],
+      "image": "/data-center-solutions.png"
+    },
+    {
+      "id": 4,
+      "title": "Security Solutions",
+      "shortDescription": "The confidentiality and accessibility of information, the most valuable asset of institutions, are under threat from all malicious or unconscious users.",
+      "fullDescription": "We offer comprehensive cybersecurity solutions to ensure information security. We protect your institution against malicious attacks, data leaks, and unconscious user errors by safeguarding the confidentiality, integrity, and accessibility of data. Risk analysis and regular audits are part of this process.",
+      "features": [
+        "Cyber Security Consulting",
+        "Network and Application Security",
+        "Data Encryption and Access Control",
+        "Disaster Recovery Planning (DRP)",
+        "Security Information and Event Management (SIEM)"
+      ],
+      "image": "/security-solutions.png"
+    },
+    {
+      "id": 5,
+      "title": "DRC Solutions (Disaster Recovery Center)",
+      "shortDescription": "The goal is to navigate a disaster as smoothly and loss-free as possible in an extraordinary situation and to ensure the system is brought back up with minimal damage. We offer customized solutions to institutions by performing studies such as planning, risk analysis, and data analysis together with our global business partners.",
+      "fullDescription": "We secure business continuity with our Disaster Recovery Center (DRC) solutions. By implementing detailed planning, risk analysis, and data backup strategies, we ensure that critical systems become operational again in the event of a disaster with minimum loss and in the shortest possible time. Our goal is full system recovery and uninterrupted service.",
+      "features": [
+        "Business Continuity and Recovery Planning",
+        "Off-site Data Backup",
+        "System Replication and Synchronization",
+        "RPO/RTO Optimization for Critical Systems",
+        "Disaster Scenario Testing"
+      ],
+      "image": "/disaster-recovery-solutions.png"
+    },
+    {
+      "id": 6,
+      "title": "Integration Solutions",
+      "shortDescription": "We provide the necessary products and services for independently operating systems to function seamlessly as a whole.",
+      "fullDescription": "We develop integration solutions that enable different software, hardware, and platforms within your organization to work together harmoniously and seamlessly. This speeds up data flow, increases operational efficiency, and eliminates the complexity created by independent systems. API (Application Programming Interface)-based integrations are our primary preference.",
+      "features": [
+        "Inter-System Data Flow Integration",
+        "API Development and Management",
+        "Enterprise Application Integration (EAI)",
+        "Data Transformation and Synchronization",
+        "Creation of a Single Centralized Platform"
+      ],
+      "image": "/integration-solutions.png"
+    },
+    {
+      "id": 7,
+      "title": "Infrastructure Solutions",
+      "shortDescription": "We offer cabling systems that will be used for years with correct design and implementation, and infrastructure solutions suitable for expansions.",
+      "fullDescription": "We design and implement structural cabling, electrical, and mechanical systems to meet physical infrastructure requirements. By anticipating future expansion needs, we create a durable, standard-compliant, and manageable foundational infrastructure.",
+      "features": [
+        "Structural Cabling Systems (Fiber/Copper)",
+        "Electrical and Power Infrastructure Solutions",
+        "UPS (Uninterruptible Power Supply) Systems",
+        "Fire Detection and Suppression Systems",
+        "HVAC and Cooling Solutions"
+      ],
+      "image": "/infrastructure-solutions.png"
+    },
+    {
+      "id": 8,
+      "title": "Electronic Systems",
+      "shortDescription": "High-performance electronic components and control systems",
+      "fullDescription": "BARSAV's electronics division produces high-performance control systems for military and civilian applications. Every product is offered to the highest standards through precise engineering and quality control. Customization options are available according to specific requests.",
+      "features": [
+        "Custom design and development",
+        "High reliability and durability",
+        "Precise quality control",
+        "Rapid prototyping and testing",
+        "Full technical support"
+      ],
+      "image": "/electronic-control-system.jpg"
+    }
+  ]
+}

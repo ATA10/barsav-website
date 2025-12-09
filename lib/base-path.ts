@@ -17,3 +17,4 @@ export function getHomePath() {
   return BASE_PATH === "/" ? "/" : BASE_PATH
 }
 
+

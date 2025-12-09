@@ -1,8 +1,30 @@
 import { Language } from "./translations"
-import productsData from "@/dataa/products.json"
-import servicesData from "@/dataa/services.json"
-import projectsData from "@/dataa/projects.json"
-import aboutData from "@/dataa/about.json"
+
+// Dil koduna göre JSON dosyalarını import et
+import productsDataTr from "@/data/tr/products.json"
+import productsDataEn from "@/data/en/products.json"
+import productsDataRu from "@/data/ru/products.json"
+import productsDataDe from "@/data/de/products.json"
+
+import servicesDataTr from "@/data/tr/services.json"
+import servicesDataEn from "@/data/en/services.json"
+import servicesDataRu from "@/data/ru/services.json"
+import servicesDataDe from "@/data/de/services.json"
+
+import projectsDataTr from "@/data/tr/projects.json"
+import projectsDataEn from "@/data/en/projects.json"
+import projectsDataRu from "@/data/ru/projects.json"
+import projectsDataDe from "@/data/de/projects.json"
+
+import blogDataTr from "@/data/tr/blog-posts.json"
+import blogDataEn from "@/data/en/blog-posts.json"
+import blogDataRu from "@/data/ru/blog-posts.json"
+import blogDataDe from "@/data/de/blog-posts.json"
+
+import aboutDataTr from "@/data/tr/about.json"
+import aboutDataEn from "@/data/en/about.json"
+import aboutDataRu from "@/data/ru/about.json"
+import aboutDataDe from "@/data/de/about.json"
 
 // Ürün çevirileri
 const productTranslations: Record<Language, Record<number, any>> = {
@@ -635,40 +657,24 @@ const productTranslations: Record<Language, Record<number, any>> = {
 
 // Ürün verilerini dil desteği ile getir
 export function getLocalizedProducts(lang: Language) {
-  return productsData.products.map((product) => {
-    const translation = productTranslations[lang]?.[product.id]
-    if (translation && lang !== "tr") {
-      return {
-        ...product,
-        ...translation,
-        // Görseller ve teknik özellikler anahtarları çevrilmeli
-        technicalSpecs: translation.technicalSpecs || product.technicalSpecs,
-        images: product.images,
-        image: product.image,
-        year: product.year,
-      }
-    }
-    return product
-  })
+  switch (lang) {
+    case "tr":
+      return productsDataTr.products
+    case "en":
+      return productsDataEn.products
+    case "ru":
+      return productsDataRu.products
+    case "de":
+      return productsDataDe.products
+    default:
+      return productsDataTr.products
+  }
 }
 
 // Tek bir ürünü dil desteği ile getir
 export function getLocalizedProduct(productId: number, lang: Language) {
-  const product = productsData.products.find((p) => p.id === productId)
-  if (!product) return null
-
-  const translation = productTranslations[lang]?.[productId]
-  if (translation && lang !== "tr") {
-    return {
-      ...product,
-      ...translation,
-      technicalSpecs: translation.technicalSpecs || product.technicalSpecs,
-      images: product.images,
-      image: product.image,
-      year: product.year,
-    }
-  }
-  return product
+  const products = getLocalizedProducts(lang)
+  return products.find((p: any) => p.id === productId) || null
 }
 
 // Services çevirileri
@@ -923,37 +929,37 @@ const projectTranslations: Record<Language, Record<number, any>> = {
 
 // Services verilerini dil desteği ile getir
 export function getLocalizedServices(lang: Language) {
-  return servicesData.services.map((service) => {
-    const translation = serviceTranslations[lang]?.[service.id]
-    if (translation && lang !== "tr") {
-      return {
-        ...service,
-        ...translation,
-        image: service.image,
-      }
-    }
-    return service
-  })
+  switch (lang) {
+    case "tr":
+      return servicesDataTr.services
+    case "en":
+      return servicesDataEn.services
+    case "ru":
+      return servicesDataRu.services
+    case "de":
+      return servicesDataDe.services
+    default:
+      return servicesDataTr.services
+  }
 }
 
 // Projects verilerini dil desteği ile getir
 export function getLocalizedProjects(lang: Language) {
-  return projectsData.projects.map((project) => {
-    const translation = projectTranslations[lang]?.[project.id]
-    if (translation && lang !== "tr") {
-      return {
-        ...project,
-        ...translation,
-        image: project.image,
-        year: project.year,
-      }
-    }
-    return project
-  })
+  switch (lang) {
+    case "tr":
+      return projectsDataTr.projects
+    case "en":
+      return projectsDataEn.projects
+    case "ru":
+      return projectsDataRu.projects
+    case "de":
+      return projectsDataDe.projects
+    default:
+      return projectsDataTr.projects
+  }
 }
 
-// Blog çevirileri
-import blogData from "@/dataa/blog-posts.json"
+// Blog çevirileri - Artık kullanılmıyor, JSON dosyalarından çekiliyor
 
 const blogTranslations: Record<Language, Record<number, any>> = {
   tr: {},
@@ -1087,17 +1093,18 @@ const blogTranslations: Record<Language, Record<number, any>> = {
 
 // Blog verilerini dil desteği ile getir
 export function getLocalizedBlogPosts(lang: Language) {
-  return blogData.posts.map((post) => {
-    const translation = blogTranslations[lang]?.[post.id]
-    if (translation && lang !== "tr") {
-      return {
-        ...post,
-        ...translation,
-        image: post.image,
-      }
-    }
-    return post
-  })
+  switch (lang) {
+    case "tr":
+      return blogDataTr.posts
+    case "en":
+      return blogDataEn.posts
+    case "ru":
+      return blogDataRu.posts
+    case "de":
+      return blogDataDe.posts
+    default:
+      return blogDataTr.posts
+  }
 }
 
 // About çevirileri
@@ -1290,18 +1297,18 @@ const aboutTranslations: Record<Language, any> = {
 
 // About verilerini dil desteği ile getir
 export function getLocalizedAbout(lang: Language) {
-  const baseData = aboutData.about
-  const translation = aboutTranslations[lang]
-  
-  if (translation && lang !== "tr") {
-    return {
-      ...baseData,
-      ...translation,
-      teamImages: baseData.teamImages,
-    }
+  switch (lang) {
+    case "tr":
+      return aboutDataTr.about
+    case "en":
+      return aboutDataEn.about
+    case "ru":
+      return aboutDataRu.about
+    case "de":
+      return aboutDataDe.about
+    default:
+      return aboutDataTr.about
   }
-  
-  return baseData
 }
 
 
