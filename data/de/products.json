@@ -2,253 +2,432 @@
   "products": [
     {
       "id": 1,
-      "name": "Flughafen LED-Beleuchtungssystem",
-      "category": "Flughafenbeleuchtung",
-      "description": "Professionelle Beleuchtungslösungen für Flughäfen. Energieeffiziente und langlebige Systeme mit LED-Technologie.",
-      "fullDescription": "Hochmoderne Beleuchtungssysteme, die auf Flughäfen eingesetzt werden. Energieeffiziente, langlebige und zuverlässige Lösungen. Für Tag- und Nachtbetrieb optimierte Systeme. Entworfen und implementiert in Übereinstimmung mit internationalen Standards.",
-      "price": "Kontaktieren Sie uns für ein Preisangebot",
+      "name": "ICAO-Standard Landebahnkantenlicht (Oberirdischer Typ)",
+      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
+      "subCategory": "Oberirdische Landebahn- und Rollbahnleuchten",
+      "description": "ICAO Annex 14 konformes, hoch belastbares oberirdisches Landebahnkantenbeleuchtungs-Leuchtmittel.",
+      "fullDescription": "Oberirdische LED-Leuchte zur sicheren Markierung von Landebahnkanten. Aluminium-Druckgussgehäuse, Polycarbonat-Linse und 6061T6-Legierung. Geringe Wartungskosten und hohe Energieeffizienz.",
+      "price": "Preis auf Anfrage",
       "features": [
-        "Moderne LED-basierte Technologie",
-        "Energieeinsparung und Nachhaltigkeit",
-        "Automatische Steuerungssysteme",
-        "Entspricht internationalen Standards",
-        "24/7 Betriebs-Zuverlässigkeit"
+        "ICAO Annex 14, FAA AC 150/5345-46D konform",
+        "IP67 wasser- und staubdicht",
+        "Betriebstemperaturbereich: -40°C bis +70°C",
+        "LED-Technologie mit 100.000 Stunden Lebensdauer",
+        "Weiße oder farbige Lichtoptionen"
       ],
       "images": [
-        "/airport-led-lighting-system.jpg",
-        "/airport-lighting-system.jpg",
-        "/airport-lighting.jpg",
-        "/led-aviation-lighting.jpg"
+        "/products/1/pist-kenar-isiği-yerustu-1.jpg",
+        "/products/1/pist-kenar-isiği-yerustu-2.jpg",
+        "/products/1/pist-kenar-isiği-yerustu-3.jpg"
       ],
-      "image": "/airport-led-lighting-system.jpg",
+      "image": "/products/pist-kenar-isiği-yerustu-1.jpg",
       "status": "Aktiv",
-      "year": "2023",
+      "year": "2024",
       "technicalSpecs": {
-        "Stromverbrauch": "50-200W",
-        "Lebensdauer": "50.000+ Stunden",
-        "Farbtemperatur": "4000K-6000K",
-        "IP-Klasse": "IP65",
-        "Betriebstemperatur": "-40°C bis +60°C",
-        "Standards": "ICAO Annex 14, FAA AC 150/5345-46"
+        "Lichtquelle": "LED, 20W",
+        "Farbtemperatur": "4000K",
+        "IP-Schutzart": "IP67",
+        "Betriebsspannung": "90-140V AC",
+        "Max. Lichtstärke": "1000 cd",
+        "Normen": "ICAO Annex 14, FAA AC 150/5345-46D",
+        "Garantie": "5 Jahre"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/airport-technical.pdf"
+          "file": "/docs/pist-kenar-yerustu-tech-spec.pdf"
         },
         {
-          "title": "Benutzerhandbuch",
-          "file": "/docs/airport-manual.pdf"
+          "title": "Installationsanleitung",
+          "file": "/docs/pist-kenar-yerustu-installation.pdf"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Militärischer Panzersimulator",
-      "category": "Militärsimulation",
-      "description": "Fortschrittliche Militärfahrzeug-Simulationen. Realistische Physik-Engine und Mehrkanal-Visualisierungssystem.",
-      "fullDescription": "Realistische und hochpräzise Militärfahrzeug-Simulationssysteme. Professionelle Lösungen, die für Trainings- und Einsatzplanungszwecke verwendet werden. Vollständig integrierte Steuer- und Beobachter-Panels. Ausgestattet mit realistischer Physik-Engine, Mehrkanal-Visualisierungssystem und Bewegungsplattform.",
-      "price": "Kontaktieren Sie uns für ein Preisangebot",
+      "name": "Eingelassenes Landebahnmittellinienlicht",
+      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
+      "subCategory": "Eingelassene Landebahn- und Rollbahnleuchten",
+      "description": "Eingelassene LED-Leuchte zur Markierung der Landebahnmittellinie, widerstandsfähig gegen Flugzeuglande-/Startlasten.",
+      "fullDescription": "Eingelassene LED-Leuchte zur sicheren Markierung der Landebahnmittellinie. 80-Tonnen-Achslastwiderstand, Edelstahlgehäuse und Glaslinsenkonstruktion. Wasserdichtes Dichtungssystem.",
+      "price": "Preis auf Anfrage",
       "features": [
-        "Realistische Physik-Engine",
-        "Mehrkanal-Visualisierungssystem",
-        "Bewegungsplattform",
-        "Beobachterstationen",
-        "KI-gestützte Szenarien"
+        "80-Tonnen-Achslastwiderstand",
+        "Edelstahl 316L Gehäuse",
+        "Berührungslose magnetische Auslösung",
+        "IP68 Schutzart",
+        "Niedrige Bauform"
       ],
       "images": [
-        "/military-tank-simulator.jpg",
-        "/military-simulation.jpg",
-        "/ai-military-simulator.jpg",
-        "/defense-system-technology.jpg"
+        "/products/2/gomulu-pist-merkez-1.jpg",
+        "/products/2/gomulu-pist-merkez-2.jpg",
+        "/products/2/gomulu-pist-merkez-3.jpg"
       ],
-      "image": "/military-tank-simulator.jpg",
+      "image": "/products/gomulu-pist-merkez-1.jpg",
       "status": "Aktiv",
-      "year": "2022",
+      "year": "2024",
       "technicalSpecs": {
-        "Sichtfeld": "360°",
-        "Auflösung": "4K pro Kanal",
-        "Bewegungsplattform": "6 DOF",
-        "Physik-Engine": "Echtzeit",
-        "KI-Szenarien": "100+",
-        "Gleichzeitige Benutzer": "1-4 Personen"
+        "Lichtquelle": "LED, 15W",
+        "Farbe": "Weiß (für Mittellinie)",
+        "IP-Schutzart": "IP68",
+        "Max. Last": "80 Tonnen",
+        "Betriebstemperatur": "-40°C bis +60°C",
+        "Linsenmaterial": "Glas",
+        "Garantie": "7 Jahre"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/airport-technical.pdf"
+          "file": "/docs/gomulu-pist-merkez-tech-spec.pdf"
         },
         {
-          "title": "Benutzerhandbuch",
-          "file": "/docs/airport-manual.pdf"
+          "title": "Prüfberichte",
+          "file": "/docs/gomulu-pist-merkez-test.pdf"
         }
       ]
     },
     {
       "id": 3,
-      "name": "Ziviler Flugzeugsimulator",
-      "category": "Zivile Simulation",
-      "description": "Flugzeugsimulationen für die Pilotenausbildung. FSTD-zertifizierter professioneller Simulator.",
-      "fullDescription": "Professionelle Pilotenausbildungssimulatoren für die zivile Luftfahrt. Vollständig erneuerbares Komponentendesign und fortschrittliches Aerodynamikmodell. FSTD-zertifizierte Systeme mit realistischem Instrumentenpanel, Bewegungssystem und vollständig integrierter Steuerungsstruktur.",
-      "price": "Kontaktieren Sie uns für ein Preisangebot",
+      "name": "PAPI-System (Precision Approach Path Indicator)",
+      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
+      "subCategory": "Anflugbeleuchtungsleuchten",
+      "description": "4-Einheiten PAPI-System mit LED-Technologie, zeigt Piloten den korrekten Anflugwinkel.",
+      "fullDescription": "PAPI-System, das Piloten ermöglicht, den korrekten Anflugwinkel (typischerweise 3°) visuell zu erkennen. Besteht aus 4 Lichteinheiten. Zeigt Anflugwinkel mit Rot-Weiß-Lichtkombination. Verfügbar mit OSRAM Spezialflughafenlampen oder LED-Optionen.",
+      "price": "Preis auf Anfrage",
       "features": [
-        "FSTD-zertifiziert",
-        "Realistisches Instrumentenpanel",
-        "Bewegungssystem",
-        "Technischer Support",
-        "Erneuerbare Komponenten"
+        "ICAO Annex 14 Volume I konform",
+        "LED- oder Halogenlampen-Optionen",
+        "Automatische Helligkeitsregelung",
+        "Fernsteuerung und Überwachung",
+        "Langlebiges Aluminiumgehäuse"
       ],
       "images": [
-        "/civil-aircraft-simulator.jpg",
-        "/flight-simulator-training.jpg",
-        "/aviation-simulator-training.jpg",
-        "/simulation-control-room.jpg"
+        "/products/3/papi-system-1.jpg",
+        "/products/3/papi-system-2.jpg",
+        "/products/3/papi-system-3.jpg"
       ],
-      "image": "/civil-aircraft-simulator.jpg",
+      "image": "/products/papi-system-1.jpg",
       "status": "Aktiv",
-      "year": "2023",
+      "year": "2024",
       "technicalSpecs": {
-        "Zertifizierung": "FSTD Level D",
-        "Visuelles System": "180° x 40°",
-        "Bewegungssystem": "6 DOF",
-        "Flugzeugmodelle": "10+",
-        "Aerodynamik": "Echtzeit",
-        "Instrumentenpanel": "Voll funktionsfähig"
+        "Lichtquelle": "LED (30W) oder Halogen (200W)",
+        "Lichtwinkel": "0,3° - 0,45° vertikal, 10° horizontal",
+        "Farbe": "Rot/Weiß",
+        "Sichtweite": "5 NM (Tag), 20 NM (Nacht)",
+        "IP-Schutzart": "IP66",
+        "Neigungseinstellung": "Einstellbar zwischen 2° - 4,5°",
+        "Normen": "ICAO Annex 14, FAA AC 150/5345-28"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/airport-technical.pdf"
+          "file": "/docs/papi-system-tech-spec.pdf"
         },
         {
-          "title": "Benutzerhandbuch",
-          "file": "/docs/airport-manual.pdf"
+          "title": "Kalibrierungsanleitung",
+          "file": "/docs/papi-calibration-guide.pdf"
         }
       ]
     },
     {
       "id": 4,
-      "name": "Elektronisches Steuerungssystem",
-      "category": "Elektronikfertigung",
-      "description": "Design und Herstellung eines Mehrkanal-Elektronik-Steuerungssystems. Entspricht den Standards der Verteidigungsindustrie.",
-      "fullDescription": "Design, Prototyping und Serienfertigung von speziellen elektronischen Produkten für die Verteidigungs- und Luftfahrtindustrie. Die Produktion erfolgt nach höchsten Qualitätsstandards. Design und Herstellung eines Mehrkanal-Elektronik-Steuerungssystems. Entspricht den Standards der Verteidigungsindustrie, getestet und zugelassen.",
-      "price": "Kontaktieren Sie uns für ein Preisangebot",
+      "name": "Hubschrauberlandeplatz erhöhtes TLOF/FATO Licht",
+      "category": "HUBISCHRAUBERLANDEPLATZ- UND HELIPORT-SYSTEME",
+      "subCategory": "Erhöhte TLOF/FATO Lichter",
+      "description": "Erhöhte LED-Beleuchtung zur Markierung von Hubschrauberlande- und -startbereichen (TLOF/FATO).",
+      "fullDescription": "Erhöhte TLOF (Touchdown and Lift-off Area) und FATO (Final Approach and Take-off Area) Beleuchtungsleuchte für Heliports. Niedrige Bauform, hohe Belastbarkeit und einfache Installation. Markiert sichere Lande-/Startbereiche für Hubschrauberpiloten mit grünem LED-Licht.",
+      "price": "Preis auf Anfrage",
       "features": [
-        "Sonderanfertigung",
-        "Qualitätskontrolle",
-        "Serienproduktion",
-        "Technischer Support",
-        "Präzisionstechnik"
+        "ICAO Annex 14 Volume II konform",
+        "Grünes LED-Licht (Heliport-Standard)",
+        "Niedrige Bauform",
+        "Stoßfest",
+        "Schnellmontagehalterung"
       ],
       "images": [
-        "/electronic-control-system.jpg",
-        "/electronic-components-manufacturing.jpg",
-        "/electronics-quality-control.jpg",
-        "/electronics-manufacturing-line.png"
+        "/products/4/heliport-tlof-raised-1.jpg",
+        "/products/4/heliport-tlof-raised-2.jpg",
+        "/products/4/heliport-tlof-raised-3.jpg"
       ],
-      "image": "/electronic-control-system.jpg",
+      "image": "/products/heliport-tlof-raised-1.jpg",
       "status": "Aktiv",
-      "year": "2023",
+      "year": "2024",
       "technicalSpecs": {
-        "Anzahl der Kanäle": "8-64",
-        "Prozessor": "ARM Cortex-A78",
-        "Betriebsspannung": "12V-48V DC",
-        "Betriebstemperatur": "-55°C bis +85°C",
-        "Standards": "MIL-STD-810G, DO-160",
-        "Schnittstelle": "CAN, RS485, Ethernet"
+        "Lichtquelle": "LED, 10W",
+        "Farbe": "Grün (Heliport-Standard)",
+        "IP-Schutzart": "IP67",
+        "Höhe": "30 cm (einstellbar)",
+        "Betriebsspannung": "24V DC oder 110V AC",
+        "Lichtwinkel": "360° horizontal",
+        "Normen": "ICAO Annex 14 Vol. II, CAP 437"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/airport-technical.pdf"
+          "file": "/docs/heliport-tlof-tech-spec.pdf"
         },
         {
-          "title": "Benutzerhandbuch",
-          "file": "/docs/airport-manual.pdf"
+          "title": "Installationsanleitung",
+          "file": "/docs/heliport-tlof-installation.pdf"
         }
       ]
     },
     {
       "id": 5,
-      "name": "Ausbildungssystem für Luftfahrtsimulatoren",
-      "category": "Zivile Simulation",
-      "description": "FSTD-zertifizierter Luftfahrtsimulator. Wird für Pilotenausbildungsprogramme verwendet.",
-      "fullDescription": "FSTD-zertifizierter Luftfahrtsimulator. Mit realistischem Instrumentenpanel, Bewegungssystem und vollständig integrierter Steuerungsstruktur. Wird für Pilotenausbildungsprogramme verwendet. Eine vollständig immersive Trainingsumgebung wird bereitgestellt.",
-      "price": "Kontaktieren Sie uns für ein Preisangebot",
+      "name": "OSRAM stromgeregelte Halogen-Flughafenlampe",
+      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
+      "subCategory": "Flughafenlampen",
+      "description": "OSRAM Spezialserie, stromgeregelte, hochleistungsfähige Halogen-Flughafenbeleuchtungslampe.",
+      "fullDescription": "OSRAM Halogenlampe speziell für Flughafenbeleuchtungssysteme hergestellt. Integrierte Stromregelungsschaltung, lange Lebensdauer und hohe Lichtausbeute. Standard E27/E40 Sockel kompatibel, Retrofit-Lösung für bestehende Systeme.",
+      "price": "Preis auf Anfrage",
       "features": [
-        "FSTD-zertifiziert",
-        "Realistisches Instrumentenpanel",
-        "Bewegungssystem",
-        "Vollständig integrierte Steuerung",
-        "Ausbildungsprogramme"
+        "Integrierte Stromregelungsschaltung",
+        "Hohe Lichtausbeute (20 lm/W)",
+        "Lange Lebensdauer (4000 Stunden)",
+        "E27/E40 Sockel kompatibel",
+        "Stoß- und vibrationsfest"
       ],
       "images": [
-        "/aviation-simulator-training.jpg",
-        "/flight-simulator-training.jpg",
-        "/civil-aircraft-simulator.jpg",
-        "/simulation-control-room.jpg"
+        "/products/5/osram-airport-bulb-1.jpg",
+        "/products/5/osram-airport-bulb-2.jpg",
+        "/products/5/osram-airport-bulb-3.jpg"
       ],
-      "image": "/aviation-simulator-training.jpg",
+      "image": "/products/osram-airport-bulb-1.jpg",
       "status": "Aktiv",
-      "year": "2023",
+      "year": "2024",
       "technicalSpecs": {
-        "Zertifizierung": "FSTD Level C/D",
-        "Visuelle Auflösung": "1920x1080 pro Bildschirm",
-        "Bewegungssystem": "6 DOF elektro-hydraulisch",
-        "Trainingsszenarien": "500+",
-        "Flugverkehr": "Echtzeit",
-        "Wetterbedingungen": "Dynamisch"
+        "Leistung": "200W, 400W, 600W Optionen",
+        "Spannung": "110V oder 220V",
+        "Farbtemperatur": "3000K",
+        "Lebensdauer": "4000 Stunden",
+        "Sockeltyp": "E27 oder E40",
+        "Stromregelung": "Integriert",
+        "Hersteller": "OSRAM (Sonderserie)"
       },
       "documents": [
         {
-          "title": "Technische Spezifikation",
-          "file": "/docs/airport-technical.pdf"
+          "title": "Technischer Katalog",
+          "file": "/docs/osram-airport-bulb-catalog.pdf"
         },
         {
-          "title": "Benutzerhandbuch",
-          "file": "/docs/airport-manual.pdf"
+          "title": "Kompatibilitätsliste",
+          "file": "/docs/osram-compatibility-list.pdf"
         }
       ]
     },
     {
       "id": 6,
-      "name": "Fertigungslinie für elektronische Komponenten",
-      "category": "Elektronikfertigung",
-      "description": "Moderne Produktionsanlage für hochtechnologische elektronische Komponenten.",
-      "fullDescription": "Die BARSAV-Produktionsanlage wurde speziell für die Herstellung präziser elektronischer Komponenten konzipiert. Die Qualitätskontrolle wird durch ein vollautomatisches Managementsystem gewährleistet. Die Anlage hat eine Produktionskapazität von 50.000+ Komponenten pro Jahr.",
-      "price": "Kontaktieren Sie uns für ein Preisangebot",
+      "name": "Glasfaserumflochtener Silikon-Flughafenkabel",
+      "category": "KABEL- UND VERBINDUNGSSYSTEME",
+      "subCategory": "Glasfaserumflochtene Silikonkabel",
+      "description": "Spezialkabel für Flughafenbeleuchtungssysteme, glasfaserumflochten, siliconisoliertes Hochtemperaturkabel.",
+      "fullDescription": "Spezialkabel für die Stromversorgung von Flughafenlandebahn- und Rollbahnbeleuchtungssystemen. Siliconisolation, Glasfaserumflechtungsschutz und hohe Temperaturbeständigkeit (-60°C bis +200°C). UV-beständig, flammhemmend und chemikalienresistent.",
+      "price": "Preis auf Anfrage",
       "features": [
-        "Automatische Produktionslinien",
-        "Präzise Qualitätskontrolle",
-        "Hohe Kapazität",
-        "ISO-Zertifizierungen",
-        "Umweltfreundliche Produktion"
+        "Betriebstemperatur: -60°C bis +200°C",
+        "UV-beständig",
+        "Flammhemmend",
+        "Chemikalienresistent",
+        "Flexibel und biegbar"
       ],
       "images": [
-        "/electronics-manufacturing-line.png",
-        "/electronic-components-manufacturing.jpg",
-        "/electronics-quality-control.jpg",
-        "/manufacturing-facility-workers.jpg"
+        "/products/6/fiberglass-silicon-cable-1.jpg",
+        "/products/6/fiberglass-silicon-cable-2.jpg",
+        "/products/6/fiberglass-silicon-cable-3.jpg"
       ],
-      "image": "/electronics-manufacturing-line.png",
+      "image": "/products/fiberglass-silicon-cable-1.jpg",
       "status": "Aktiv",
-      "year": "2021",
+      "year": "2024",
       "technicalSpecs": {
-        "Produktionskapazität": "50.000+ Komponenten/Jahr",
-        "Automatisierungsgrad": "95%",
-        "Qualitätskontrolle": "100% Test",
-        "Zertifizierungen": "ISO 9001, ISO 14001",
-        "Reinraum": "ISO 7 (Klasse 10.000)",
-        "Arbeitsfläche": "2.500 m²"
+        "Leiter": "Kupfer, verzinnert",
+        "Isolation": "Silikon",
+        "Schutz": "Glasfaserumflechtung",
+        "Betriebstemperatur": "-60°C bis +200°C",
+        "Spannungsfestigkeit": "600V/1000V",
+        "Normen": "IEC 60331, IEC 60754",
+        "Farbcodierung": "Standard-Flughafenfarbschema"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/asd.pdf"
+          "file": "/docs/fiberglass-cable-tech-spec.pdf"
         },
         {
-          "title": "Benutzerhandbuch",
-          "file": "/docs/CV_ANILTAHAADAK.pdf"
+          "title": "Prüfberichte",
+          "file": "/docs/fiberglass-cable-tests.pdf"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Konstantstromregler (CCR) - 20KVA",
+      "category": "ELEKTRISCHE UND STEUERUNGSSYSTEME",
+      "subCategory": "CCR (Constant Current Regulators)",
+      "description": "20KVA Konstantstromregler mit digitaler Steuereinheit für Flughafenbeleuchtungssysteme.",
+      "fullDescription": "Konstantstromregler für sicheren und stabilen Betrieb von Flughafenbeleuchtungsschaltkreisen. Digitale Steuerung, Fernüberwachung und -steuerung, Oberschwingungsfilterung und hoher Wirkungsgrad. 6,6A Konstantstromausgang, 20KVA Leistungsfähigkeit.",
+      "price": "Preis auf Anfrage",
+      "features": [
+        "Digitale Steuerung",
+        "Fernüberwachung (RS485/Ethernet)",
+        "Oberschwingungsfilterung (THD <5%)",
+        "Hoher Wirkungsgrad (>92%)",
+        "Temperatur- und Überlastschutz"
+      ],
+      "images": [
+        "/products/7/ccr-20kva-1.jpg",
+        "/products/7/ccr-20kva-2.jpg",
+        "/products/7/ccr-20kva-3.jpg"
+      ],
+      "image": "/products/ccr-20kva-1.jpg",
+      "status": "Aktiv",
+      "year": "2024",
+      "technicalSpecs": {
+        "Leistung": "20 KVA",
+        "Ausgangsstrom": "6,6A konstant",
+        "Eingangsspannung": "380V AC, 3-phasig",
+        "Wirkungsgrad": "92% (typisch)",
+        "THD": "<5%",
+        "Steuerungsschnittstelle": "RS485, Ethernet, Modbus",
+        "Schutzart": "IP20 (Gehäuse), NEMA 1",
+        "Normen": "IEC 61000, EN 55011"
+      },
+      "documents": [
+        {
+          "title": "Technische Spezifikation",
+          "file": "/docs/ccr-20kva-tech-spec.pdf"
+        },
+        {
+          "title": "Verdrahtungsplan",
+          "file": "/docs/ccr-wiring-diagram.pdf"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Beleuchteter Windrichtungsanzeiger (Tetraeder)",
+      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
+      "subCategory": "Wind- und Landezeichen",
+      "description": "Beleuchteter Tetraeder-Windrichtungsanzeiger für Tag- und Nachteinsatz.",
+      "fullDescription": "Beleuchteter Tetraeder-Anzeiger zur visuellen Darstellung der Windrichtung auf Flughäfen und Heliports. Sensible Rotation bereits bei niedrigen Windgeschwindigkeiten, Nachtsicht mit LED-Beleuchtung, Edelstahlwelle und Lagerungssystem.",
+      "price": "Preis auf Anfrage",
+      "features": [
+        "Nachtsicht-LED-Beleuchtung",
+        "Edelstahlwelle",
+        "Niedrigreibungs-Lagerung",
+        "Betrieb ab 3 Knoten Windgeschwindigkeit",
+        "UV-beständige Lackierung"
+      ],
+      "images": [
+        "/products/8/wind-tetrahedron-1.jpg",
+        "/products/8/wind-tetrahedron-2.jpg",
+        "/products/8/wind-tetrahedron-3.jpg"
+      ],
+      "image": "/products/wind-tetrahedron-1.jpg",
+      "status": "Aktiv",
+      "year": "2024",
+      "technicalSpecs": {
+        "Baumaterial": "Aluminium-Verbundstoff",
+        "Höhe": "3,5 Meter (inklusive Basis)",
+        "Beleuchtung": "LED, 20W",
+        "Rotationsbeginn": "3 Knoten Windgeschwindigkeit",
+        "Farben": "Weiß/Rot/Schwarz",
+        "IP-Schutzart": "IP65",
+        "Normen": "ICAO Annex 14"
+      },
+      "documents": [
+        {
+          "title": "Technische Spezifikation",
+          "file": "/docs/wind-tetrahedron-tech-spec.pdf"
+        },
+        {
+          "title": "Montageanleitung",
+          "file": "/docs/wind-tetrahedron-installation.pdf"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "HAPI (Heliport Approach Path Indicator) - LED",
+      "category": "HUBISCHRAUBERLANDEPLATZ- UND HELIPORT-SYSTEME",
+      "subCategory": "HAPI Lichter - LED",
+      "description": "LED-Technologie HAPI-System zur Anzeige des Anflugwinkels für Hubschrauberpiloten.",
+      "fullDescription": "HAPI-System, das Hubschrauberpiloten ermöglicht, sichere Anflugwinkel (typischerweise 6°-9°) visuell zu erkennen. Grün-Rot-LED-Lichtkombination, automatische Helligkeitsregelung, kompaktes und leichtes Design. Ideal für Heliports und Offshore-Plattformen.",
+      "price": "Preis auf Anfrage",
+      "features": [
+        "LED-Technologie, niedriger Energieverbrauch",
+        "Automatische Helligkeitsregelung",
+        "Kompaktes und leichtes Design",
+        "Seewasserbeständig (für Offshore)",
+        "Einfache Installation und Wartung"
+      ],
+      "images": [
+        "/products/9/hapi-led-1.jpg",
+        "/products/9/hapi-led-2.jpg",
+        "/products/9/hapi-led-3.jpg"
+      ],
+      "image": "/products/hapi-led-1.jpg",
+      "status": "Aktiv",
+      "year": "2024",
+      "technicalSpecs": {
+        "Lichtquelle": "LED, 15W",
+        "Farbe": "Grün/Rot",
+        "Neigungswinkel": "6°, 7,5°, 9° (wählbar)",
+        "Sichtweite": "3 NM",
+        "IP-Schutzart": "IP67 (IP68 offshore)",
+        "Betriebstemperatur": "-40°C bis +70°C",
+        "Normen": "ICAO Annex 14 Vol. II, CAP 437"
+      },
+      "documents": [
+        {
+          "title": "Technische Spezifikation",
+          "file": "/docs/hapi-led-tech-spec.pdf"
+        },
+        {
+          "title": "Offshore-Anwendungsleitfaden",
+          "file": "/docs/hapi-offshore-guide.pdf"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Beleuchtetes Wegweiserschild - Rollbahn",
+      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
+      "subCategory": "Beleuchtete Wegweiserschilder",
+      "description": "Beleuchtetes, reflektierendes Wegweiserschild für Rollbahnführung.",
+      "fullDescription": "Beleuchtetes Wegweiserschild für die Führung von Flugzeugen auf Rollbahnen. Innenbeleuchtung, hochkontrastige Buchstaben und Zahlen, retroreflektierende Oberfläche. Aluminium-Verbundstoffgehäuse, Polycarbonat-Schutzabdeckung.",
+      "price": "Preis auf Anfrage",
+      "features": [
+        "Innen-LED-Beleuchtung",
+        "Retroreflektierende Oberfläche",
+        "Hoher Kontrast",
+        "UV-beständiges Material",
+        "Einfacher Zeichenwechsel"
+      ],
+      "images": [
+        "/products/10/taxiway-sign-1.jpg",
+        "/products/10/taxiway-sign-2.jpg",
+        "/products/10/taxiway-sign-3.jpg"
+      ],
+      "image": "/products/taxiway-sign-1.jpg",
+      "status": "Aktiv",
+      "year": "2024",
+      "technicalSpecs": {
+        "Größe": "Standard 1,2m x 0,6m (anpassbar)",
+        "Beleuchtung": "LED, 40W",
+        "Farben": "Schwarz/Gelb (ICAO-Standard)",
+        "IP-Schutzart": "IP66",
+        "Betrachtungswinkel": "±45°",
+        "Zeichenhöhe": "50 cm (Standard)",
+        "Normen": "ICAO Annex 14, FAA AC 150/5345-44"
+      },
+      "documents": [
+        {
+          "title": "Technische Spezifikation",
+          "file": "/docs/taxiway-sign-tech-spec.pdf"
+        },
+        {
+          "title": "Zeichensatz-Katalog",
+          "file": "/docs/sign-character-catalog.pdf"
         }
       ]
     }

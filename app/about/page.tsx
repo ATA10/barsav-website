@@ -362,7 +362,7 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">{aboutData.title}</h1>
-          <p className="text-xl text-muted-foreground text-balance text-white">
+          <p className="text-xl text-foreground text-balance">
             {aboutData.subtitle}
           </p>
         </div>
