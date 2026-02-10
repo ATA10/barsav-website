@@ -2,27 +2,27 @@
   "products": [
     {
       "id": 1,
-      "name": "ICAO-Standard Landebahnkantenlicht (Oberirdischer Typ)",
-      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
-      "subCategory": "Oberirdische Landebahn- und Rollbahnleuchten",
-      "description": "ICAO Annex 14 konformes, hoch belastbares oberirdisches Landebahnkantenbeleuchtungs-Leuchtmittel.",
-      "fullDescription": "Oberirdische LED-Leuchte zur sicheren Markierung von Landebahnkanten. Aluminium-Druckgussgehäuse, Polycarbonat-Linse und 6061T6-Legierung. Geringe Wartungskosten und hohe Energieeffizienz.",
+      "name": "Landebahnrandleuchte (Oberflächenmontiert)",
+      "category": "FLUGHAFEN-BELEUCHTUNGSSYSTEME",
+      "subCategory": "Landebahnrand- und Mittellinienleuchten",
+      "description": "Hochfeste, oberflächenmontierte Landebahnrandleuchte nach ICAO Annex 14.",
+      "fullDescription": "Oberflächenmontierte LED-Leuchte zur sicheren Markierung von Landebahnrändern. Aluminium-Druckgussgehäuse, Polycarbonatlinse und 6061T6-Legierung. Geringe Wartungskosten und hohe Energieeffizienz.",
       "price": "Preis auf Anfrage",
       "features": [
-        "ICAO Annex 14, FAA AC 150/5345-46D konform",
+        "Konform mit ICAO Annex 14, FAA AC 150/5345-46D",
         "IP67 wasser- und staubdicht",
-        "Betriebstemperaturbereich: -40°C bis +70°C",
-        "LED-Technologie mit 100.000 Stunden Lebensdauer",
+        "Betriebstemperatur: -40°C bis +70°C",
+        "100.000 Stunden Lebensdauer mit LED-Technologie",
         "Weiße oder farbige Lichtoptionen"
       ],
       "images": [
         "/products/1/b1.jpg",
-        "/products/1/pist-kenar-isiği-yerustu-1.jpg",
-        "/products/1/pist-kenar-isiği-yerustu-2.jpg",
-        "/products/1/pist-kenar-isiği-yerustu-3.jpg"
+        "/products/1/pist-kenar-isigi-yerustu-1.png",
+        "/products/1/pist-kenar-isigi-yerustu-2.jpg",
+        "/products/1/pist-kenar-isigi-yerustu-3.png"
       ],
-      "image": "/products/pist-kenar-isiği-yerustu-1.jpg",
-      "status": "Aktiv",
+      "image": "/products/1/b1.jpg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
         "Lichtquelle": "LED, 20W",
@@ -39,39 +39,40 @@
           "file": "/docs/pist-kenar-yerustu-tech-spec.pdf"
         },
         {
-          "title": "Installationsanleitung",
+          "title": "Installationshandbuch",
           "file": "/docs/pist-kenar-yerustu-installation.pdf"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Eingelassenes Landebahnmittellinienlicht",
-      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
-      "subCategory": "Eingelassene Landebahn- und Rollbahnleuchten",
-      "description": "Eingelassene LED-Leuchte zur Markierung der Landebahnmittellinie, widerstandsfähig gegen Flugzeuglande-/Startlasten.",
-      "fullDescription": "Eingelassene LED-Leuchte zur sicheren Markierung der Landebahnmittellinie. 80-Tonnen-Achslastwiderstand, Edelstahlgehäuse und Glaslinsenkonstruktion. Wasserdichtes Dichtungssystem.",
+      "name": "Bodengleiche Landebahnmittellinienleuchte",
+      "category": "FLUGHAFEN-BELEUCHTUNGSSYSTEME",
+      "subCategory": "Landebahnrand- und Mittellinienleuchten",
+      "description": "Bodengleiche LED-Leuchte zur Markierung der Landebahnmittellinie, belastbar durch Flugzeuglande-/Startlasten.",
+      "fullDescription": "Bodengleiche LED-Leuchte zur sicheren Markierung der Landebahnmittellinie. 80 Tonnen Achslast beständig, Edelstahlgehäuse und Glaslinse. Wasserdichtes Dichtungssystem.",
       "price": "Preis auf Anfrage",
       "features": [
-        "80-Tonnen-Achslastwiderstand",
-        "Edelstahl 316L Gehäuse",
+        "80 Tonnen Achslast-Beständigkeit",
+        "Edelstahlgehäuse 316L",
         "Berührungslose magnetische Auslösung",
         "IP68 Schutzart",
         "Niedrige Bauform"
       ],
       "images": [
-        "/products/2/gomulu-pist-merkez-1.jpg",
-        "/products/2/gomulu-pist-merkez-2.jpg",
+        "/products/2/gomulu-pist-merkez-5.jpeg",
+        "/products/2/gomulu-pist-merkez-1.png",
+        "/products/2/gomulu-pist-merkez-2.png",
         "/products/2/gomulu-pist-merkez-3.jpg"
       ],
-      "image": "/products/gomulu-pist-merkez-1.jpg",
-      "status": "Aktiv",
+      "image": "/products/2/gomulu-pist-merkez-5.jpeg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
         "Lichtquelle": "LED, 15W",
         "Farbe": "Weiß (für Mittellinie)",
         "IP-Schutzart": "IP68",
-        "Max. Last": "80 Tonnen",
+        "Maximale Last": "80 Tonnen",
         "Betriebstemperatur": "-40°C bis +60°C",
         "Linsenmaterial": "Glas",
         "Garantie": "7 Jahre"
@@ -82,41 +83,42 @@
           "file": "/docs/gomulu-pist-merkez-tech-spec.pdf"
         },
         {
-          "title": "Prüfberichte",
+          "title": "Testberichte",
           "file": "/docs/gomulu-pist-merkez-test.pdf"
         }
       ]
     },
     {
       "id": 3,
-      "name": "PAPI-System (Precision Approach Path Indicator)",
-      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
-      "subCategory": "Anflugbeleuchtungsleuchten",
-      "description": "4-Einheiten PAPI-System mit LED-Technologie, zeigt Piloten den korrekten Anflugwinkel.",
-      "fullDescription": "PAPI-System, das Piloten ermöglicht, den korrekten Anflugwinkel (typischerweise 3°) visuell zu erkennen. Besteht aus 4 Lichteinheiten. Zeigt Anflugwinkel mit Rot-Weiß-Lichtkombination. Verfügbar mit OSRAM Spezialflughafenlampen oder LED-Optionen.",
+      "name": "PAPI-System (Präzisionsanflugneigungsanzeiger)",
+      "category": "FLUGHAFEN-BELEUCHTUNGSSYSTEME",
+      "subCategory": "Anflugbefeuerung",
+      "description": "4-Licht-PAPI-System mit LED-Technologie, zeigt Piloten den korrekten Anflugwinkel.",
+      "fullDescription": "PAPI-System zur visuellen Anzeige des korrekten Anflugwinkels (typisch 3°). Besteht aus 4 Lichtquellen. Rot/Weiß-Lichtkombination zeigt Anflugneigung an. LED-Optionen verfügbar.",
       "price": "Preis auf Anfrage",
       "features": [
-        "ICAO Annex 14 Volume I konform",
-        "LED- oder Halogenlampen-Optionen",
+        "Konform mit ICAO Annex 14 Volume I",
+        "LED-Technologie",
         "Automatische Helligkeitsregelung",
-        "Fernsteuerung und Überwachung",
-        "Langlebiges Aluminiumgehäuse"
+        "Fernüberwachung und -steuerung",
+        "Robustes Aluminiumgehäuse"
       ],
       "images": [
+        "/products/3/papi-system-5.jpg",
         "/products/3/papi-system-1.jpg",
         "/products/3/papi-system-2.jpg",
-        "/products/3/papi-system-3.jpg"
+        "/products/3/papi-system-3.png"
       ],
-      "image": "/products/papi-system-1.jpg",
-      "status": "Aktiv",
+      "image": "/products/3/papi-system-5.png",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
-        "Lichtquelle": "LED (30W) oder Halogen (200W)",
-        "Lichtwinkel": "0,3° - 0,45° vertikal, 10° horizontal",
+        "Lichtquelle": "LED, 30W",
+        "Lichtkegelwinkel": "0,3° - 0,45° vertikal, 10° horizontal",
         "Farbe": "Rot/Weiß",
         "Sichtweite": "5 NM (Tag), 20 NM (Nacht)",
         "IP-Schutzart": "IP66",
-        "Neigungseinstellung": "Einstellbar zwischen 2° - 4,5°",
+        "Neigungseinstellung": "Einstellbar von 2° - 4,5°",
         "Normen": "ICAO Annex 14, FAA AC 150/5345-28"
       },
       "documents": [
@@ -132,69 +134,67 @@
     },
     {
       "id": 4,
-      "name": "Hubschrauberlandeplatz erhöhtes TLOF/FATO Licht",
-      "category": "HUBISCHRAUBERLANDEPLATZ- UND HELIPORT-SYSTEME",
-      "subCategory": "Erhöhte TLOF/FATO Lichter",
-      "description": "Erhöhte LED-Beleuchtung zur Markierung von Hubschrauberlande- und -startbereichen (TLOF/FATO).",
-      "fullDescription": "Erhöhte TLOF (Touchdown and Lift-off Area) und FATO (Final Approach and Take-off Area) Beleuchtungsleuchte für Heliports. Niedrige Bauform, hohe Belastbarkeit und einfache Installation. Markiert sichere Lande-/Startbereiche für Hubschrauberpiloten mit grünem LED-Licht.",
+      "name": "Hubschrauberlandeplatzleuchten",
+      "category": "HUBSTRAUBERLANDEBELEUCHTUNGSSYSTEME",
+      "subCategory": "Hubschrauberlandeplatzrandleuchten",
+      "description": "Erhöhte LED-Leuchten zur Markierung von Hubschrauberlande- und -startbereichen (TLOF/FATO).",
+      "fullDescription": "Erhöhte TLOF- und FATO-Leuchte für Hubschrauberlandeplätze. Niedrige Bauform, hohe Belastbarkeit und einfache Installation. Markiert sichere Lande-/Startbereiche für Hubschrauberpiloten mit grünem LED-Licht.",
       "price": "Preis auf Anfrage",
       "features": [
-        "ICAO Annex 14 Volume II konform",
-        "Grünes LED-Licht (Heliport-Standard)",
+        "Konform mit ICAO Annex 14 Volume II",
+        "Grünes LED-Licht (Hubschrauberstandard)",
         "Niedrige Bauform",
         "Stoßfest",
         "Schnellmontagehalterung"
       ],
       "images": [
-        "/products/4/heliport-tlof-raised-1.jpg",
-        "/products/4/heliport-tlof-raised-2.jpg",
-        "/products/4/heliport-tlof-raised-3.jpg"
+        "/products/4/heliport-kenar-4.jpeg",
+        "/products/4/heliport-kenar-1.jpg",
+        "/products/4/heliport-kenar-2.jpg",
+        "/products/4/heliport-kenar-3.jpg",
+        "/products/4/heliport-sema.png"
       ],
-      "image": "/products/heliport-tlof-raised-1.jpg",
-      "status": "Aktiv",
+      "image": "/products/4/heliport-kenar-4.jpeg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
         "Lichtquelle": "LED, 10W",
-        "Farbe": "Grün (Heliport-Standard)",
+        "Farbe": "Grün (Hubschrauberstandard)",
         "IP-Schutzart": "IP67",
         "Höhe": "30 cm (einstellbar)",
         "Betriebsspannung": "24V DC oder 110V AC",
-        "Lichtwinkel": "360° horizontal",
+        "Lichtkegelwinkel": "360° horizontal",
         "Normen": "ICAO Annex 14 Vol. II, CAP 437"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/heliport-tlof-tech-spec.pdf"
+          "file": "/docs/heliport-kenar-tech-spec.pdf"
         },
         {
-          "title": "Installationsanleitung",
-          "file": "/docs/heliport-tlof-installation.pdf"
+          "title": "Installationshandbuch",
+          "file": "/docs/heliport-kenar-installation.pdf"
         }
       ]
     },
     {
       "id": 5,
-      "name": "OSRAM stromgeregelte Halogen-Flughafenlampe",
-      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
+      "name": "Halogen-Flughafenlampe",
+      "category": "FLUGHAFEN-BELEUCHTUNGSSYSTEME",
       "subCategory": "Flughafenlampen",
-      "description": "OSRAM Spezialserie, stromgeregelte, hochleistungsfähige Halogen-Flughafenbeleuchtungslampe.",
-      "fullDescription": "OSRAM Halogenlampe speziell für Flughafenbeleuchtungssysteme hergestellt. Integrierte Stromregelungsschaltung, lange Lebensdauer und hohe Lichtausbeute. Standard E27/E40 Sockel kompatibel, Retrofit-Lösung für bestehende Systeme.",
+      "description": "Stromgeregelte, hochleistungsfähige Halogen-Flughafenbeleuchtungslampe.",
+      "fullDescription": "Spezial-Halogenlampe für Flughafenbeleuchtungssysteme. Integrierte Stromregelungsschaltung, lange Lebensdauer und hohe Lichtausbeute. Kompatibel mit Standard-E27/E40-Sockeln, Nachrüstlösung für bestehende Systeme.",
       "price": "Preis auf Anfrage",
       "features": [
         "Integrierte Stromregelungsschaltung",
         "Hohe Lichtausbeute (20 lm/W)",
         "Lange Lebensdauer (4000 Stunden)",
-        "E27/E40 Sockel kompatibel",
+        "E27/E40-Sockel kompatibel",
         "Stoß- und vibrationsfest"
       ],
-      "images": [
-        "/products/5/osram-airport-bulb-1.jpg",
-        "/products/5/osram-airport-bulb-2.jpg",
-        "/products/5/osram-airport-bulb-3.jpg"
-      ],
-      "image": "/products/osram-airport-bulb-1.jpg",
-      "status": "Aktiv",
+      "images": ["/products/5/airport-bulb-3.jpeg", "/products/5/airport-bulb-1.jpg", "/products/5/airport-bulb-2.jpg"],
+      "image": "/products/5/airport-bulb-3.jpeg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
         "Leistung": "200W, 400W, 600W Optionen",
@@ -203,50 +203,50 @@
         "Lebensdauer": "4000 Stunden",
         "Sockeltyp": "E27 oder E40",
         "Stromregelung": "Integriert",
-        "Hersteller": "OSRAM (Sonderserie)"
+        "Normen": "FAA, ICAO"
       },
       "documents": [
         {
           "title": "Technischer Katalog",
-          "file": "/docs/osram-airport-bulb-catalog.pdf"
+          "file": "/docs/airport-bulb-catalog.pdf"
         },
         {
           "title": "Kompatibilitätsliste",
-          "file": "/docs/osram-compatibility-list.pdf"
+          "file": "/docs/airport-bulb-compatibility.pdf"
         }
       ]
     },
     {
       "id": 6,
-      "name": "Glasfaserumflochtener Silikon-Flughafenkabel",
+      "name": "Glasfasergeflecht-Silikon-Flughafenkabel",
       "category": "KABEL- UND VERBINDUNGSSYSTEME",
-      "subCategory": "Glasfaserumflochtene Silikonkabel",
-      "description": "Spezialkabel für Flughafenbeleuchtungssysteme, glasfaserumflochten, siliconisoliertes Hochtemperaturkabel.",
-      "fullDescription": "Spezialkabel für die Stromversorgung von Flughafenlandebahn- und Rollbahnbeleuchtungssystemen. Siliconisolation, Glasfaserumflechtungsschutz und hohe Temperaturbeständigkeit (-60°C bis +200°C). UV-beständig, flammhemmend und chemikalienresistent.",
+      "subCategory": "Spezielle Flughafenkabel",
+      "description": "Speziell entwickeltes, glasfasergeflechtetes, silikonisoliertes Hochtemperaturkabel für Flughafenbeleuchtungssysteme.",
+      "fullDescription": "Spezialkabel für die Stromversorgung von Flughafenlandebahn- und Rollwegbeleuchtungssystemen. Silikonisolation, Glasfasergeflecht-Schutz und Hochtemperaturbeständigkeit (-60°C bis +200°C). UV-beständig, flammhemmend und chemikalienresistent.",
       "price": "Preis auf Anfrage",
       "features": [
-        "Betriebstemperatur: -60°C bis +200°C",
+        "-60°C bis +200°C Betrieb",
         "UV-beständig",
         "Flammhemmend",
         "Chemikalienresistent",
         "Flexibel und biegbar"
       ],
       "images": [
-        "/products/6/fiberglass-silicon-cable-1.jpg",
-        "/products/6/fiberglass-silicon-cable-2.jpg",
-        "/products/6/fiberglass-silicon-cable-3.jpg"
+        "/products/6/fiberglass-cable-1.jpg",
+        "/products/6/fiberglass-cable-2.jpg",
+        "/products/6/fiberglass-cable-3.jpg"
       ],
-      "image": "/products/fiberglass-silicon-cable-1.jpg",
-      "status": "Aktiv",
+      "image": "/products/6/fiberglass-cable-1.jpg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
         "Leiter": "Kupfer, verzinnert",
         "Isolation": "Silikon",
-        "Schutz": "Glasfaserumflechtung",
+        "Schutz": "Glasfasergeflecht",
         "Betriebstemperatur": "-60°C bis +200°C",
         "Spannungsfestigkeit": "600V/1000V",
         "Normen": "IEC 60331, IEC 60754",
-        "Farbcodierung": "Standard-Flughafenfarbschema"
+        "Farbkodierung": "Standard-Flughafenfarbe"
       },
       "documents": [
         {
@@ -254,48 +254,43 @@
           "file": "/docs/fiberglass-cable-tech-spec.pdf"
         },
         {
-          "title": "Prüfberichte",
+          "title": "Testberichte",
           "file": "/docs/fiberglass-cable-tests.pdf"
         }
       ]
     },
     {
       "id": 7,
-      "name": "Konstantstromregler (CCR) - 20KVA",
-      "category": "ELEKTRISCHE UND STEUERUNGSSYSTEME",
-      "subCategory": "CCR (Constant Current Regulators)",
-      "description": "20KVA Konstantstromregler mit digitaler Steuereinheit für Flughafenbeleuchtungssysteme.",
-      "fullDescription": "Konstantstromregler für sicheren und stabilen Betrieb von Flughafenbeleuchtungsschaltkreisen. Digitale Steuerung, Fernüberwachung und -steuerung, Oberschwingungsfilterung und hoher Wirkungsgrad. 6,6A Konstantstromausgang, 20KVA Leistungsfähigkeit.",
+      "name": "Konstantstromregler (CCR) - 5 Stufen",
+      "category": "FLUGHAFEN-BELEUCHTUNGSSYSTEME",
+      "subCategory": "Konstantstromregler",
+      "description": "5-stufiger (2,8A - 6,6A) Konstantstromregler mit digitaler Steuerung für Flughafenbeleuchtungssysteme.",
+      "fullDescription": "Konstantstromregler für sicheren und stabilen Betrieb von Flughafen- und Hubschrauberlandeplatzbeleuchtungsschaltkreisen. 5-stufige Stromregelung, digitale Bedientafel, Fernüberwachung und Steuerung. Für Systemstromversorgung optimiert.",
       "price": "Preis auf Anfrage",
       "features": [
-        "Digitale Steuerung",
+        "5-stufige Stromregelung (2,8A - 6,6A)",
+        "Digitale Bedientafel",
         "Fernüberwachung (RS485/Ethernet)",
-        "Oberschwingungsfilterung (THD <5%)",
-        "Hoher Wirkungsgrad (>92%)",
+        "Harmonische Filterung",
         "Temperatur- und Überlastschutz"
       ],
-      "images": [
-        "/products/7/ccr-20kva-1.jpg",
-        "/products/7/ccr-20kva-2.jpg",
-        "/products/7/ccr-20kva-3.jpg"
-      ],
-      "image": "/products/ccr-20kva-1.jpg",
-      "status": "Aktiv",
+      "images": ["/products/7/ccr-5k-4.jpeg","/products/7/ccr-5k-1.jpg", "/products/7/ccr-5k-2.jpg", "/products/7/ccr-5k-3.jpg"],
+      "image": "/products/7/ccr-5k-4.jpeg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
-        "Leistung": "20 KVA",
-        "Ausgangsstrom": "6,6A konstant",
+        "Leistung": "3-20 KVA Optionen",
+        "Ausgangsstrom": "2,8A, 3,5A, 4,2A, 5,0A, 6,6A",
         "Eingangsspannung": "380V AC, 3-phasig",
-        "Wirkungsgrad": "92% (typisch)",
-        "THD": "<5%",
+        "Effizienz": "92% (typisch)",
         "Steuerungsschnittstelle": "RS485, Ethernet, Modbus",
-        "Schutzart": "IP20 (Gehäuse), NEMA 1",
+        "Schutzart": "IP20 (Bedienfeld)",
         "Normen": "IEC 61000, EN 55011"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/ccr-20kva-tech-spec.pdf"
+          "file": "/docs/ccr-tech-spec.pdf"
         },
         {
           "title": "Verdrahtungsplan",
@@ -305,119 +300,79 @@
     },
     {
       "id": 8,
-      "name": "Beleuchteter Windrichtungsanzeiger (Tetraeder)",
-      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
-      "subCategory": "Wind- und Landezeichen",
-      "description": "Beleuchteter Tetraeder-Windrichtungsanzeiger für Tag- und Nachteinsatz.",
-      "fullDescription": "Beleuchteter Tetraeder-Anzeiger zur visuellen Darstellung der Windrichtung auf Flughäfen und Heliports. Sensible Rotation bereits bei niedrigen Windgeschwindigkeiten, Nachtsicht mit LED-Beleuchtung, Edelstahlwelle und Lagerungssystem.",
+      "name": "Beleuchteter Windhose",
+      "category": "HUBSTRAUBERLANDEBELEUCHTUNGSSYSTEME",
+      "subCategory": "Windrichtungsanzeiger",
+      "description": "Beleuchteter Windhose für Tag- und Nachteinsatz, mit weißer Beleuchtung und roten Hindernismarkierungen.",
+      "fullDescription": "Beleuchteter Windhose zur visuellen Anzeige der Windrichtung auf Hubschrauberlandeplätzen. Geeignet für Tag- und Nachteinsatz mit weißer Beleuchtung und roten Hindernismarkierungen. Präzise Drehung bereits bei geringen Windgeschwindigkeiten.",
       "price": "Preis auf Anfrage",
       "features": [
-        "Nachtsicht-LED-Beleuchtung",
-        "Edelstahlwelle",
-        "Niedrigreibungs-Lagerung",
-        "Betrieb ab 3 Knoten Windgeschwindigkeit",
-        "UV-beständige Lackierung"
+        "Weiße LED-Beleuchtung",
+        "Rote Hindernismarkierungen",
+        "Niedrigreibungs-Drehsystem",
+        "UV-beständiges Material",
+        "Einfache Installation"
       ],
       "images": [
-        "/products/8/wind-tetrahedron-1.jpg",
-        "/products/8/wind-tetrahedron-2.jpg",
-        "/products/8/wind-tetrahedron-3.jpg"
+        "/products/8/koni-5.jpeg",
+        "/products/8/wind-cone-1.jpg",
+        "/products/8/wind-cone-2.jpg",
+        "/products/8/wind-cone-3.jpg",
+        "/products/8/heliport-sema.png"
       ],
-      "image": "/products/wind-tetrahedron-1.jpg",
-      "status": "Aktiv",
+      "image": "/products/8/koni-5.jpeg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
-        "Baumaterial": "Aluminium-Verbundstoff",
-        "Höhe": "3,5 Meter (inklusive Basis)",
-        "Beleuchtung": "LED, 20W",
-        "Rotationsbeginn": "3 Knoten Windgeschwindigkeit",
-        "Farben": "Weiß/Rot/Schwarz",
+        "Material": "Leichtes Verbundmaterial",
+        "Höhe": "2-3 Meter",
+        "Beleuchtung": "Weiße LED, 10W",
+        "Drehbeginn": "3 Knoten Windgeschwindigkeit",
         "IP-Schutzart": "IP65",
         "Normen": "ICAO Annex 14"
       },
       "documents": [
         {
           "title": "Technische Spezifikation",
-          "file": "/docs/wind-tetrahedron-tech-spec.pdf"
+          "file": "/docs/wind-cone-tech-spec.pdf"
         },
         {
-          "title": "Montageanleitung",
-          "file": "/docs/wind-tetrahedron-installation.pdf"
+          "title": "Installationsanleitung",
+          "file": "/docs/wind-cone-installation.pdf"
         }
       ]
     },
     {
       "id": 9,
-      "name": "HAPI (Heliport Approach Path Indicator) - LED",
-      "category": "HUBISCHRAUBERLANDEPLATZ- UND HELIPORT-SYSTEME",
-      "subCategory": "HAPI Lichter - LED",
-      "description": "LED-Technologie HAPI-System zur Anzeige des Anflugwinkels für Hubschrauberpiloten.",
-      "fullDescription": "HAPI-System, das Hubschrauberpiloten ermöglicht, sichere Anflugwinkel (typischerweise 6°-9°) visuell zu erkennen. Grün-Rot-LED-Lichtkombination, automatische Helligkeitsregelung, kompaktes und leichtes Design. Ideal für Heliports und Offshore-Plattformen.",
-      "price": "Preis auf Anfrage",
-      "features": [
-        "LED-Technologie, niedriger Energieverbrauch",
-        "Automatische Helligkeitsregelung",
-        "Kompaktes und leichtes Design",
-        "Seewasserbeständig (für Offshore)",
-        "Einfache Installation und Wartung"
-      ],
-      "images": [
-        "/products/9/hapi-led-1.jpg",
-        "/products/9/hapi-led-2.jpg",
-        "/products/9/hapi-led-3.jpg"
-      ],
-      "image": "/products/hapi-led-1.jpg",
-      "status": "Aktiv",
-      "year": "2024",
-      "technicalSpecs": {
-        "Lichtquelle": "LED, 15W",
-        "Farbe": "Grün/Rot",
-        "Neigungswinkel": "6°, 7,5°, 9° (wählbar)",
-        "Sichtweite": "3 NM",
-        "IP-Schutzart": "IP67 (IP68 offshore)",
-        "Betriebstemperatur": "-40°C bis +70°C",
-        "Normen": "ICAO Annex 14 Vol. II, CAP 437"
-      },
-      "documents": [
-        {
-          "title": "Technische Spezifikation",
-          "file": "/docs/hapi-led-tech-spec.pdf"
-        },
-        {
-          "title": "Offshore-Anwendungsleitfaden",
-          "file": "/docs/hapi-offshore-guide.pdf"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Beleuchtetes Wegweiserschild - Rollbahn",
-      "category": "FLUGHAFEN LANDEBAHN- UND ROLLBAHNBELECHTUNGSSYSTEME",
-      "subCategory": "Beleuchtete Wegweiserschilder",
-      "description": "Beleuchtetes, reflektierendes Wegweiserschild für Rollbahnführung.",
-      "fullDescription": "Beleuchtetes Wegweiserschild für die Führung von Flugzeugen auf Rollbahnen. Innenbeleuchtung, hochkontrastige Buchstaben und Zahlen, retroreflektierende Oberfläche. Aluminium-Verbundstoffgehäuse, Polycarbonat-Schutzabdeckung.",
+      "name": "Beleuchtetes Wegweiserschild",
+      "category": "FLUGHAFEN-BELEUCHTUNGSSYSTEME",
+      "subCategory": "Beleuchtete Beschilderung",
+      "description": "Beleuchtetes, reflektierendes Wegweiserschild für Rollwegführung.",
+      "fullDescription": "Beleuchtetes Wegweiserschild zur Führung von Flugzeugen auf Rollwegen. Innenbeleuchtet, hochkontrastreiche Buchstaben/Zahlen, retroreflektierende Oberfläche. Aluminium-Verbundgehäuse, Polycarbonat-Schutzabdeckung.",
       "price": "Preis auf Anfrage",
       "features": [
         "Innen-LED-Beleuchtung",
         "Retroreflektierende Oberfläche",
-        "Hoher Kontrast",
+        "Hochkontrast-Sichtbarkeit",
         "UV-beständiges Material",
         "Einfacher Zeichenwechsel"
       ],
       "images": [
+        "/products/10/taxiway-sign-5.jpg",
         "/products/10/taxiway-sign-1.jpg",
         "/products/10/taxiway-sign-2.jpg",
-        "/products/10/taxiway-sign-3.jpg"
+        "/products/10/taxiway-sign-3.jpg",
+        "/products/10/taxiway-sign-4.jpg"
       ],
-      "image": "/products/taxiway-sign-1.jpg",
-      "status": "Aktiv",
+      "image": "/products/10/taxiway-sign-5.jpg",
+      "status": "Auf Lager",
       "year": "2024",
       "technicalSpecs": {
-        "Größe": "Standard 1,2m x 0,6m (anpassbar)",
+        "Abmessungen": "Standard 1,2m x 0,6m (individuell anpassbar)",
         "Beleuchtung": "LED, 40W",
         "Farben": "Schwarz/Gelb (ICAO-Standard)",
         "IP-Schutzart": "IP66",
-        "Betrachtungswinkel": "±45°",
+        "Blickwinkel": "±45°",
         "Zeichenhöhe": "50 cm (Standard)",
         "Normen": "ICAO Annex 14, FAA AC 150/5345-44"
       },
@@ -427,10 +382,84 @@
           "file": "/docs/taxiway-sign-tech-spec.pdf"
         },
         {
-          "title": "Zeichensatz-Katalog",
+          "title": "Zeichensatzkatalog",
           "file": "/docs/sign-character-catalog.pdf"
         }
       ]
+    },
+    {
+      "id": 10,
+      "name": "Scheiben-Montagemaschine",
+      "category": "FLUGZEUG-BODENAUSRÜSTUNG",
+      "subCategory": "Bodenunterstützungsgeräte",
+      "description": "Scheiben-Montagemaschine für das Luftwaffenkommando.",
+      "fullDescription": "Scheiben-Montagemaschine (DIM) ist ein spezielles Gerät für schnelle und sichere Montage von Scheibeneinheiten in Flugzeug-Fangsystemen für das Luftwaffenkommando. Angetrieben von 13PS Benzinmotor, montiert 1\" und 1,25\" Scheibeneinheiten in 18-27 Sekunden. Leicht per Anhänger transportierbar.",
+      "price": "Auf Anfrage",
+      "features": [
+        "13PS Benzinmotor",
+        "Montiert 1\" und 1,25\" Scheibeneinheiten",
+        "18-27 Sekunden Montagezeit",
+        "Leichter Transport per Anhänger",
+        "40-Liter-Hydraulikölkapazität",
+        "350 kg Gesamtgewicht",
+        "250 bar maximaler Betriebsdruck",
+        "NATO-zugelassen"
+      ],
+      "images": [
+        "/products/16/disc-installation-machine-4.jpeg",
+        "/products/16/disc-installation-machine-1.jpg",
+        "/products/16/disc-installation-machine-2.jpg",
+        "/products/16/disc-installation-machine-3.jpg"
+      ],
+      "image": "/products/16/disc-installation-machine-4.jpeg",
+      "status": "Auf Lager",
+      "year": "2024",
+      "technicalSpecs": {
+        "Teilenummer": "BRS-DBM-v130",
+        "NCAGE": "TG793",
+        "NSN": "1730270668062",
+        "Motor": "13PS Benzin",
+        "Scheibengrößen": "1\" und 1,25\"",
+        "Montagezeit": "18-27 Sekunden",
+        "Hydraulikkapazität": "40 Liter",
+        "Gewicht": "350 kg",
+        "Max. Druck": "250 bar"
+      }
+    },
+    {
+      "id": 11,
+      "name": "MILES-Schießsimulation und Militärsimulatorsysteme",
+      "category": "MILITÄRSIMULATOREN",
+      "subCategory": "Schieß- und Panzersimulatoren",
+      "description": "MILES-Schießsimulation, Panzersimulator und Schießsimulatorsysteme.",
+      "fullDescription": "MILES-Schießsimulationssysteme (Multiple Integrated Laser Engagement System) bieten realistische Trainings- und Übungsumgebungen für militärische Ausbildung. Integrierbar mit Panzer- und Schießsimulatoren. Ermöglicht realistische Gefechtsszenarien ohne scharfe Munition, reduziert Kosten und bietet sichere Ausbildungsumgebung.",
+      "price": "Auf Anfrage",
+      "features": [
+        "MILES-Lasersystemintegration",
+        "Panzersimulator-Unterstützung",
+        "Schießsimulatorsysteme",
+        "Realistische Ausbildungsszenarien",
+        "Keine scharfe Munition erforderlich",
+        "Niedrige Betriebskosten",
+        "Sichere Ausbildungsumgebung",
+        "Integrierte logistische Unterstützung",
+        "Datenanalyse und Berichterstattung"
+      ],
+      "images": [
+        "/products/17/miles-firing-simulation-1.jpg",
+        "/products/17/tank-simulator-1.jpg",
+        "/products/17/shooting-simulator-1.jpg"
+      ],
+      "image": "/products/17/miles-firing-simulation-1.jpg",
+      "status": "Auf Lager",
+      "year": "2024",
+      "technicalSpecs": {
+        "Systemtyp": "MILES-Lasersystem",
+        "Integration": "Panzer- und Schießsimulatoren",
+        "Ausbildungsart": "Echtzeitübungen",
+        "Datenerfassung": "Digitale Berichterstattung",
+        "Wartung": "Geringer Wartungsaufwand"
+      }
     }
   ]
 }

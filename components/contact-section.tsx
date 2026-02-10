@@ -129,7 +129,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 <p className="text-accent font-semibold mb-1">
                   {getTranslation(language, "contact.email")}
                 </p>
-                <p className="text-foreground">info@barsav.com</p>
+                <p className="text-foreground">info@barsav.com.tr</p>
               </div>
             </div>
           </div>

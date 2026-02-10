@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "ICAO Standart Pist Kenar Işığı (Yerüstü Tip)",
+      "name": "Pist Kenar Armatürü (Yerüstü Tip)",
       "category": "HAVALİMANI PİST AYDINLATMA SİSTEMLERİ",
       "subCategory": "Pist Kenar ve Merkez Işıkları",
       "description": "ICAO Annex 14 standartlarına uygun, yüksek dayanımlı yerüstü tip pist kenar aydınlatma armatürü.",
@@ -46,7 +46,7 @@
     },
     {
       "id": 2,
-      "name": "Gömülü Tip Pist Merkez Hattı Işığı",
+      "name": "Gömülü Tip Pist Merkez Hattı Armatürü",
       "category": "HAVALİMANI PİST AYDINLATMA SİSTEMLERİ",
       "subCategory": "Pist Kenar ve Merkez Işıkları",
       "description": "Pist merkez hattının işaretlenmesi için gömülü tip, uçak iniş-kalkış yüklerine dayanıklı LED armatür.",
@@ -60,11 +60,12 @@
         "Düşük profil tasarım"
       ],
       "images": [
+        "/products/2/gomulu-pist-merkez-5.jpeg",
         "/products/2/gomulu-pist-merkez-1.png",
         "/products/2/gomulu-pist-merkez-2.png",
         "/products/2/gomulu-pist-merkez-3.jpg"
       ],
-      "image": "/products/2/gomulu-pist-merkez-1.png",
+      "image": "/products/2/gomulu-pist-merkez-5.jpeg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -102,8 +103,13 @@
         "Uzaktan kontrol ve izleme",
         "Dayanıklı alüminyum gövde"
       ],
-      "images": ["/products/3/papi-system-1.jpg", "/products/3/papi-system-2.jpg", "/products/3/papi-system-3.png"],
-      "image": "/products/3/papi-system-1.jpg",
+      "images": [
+        "/products/3/papi-system-5.jpg", 
+        "/products/3/papi-system-1.jpg", 
+        "/products/3/papi-system-2.jpg", 
+        "/products/3/papi-system-3.png"
+      ],
+      "image": "/products/3/papi-system-5.png",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -128,7 +134,7 @@
     },
     {
       "id": 4,
-      "name": "Helikopter Pisti Yükseltilmiş Kenar Işığı (TLOF/FATO)",
+      "name": "Helikopter Pisti Armatürleri",
       "category": "HELİKOPTER PİSTİ AYDINLATMA SİSTEMLERİ",
       "subCategory": "Helikopter Pisti Kenar Işıkları",
       "description": "Helikopter iniş ve kalkış alanlarının (TLOF/FATO) işaretlenmesi için yükseltilmiş tip LED aydınlatma.",
@@ -142,12 +148,13 @@
         "Hızlı kurulum braketi"
       ],
       "images": [
+        "/products/4/heliport-kenar-4.jpeg",
         "/products/4/heliport-kenar-1.jpg",
         "/products/4/heliport-kenar-2.jpg",
         "/products/4/heliport-kenar-3.jpg",
         "/products/4/heliport-sema.png"
       ],
-      "image": "/products/4/heliport-kenar-1.jpg",
+      "image": "/products/4/heliport-kenar-4.jpeg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -185,8 +192,8 @@
         "E27/E40 duy uyumlu",
         "Şok ve titreşim dayanımlı"
       ],
-      "images": ["/products/5/airport-bulb-1.jpg", "/products/5/airport-bulb-2.jpg", "/products/5/airport-bulb-3.jpg"],
-      "image": "/products/5/airport-bulb-1.jpg",
+      "images": ["/products/5/airport-bulb-3.jpeg", "/products/5/airport-bulb-1.jpg", "/products/5/airport-bulb-2.jpg"],
+      "image": "/products/5/airport-bulb-3.jpeg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -267,8 +274,8 @@
         "Harmonik filtreleme",
         "Sıcaklık ve aşırı yük koruması"
       ],
-      "images": ["/products/7/ccr-5k-1.jpg", "/products/7/ccr-5k-2.jpg", "/products/7/ccr-5k-3.jpg"],
-      "image": "/products/7/ccr-5k-1.jpg",
+      "images": ["/products/7/ccr-5k-4.jpeg","/products/7/ccr-5k-1.jpg", "/products/7/ccr-5k-2.jpg", "/products/7/ccr-5k-3.jpg"],
+      "image": "/products/7/ccr-5k-4.jpeg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -307,12 +314,13 @@
         "Kolay kurulum"
       ],
       "images": [
+        "/products/8/koni-5.jpeg",
         "/products/8/wind-cone-1.jpg",
         "/products/8/wind-cone-2.jpg",
         "/products/8/wind-cone-3.jpg",
         "/products/8/heliport-sema.png"
       ],
-      "image": "/products/8/wind-cone-1.jpg",
+      "image": "/products/8/koni-5.jpeg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -336,51 +344,7 @@
     },
     {
       "id": 9,
-      "name": "HAPI (Heliport Approach Path Indicator) - LED",
-      "category": "HELİKOPTER PİSTİ AYDINLATMA SİSTEMLERİ",
-      "subCategory": "Yaklaşma Işıkları",
-      "description": "Helikopter pilotlarına yaklaşma eğimini gösteren LED teknolojili HAPI sistemi.",
-      "fullDescription": "Helikopter pilotlarının güvenli yaklaşma eğimini (genellikle 6°-9°) görsel olarak algılamalarını sağlayan HAPI sistemi. Yeşil ve kırmızı LED ışık kombinasyonu, otomatik parlaklık kontrolü, kompakt ve hafif tasarım. Heliport ve offshore platformlar için ideal.",
-      "price": "Fiyat Teklifi İçin İletişime Geçin",
-      "features": [
-        "LED teknolojisi, düşük enerji tüketimi",
-        "Otomatik parlaklık kontrolü",
-        "Kompakt ve hafif tasarım",
-        "Deniz suyuna dayanıklı (offshore için)",
-        "Kolay kurulum ve bakım"
-      ],
-      "images": [
-        "/products/9/hapi-led-1.jpg",
-        "/products/9/hapi-led-2.jpg",
-        "/products/9/hapi-led-3.jpg",
-        "/products/9/heliport-sema.png"
-      ],
-      "image": "/products/9/hapi-led-1.jpg",
-      "status": "Stokta",
-      "year": "2024",
-      "technicalSpecs": {
-        "Işık Kaynağı": "LED, 15W",
-        "Renk": "Yeşil/Kırmızı",
-        "Eğim Açısı": "6°, 7.5°, 9° (seçilebilir)",
-        "Görüş Mesafesi": "3 NM",
-        "IP Sınıfı": "IP67 (IP68 offshore)",
-        "Çalışma Sıcaklığı": "-40°C ile +70°C",
-        "Standartlar": "ICAO Annex 14 Vol. II, CAP 437"
-      },
-      "documents": [
-        {
-          "title": "Teknik Şartname",
-          "file": "/docs/hapi-led-tech-spec.pdf"
-        },
-        {
-          "title": "Offshore Uygulama Kılavuzu",
-          "file": "/docs/hapi-offshore-guide.pdf"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Işıklı Yönlendirme Levhası - Taksi Yolu",
+      "name": "Işıklı Yönlendirme Levhası",
       "category": "HAVALİMANI PİST AYDINLATMA SİSTEMLERİ",
       "subCategory": "Aydınlatılmış İşaret Levhaları",
       "description": "Taksi yolu yönlendirmesi için ışıklı, yansıtıcılı yönlendirme levhası.",
@@ -394,12 +358,13 @@
         "Kolay karakter değişimi"
       ],
       "images": [
+        "/products/10/taxiway-sign-5.jpg",
         "/products/10/taxiway-sign-1.jpg",
         "/products/10/taxiway-sign-2.jpg",
         "/products/10/taxiway-sign-3.jpg",
         "/products/10/taxiway-sign-4.jpg"
       ],
-      "image": "/products/10/taxiway-sign-1.jpg",
+      "image": "/products/10/taxiway-sign-5.jpg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -423,208 +388,7 @@
       ]
     },
     {
-      "id": 11,
-      "name": "Helikopter Pisti Merkez Armatürü (TLOF Temas Işıkları)",
-      "category": "HELİKOPTER PİSTİ AYDINLATMA SİSTEMLERİ",
-      "subCategory": "Helikopter Merkez Işıkları",
-      "description": "TLOF temas noktasını işaretleyen merkez armatür, beyaz ışıklı, 1x45W veya LED.",
-      "fullDescription": "Helikopter TLOF (Touchdown and Lift-off Area) merkezini işaretlemek için tasarlanmış LED armatür. Beyaz ışık yayar. 1x45W veya LED seçenekleri mevcuttur. Gömülü veya yükseltilmiş montaj seçenekleri.",
-      "price": "Fiyat Teklifi İçin İletişime Geçin",
-      "features": [
-        "TLOF merkez işaretleme",
-        "Beyaz LED ışık",
-        "1x45W veya LED seçeneği",
-        "Gömülü veya yükseltilmiş tip",
-        "Yüksek görünürlük"
-      ],
-      "images": [
-        "/products/11/heliport-merkez-1.jpg",
-        "/products/11/heliport-merkez-2.jpg",
-        "/products/11/heliport-merkez-3.png",
-        "/products/11/heliport-merkez-4.png",
-        "/products/11/heliport-merkez-5.jpg",
-        "/products/11/heliport-sema.png"
-      ],
-      "image": "/products/11/heliport-merkez-1.jpg",
-      "status": "Stokta",
-      "year": "2024",
-      "technicalSpecs": {
-        "Işık Kaynağı": "LED veya 45W",
-        "Renk": "Beyaz",
-        "IP Sınıfı": "IP67",
-        "Kurulum Tipi": "Gömülü veya Yükseltilmiş",
-        "Çalışma Sıcaklığı": "-40°C ile +70°C",
-        "Standartlar": "ICAO Annex 14 Vol. II"
-      },
-      "documents": [
-        {
-          "title": "Teknik Şartname",
-          "file": "/docs/heliport-merkez-tech-spec.pdf"
-        },
-        {
-          "title": "Montaj Seçenekleri",
-          "file": "/docs/heliport-mounting-options.pdf"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Helikopter Pisti Çevre Aydınlatma Armatürü",
-      "category": "HELİKOPTER PİSTİ AYDINLATMA SİSTEMLERİ",
-      "subCategory": "Alan Aydınlatma Işıkları",
-      "description": "TLOF alan aydınlatması için yüksek güçlü çevre aydınlatma armatürü, 1x200W veya LED.",
-      "fullDescription": "Helikopter pisti çevresinin genel aydınlatılması için tasarlanmış yüksek güçlü LED armatür. Beyaz ışık yayar. 1x200W veya LED seçenekleri mevcuttur. Geniş açılı ışık dağılımı ile etkili aydınlatma sağlar.",
-      "price": "Fiyat Teklifi İçin İletişime Geçin",
-      "features": [
-        "TLOF alan aydınlatması",
-        "1x200W veya LED seçeneği",
-        "Beyaz LED ışık",
-        "Geniş açılı aydınlatma",
-        "Uzun ömürlü tasarım"
-      ],
-      "images": [
-        "/products/12/heliport-cevre-1.jpg",
-        "/products/12/heliport-cevre-2.jpg",
-        "/products/12/heliport-cevre-3.jpg",
-        "/products/12/heliport-cevre-4.png",
-        "/products/12/heliport-cevre-5.png",
-        "/products/12/heliport-cevre-6.jpg",
-        "/products/12/heliport-sema.png"
-      ],
-      "image": "/products/12/heliport-cevre-1.jpg",
-      "status": "Stokta",
-      "year": "2024",
-      "technicalSpecs": {
-        "Işık Kaynağı": "LED veya 200W",
-        "Renk": "Beyaz",
-        "IP Sınıfı": "IP65",
-        "Işık Açısı": "120°",
-        "Aydınlatma Alanı": "50-100 m²",
-        "Standartlar": "ICAO Annex 14 Vol. II"
-      },
-      "documents": [
-        {
-          "title": "Teknik Şartname",
-          "file": "/docs/heliport-cevre-tech-spec.pdf"
-        },
-        {
-          "title": "Aydınlatma Hesapları",
-          "file": "/docs/heliport-lighting-calc.pdf"
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Rüzgar Konisi",
-      "category": "HELİKOPTER PİSTİ AYDINLATMA SİSTEMLERİ",
-      "subCategory": "Rüzgar yönü göstericisi",
-      "description": "Rüzgar konisi, beyaz şeritli ve kırmızı mania işaretli.",
-      "fullDescription": "Pistlerde rüzgar yönünü görsel olarak gösteren rüzgar konisi. Beyaz şerit ve kırmızı mania işaretleri ile kullanıma uygundur. Düşük rüzgar hızlarında bile hassas dönüş sağlar.",
-      "price": "Fiyat Teklifi İçin İletişime Geçin",
-      "features": [
-        "Beyaz şerit ",
-        "Kırmızı mania işaretleri",
-        "Düşük sürtünmeli dönüş sistemi",
-        "UV dayanımlı malzeme",
-        "Kolay kurulum"
-      ],
-      "images": [
-        "/products/13/koni-1.jpg",
-        "/products/13/koni-2.jpeg",
-        "/products/13/koni-3.jpeg",
-        "/products/13/heliport-sema.png"
-      ],
-      "image": "/products/13/koni-1.jpg",
-      "status": "Stokta",
-      "year": "2024",
-      "technicalSpecs": {
-        "Yapı Malzemesi": "Hafif kompozit malzeme",
-        "Yükseklik": "2-3 metre",
-        "Aydınlatma": "Beyaz LED, 10W",
-        "Dönüş Başlangıcı": "3 knot rüzgar hızı",
-        "IP Sınıfı": "IP65",
-        "Standartlar": "ICAO Annex 14"
-      },
-      "documents": [
-        {
-          "title": "Teknik Şartname",
-          "file": "/docs/wind-cone-tech-spec.pdf"
-        },
-        {
-          "title": "Kurulum Talimatı",
-          "file": "/docs/wind-cone-installation.pdf"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Aerosol Yangın Söndürme Sistemleri",
-      "category": "YANGIN SÖNDÜRME SİSTEMLERİ",
-      "subCategory": "Aerosol Sistemler",
-      "description": "Otomatik aerosol yangın söndürme sistemleri, kurumsal ve endüstriyel tesisler için.",
-      "fullDescription": "Aerosol yangın söndürme sistemleri, yeni nesil yangın söndürme teknolojisi ile hızlı ve etkili yangın müdahalei sağlar. Elektrik panolarından sunucu odalarına, araçlardan endüstriyel tesislere kadar geniş uygulama yelpazesine sahiptir. Çevre dostu ve bakım gerektirmeyen yapısıyla uzun ömürlü kullanım sunar.",
-      "price": "Talep Üzerine",
-      "features": [
-        "Otomatik Aktifleşme sistemi",
-        "Çevre dostu ve insan sağlığına zararsız",
-        "Elektrikli ve elektronik ekipmanlara zarar vermez",
-        "Bakım gerektirmez",
-        "Kompakt tasarım",
-        "Geniş uygulama alanı",
-        "Hızlı ve etkili söndürme",
-        "Uzun ömürlü"
-      ],
-      "images": [
-        "/products/14/aerosol-yangin-sondurme-sistemi-1.jpg",
-        "/products/14/aerosol-yangin-sondurme-sistemi-2.jpg",
-        "/products/14/aerosol-yangin-sondurme-sistemi-3.jpg"
-      ],
-      "image": "/products/14/aerosol-yangin-sondurme-sistemi-1.jpg",
-      "status": "Stokta",
-      "year": "2024",
-      "technicalSpecs": {
-        "Tip": "Aerosol",
-        "Stoktaleşme": "Otomatik / Manuel",
-        "Çalışma Sıcaklığı": "-40°C ile +60°C",
-        "Söndürme Süresi": "10-15 saniye",
-        "Koruma Alanı": "Modele göre değişir",
-        "Ömür": "10 yıl"
-      }
-    },
-    {
-      "id": 15,
-      "name": "Aircraft Arresting Systems (AAS) Yedek Parçaları",
-      "category": "HAVACILIK EKİPMANLARI",
-      "subCategory": "Uçak Durdurma Sistemleri",
-      "description": "Askeri havalimanları için uçak durdurma sistemi (AAS) yedek parçaları.",
-      "fullDescription": "Uçak Durdurma Sistemleri (Aircraft Arresting Systems - AAS), askeri havalimanlarında acil durumlarda uçakların güvenli bir şekilde durdurulmasını sağlayan kritik güvenlik ekipmanlarıdır. Yedek parçalarımız orijinal spesifikasyonlara uygun olarak üretilir ve NATO standartlarına sahiptir.",
-      "price": "Talep Üzerine",
-      "features": [
-        "NATO standartlarına uygun",
-        "Orijinal spesifikasyonlarda üretim",
-        "Yüksek dayanıklılık",
-        "Hızlı teslimat",
-        "Teknik destek",
-        "Kalite güvencesi",
-        "Askeri sertifikasyonlar"
-      ],
-      "images": [
-        "/products/15/aircraft-arresting-system-parts-1.jpg",
-        "/products/15/aircraft-arresting-system-parts-2.jpg",
-        "/products/15/aircraft-arresting-system-parts-3.jpg"
-      ],
-      "image": "/products/15/aircraft-arresting-system-parts-1.jpg",
-      "status": "Stokta",
-      "year": "2024",
-      "technicalSpecs": {
-        "Standart": "NATO",
-        "Malzeme": "Yüksek Dayanıklı Çelik",
-        "Sertifikasyon": "Askeri Onaylı",
-        "Garanti": "2 Yıl"
-      }
-    },
-    {
-      "id": 16,
+      "id": 10,
       "name": "Disc Installation Machine - Disk Montaj Makinesi",
       "category": "HAVACILIK EKİPMANLARI",
       "subCategory": "Yer Destek Ekipmanları",
@@ -642,11 +406,12 @@
         "NATO onaylı"
       ],
       "images": [
+        "/products/16/disc-installation-machine-4.jpeg",
         "/products/16/disc-installation-machine-1.jpg",
         "/products/16/disc-installation-machine-2.jpg",
         "/products/16/disc-installation-machine-3.jpg"
       ],
-      "image": "/products/16/disc-installation-machine-1.jpg",
+      "image": "/products/16/disc-installation-machine-4.jpeg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
@@ -662,7 +427,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 11,
       "name": "MILES Atış Simülasyonu ve Ordu Simülatör Sistemleri",
       "category": "ASKERİ SİMÜLATÖRLER",
       "subCategory": "Atış ve Tank Simülatörleri",
@@ -695,6 +460,6 @@
         "Veri Kayıt": "Dijital Raporlama",
         "Bakım": "Düşük Bakım Gereksinimi"
       }
-    }
+    }   
   ]
 }
