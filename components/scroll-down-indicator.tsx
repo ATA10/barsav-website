@@ -35,7 +35,7 @@ export default function ScrollDownIndicator() {
         aria-label="Aşağı kaydırın"
         className="
           flex flex-col items-center justify-center gap-1
-          w-24 h-28
+          w-20 h-20
           bg-accent/20
           backdrop-blur-lg
           border border-accent/40
@@ -46,7 +46,7 @@ export default function ScrollDownIndicator() {
           transition-all duration-300
         "
         style={{ 
-          borderRadius: '50% / 40% 40% 60% 60%'
+          borderRadius: '80% / 80% 80% 80% 80%'
         }}
       >
         <span className="text-sm font-semibold tracking-wide">

@@ -7,7 +7,7 @@
   /* Professional corporate theme with refined navy blue and neutral grays */
   --background: oklch(0.98 0.005 240);
   --foreground: oklch(0.2 0.015 240);
-  --card: oklch(1 0 0);
+  --card: oklch(2 0 0);
   --card-foreground: oklch(0.2 0.015 240);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2 0.015 240);

@@ -161,7 +161,7 @@ export default function BlogSection() {
 
   return (
     <>
-      <section id="blog" className="py-24 bg-card/50">
+      <section id="blog" className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Header */}

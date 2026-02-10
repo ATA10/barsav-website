@@ -32,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="bg-background border-t border-[color:var(--border)] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             {/* <h3 className="text-3xl text-foreground font-semibold mb-4">{getTranslation(language, "footer.company")}</h3> */}
             <p className="text-muted-foreground text-sm">
@@ -83,11 +83,11 @@ export default function Footer() {
                   {getTranslation(language, "nav.career")}
                 </a>
               </li> */}
-              <li>
+              {/* <li>
                 <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="hover:text-accent transition cursor-pointer">
                   {getTranslation(language, "nav.blog")}
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#blog" onClick={(e) => handleAnchorClick(e, '#blog')} className="hover:text-accent transition cursor-pointer">
                   {getTranslation(language, "footer.pressRelease")}
@@ -101,8 +101,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-foreground font-semibold mb-4">{getTranslation(language, "footer.socialNetworks")}</h4>
+          <div>            
+            {/* <h4 className="text-foreground font-semibold mb-4">{getTranslation(language, "footer.socialNetworks")}</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
                 <a href="#" className="hover:text-accent transition">
@@ -124,7 +124,7 @@ export default function Footer() {
                   YouTube
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
 

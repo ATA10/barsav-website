@@ -12,33 +12,13 @@
     },
     {
       "id": 2,
-      "title": "Military Tank Simulator System",
-      "category": "Military Simulation",
-      "fullDescription": "Advanced tank simulator system. Equipped with a realistic physics engine, multi-channel visual system, and motion platform. Used for training and operation planning.",
-      "year": "2022",
-      "status": "Completed",
-      "client": "Turkish Armed Forces",
-      "image": "/military-tank-simulator.jpg"
-    },
-    {
-      "id": 3,
       "title": "Electronic Control System",
       "category": "Electronic Manufacturing",
       "fullDescription": "Design and production of a multi-channel electronic control system. Compliant with defense industry standards, tested, and approved.",
-      "year": "2023",
+      "year": "2016",
       "status": "Ongoing",
       "client": "Defense Contractor",
       "image": "/electronic-control-system.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Aviation Simulator Training System",
-      "category": "Civilian Simulation",
-      "fullDescription": "FSTD certified aviation simulator. Featuring a realistic instrument panel, motion system, and fully integrated control structure. Used for pilot training programs.",
-      "year": "2023",
-      "status": "Completed",
-      "client": "Aviation Training Center",
-      "image": "/aviation-simulator-training.jpg"
     }
   ]
 }

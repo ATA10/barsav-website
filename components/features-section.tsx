@@ -33,7 +33,7 @@ export default function FeaturesSection() {
 
   return (
     <>
-      <section id="services" className="py-24 bg-background">
+      <section id="services" className="py-24 bg-card/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">{getTranslation(language, "services.title")}</h2>
@@ -60,7 +60,7 @@ export default function FeaturesSection() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.shortDescription}</p>
+                  <p className="text-muted-foreground">{service.shortDescription.length > 50 ? service.shortDescription.slice(0,50)+"......": service.shortDescription }</p>
                 </div>
               </div>
             ))}

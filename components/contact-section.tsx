@@ -92,10 +92,9 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 {getTranslation(language, "contact.contactInfo")}
               </h3>
 
-              <div className="bg-background rounded-lg p-4 mb-6">
+              <div className="bg-card/50 rounded-lg p-4 mb-6">
                 <iframe
-                  // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6262506623846!2d29.00596!3d41.04733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7c0e3f0001%3A0x1234567890abc!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5325.439293731519!2d32.76094523667606!3d39.94895447762949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3490200415bb9%3A0x9907b73c659b599c!2sBARSAV%20HAVACILIK%20ELEKTRON%C4%B0K%20VE%20SAVUNMA%20SANAY%C4%B0%20T%C4%B0C.LTD.%C5%9ET%C4%B0.!5e0!3m2!1str!2str!4v1765100101926!5m2!1str!2str"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.6795092404099!2d32.77036890327922!3d39.94794411801186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d348fde2c5597d%3A0xec041d88846c1d48!2zQVRCIMSwxZ8gTWVya2V6aQ!5e0!3m2!1str!2str!4v1770740945184!5m2!1str!2str"
                   width="100%"
                   height="300"
                   style={{ border: 0, borderRadius: "8px" }}
@@ -112,9 +111,9 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                   {getTranslation(language, "contact.address")}
                 </p>
                 <p className="text-foreground">
-                   Barsav Havacılık Elektronik Savunma Sanayi Ticaret Limited Şirketi
+                  MACUN MAHALLESİ BATI BULVARI ATB İŞ MERKEZİ NO:1/94 YENİMAHALLE 
                   <br />
-                  Ankara, Türkiye
+                  ANKARA / TÜRKİYE
                 </p>
               </div>
 
@@ -137,7 +136,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
 
           {/* SAĞ TARAF - FORM */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">
+            <h3 className="text-2xl font-bold text-foreground mb-8">
               {getTranslation(language, "contact.sendMessage")}
             </h3>
 
@@ -178,7 +177,7 @@ export default function ContactSection({ onContactClick }: ContactSectionProps) 
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows={15}
+                rows={17}
                 className="w-full bg-background border border-[color:var(--border)] rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none transition"
               />
 

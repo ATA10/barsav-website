@@ -69,7 +69,7 @@
 
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-12">
               <div className="space-y-2 backdrop-blur-md bg-white/20 p-4 rounded-lg border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">50+</p>
+                <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">100+</p>
                 <p className="text-white font-semibold">{getTranslation(language, "hero.projects")}</p>
               </div>
               <div className="space-y-2 backdrop-blur-md bg-white/20 p-4 rounded-lg border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
@@ -77,7 +77,7 @@
                 <p className="text-white font-semibold">{getTranslation(language, "hero.years")}</p>
               </div>
               <div className="space-y-2 backdrop-blur-md bg-white/20 p-4 rounded-lg border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">500+</p>
+                <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">50+</p>
                 <p className="text-white font-semibold">{getTranslation(language, "hero.professionals")}</p>
               </div>
             </div>

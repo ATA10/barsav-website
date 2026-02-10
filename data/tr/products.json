@@ -21,7 +21,7 @@
         "/products/1/pist-kenar-isigi-yerustu-3.png"
       ],
       "image": "/products/1/pist-kenar-isigi-yerustu-1.png",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Işık Kaynağı": "LED, 20W",
@@ -64,7 +64,7 @@
         "/products/2/gomulu-pist-merkez-3.jpg"
       ],
       "image": "/products/2/gomulu-pist-merkez-1.png",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Işık Kaynağı": "LED, 15W",
@@ -103,7 +103,7 @@
       ],
       "images": ["/products/3/papi-system-1.jpg", "/products/3/papi-system-2.jpg", "/products/3/papi-system-3.png"],
       "image": "/products/3/papi-system-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Işık Kaynağı": "LED, 30W",
@@ -147,7 +147,7 @@
         "/products/4/heliport-sema.png"
       ],
       "image": "/products/4/heliport-kenar-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Işık Kaynağı": "LED, 10W",
@@ -186,7 +186,7 @@
       ],
       "images": ["/products/5/airport-bulb-1.jpg", "/products/5/airport-bulb-2.jpg", "/products/5/airport-bulb-3.jpg"],
       "image": "/products/5/airport-bulb-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Güç": "200W, 400W, 600W seçenekleri",
@@ -229,7 +229,7 @@
         "/products/6/fiberglass-cable-3.jpg"
       ],
       "image": "/products/6/fiberglass-cable-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "İletken": "Bakır, kalay kaplı",
@@ -268,7 +268,7 @@
       ],
       "images": ["/products/7/ccr-5k-1.jpg", "/products/7/ccr-5k-2.jpg", "/products/7/ccr-5k-3.jpg"],
       "image": "/products/7/ccr-5k-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Güç": "3-20 KVA seçenekleri",
@@ -312,7 +312,7 @@
         "/products/8/heliport-sema.png"
       ],
       "image": "/products/8/wind-cone-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Yapı Malzemesi": "Hafif kompozit malzeme",
@@ -355,7 +355,7 @@
         "/products/9/heliport-sema.png"
       ],
       "image": "/products/9/hapi-led-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Işık Kaynağı": "LED, 15W",
@@ -399,7 +399,7 @@
         "/products/10/taxiway-sign-4.jpg"
       ],
       "image": "/products/10/taxiway-sign-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Boyut": "Standart 1.2m x 0.6m (isteğe özel)",
@@ -445,7 +445,7 @@
         "/products/11/heliport-sema.png"
       ],
       "image": "/products/11/heliport-merkez-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Işık Kaynağı": "LED veya 45W",
@@ -491,7 +491,7 @@
         "/products/12/heliport-sema.png"
       ],
       "image": "/products/12/heliport-cevre-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Işık Kaynağı": "LED veya 200W",
@@ -534,7 +534,7 @@
         "/products/13/heliport-sema.png"
       ],
       "image": "/products/13/koni-1.jpg",
-      "status": "Aktif",
+      "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {
         "Yapı Malzemesi": "Hafif kompozit malzeme",
@@ -564,7 +564,7 @@
       "fullDescription": "Aerosol yangın söndürme sistemleri, yeni nesil yangın söndürme teknolojisi ile hızlı ve etkili yangın müdahalei sağlar. Elektrik panolarından sunucu odalarına, araçlardan endüstriyel tesislere kadar geniş uygulama yelpazesine sahiptir. Çevre dostu ve bakım gerektirmeyen yapısıyla uzun ömürlü kullanım sunar.",
       "price": "Talep Üzerine",
       "features": [
-        "Otomatik aktifleşme sistemi",
+        "Otomatik Aktifleşme sistemi",
         "Çevre dostu ve insan sağlığına zararsız",
         "Elektrikli ve elektronik ekipmanlara zarar vermez",
         "Bakım gerektirmez",
@@ -583,7 +583,7 @@
       "year": "2024",
       "technicalSpecs": {
         "Tip": "Aerosol",
-        "Aktifleşme": "Otomatik / Manuel",
+        "Stoktaleşme": "Otomatik / Manuel",
         "Çalışma Sıcaklığı": "-40°C ile +60°C",
         "Söndürme Süresi": "10-15 saniye",
         "Koruma Alanı": "Modele göre değişir",
