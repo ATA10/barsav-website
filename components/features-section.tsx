@@ -49,7 +49,7 @@ export default function FeaturesSection() {
                 onClick={() => handleServiceClick(service)}
                 className="group cursor-pointer overflow-hidden rounded-lg"
               >
-                <div className="relative h-64 overflow-hidden bg-card rounded-lg">
+                {/* <div className="relative h-64 overflow-hidden bg-card rounded-lg">
                   <ImageWithBasePath
                     src={service.image}
                     alt={service.title}
@@ -57,6 +57,24 @@ export default function FeaturesSection() {
                     className="object-cover group-hover:scale-105 transition duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition" />
+                </div> */}
+
+                {/* <div className="relative aspect-[16/9] bg-muted rounded-lg flex items-center justify-center">
+                  <ImageWithBasePath
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div> */}
+                
+                <div className="relative w-full h-[260px] bg-card rounded-lg flex items-center justify-center">
+                  <ImageWithBasePath
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>

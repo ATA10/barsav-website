@@ -1,4 +1,6 @@
-# Baykartech website clone
+# website 
+
+* ürünler içerik sayfası kapalı 
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 

@@ -125,7 +125,7 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold text-foreground mb-12 text-balance">{aboutData.whoWeAre}</h2>
 
           <div className="mb-8 rounded-lg overflow-hidden h-96 bg-gradient-to-br from-accent/20 to-primary/20 relative">
-            <ImageWithBasePath src="/modern-aerospace-technology-facility.jpg" alt="Barsav Teknoloji" fill className="object-cover" />
+            <ImageWithBasePath src="/hak1.jpg" alt="Barsav Teknoloji" fill className="object-cover" />
           </div>
 
           <div className="space-y-6 text-lg text-foreground leading-relaxed">

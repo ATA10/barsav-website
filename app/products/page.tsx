@@ -199,7 +199,7 @@ export default function ProductsPage() {
               {filteredProducts.map((product) => (
                 <div
                   key={product.id}
-                  onClick={() => handleProductClick(product)}
+                  // onClick={() => handleProductClick(product)}
                   className="bg-card border border-[color:var(--border)] rounded-lg overflow-hidden hover:border-accent transition cursor-pointer group"
                 >
                   <div className="relative h-64 overflow-hidden bg-gradient-to-br from-accent/20 to-primary/20">

@@ -16,11 +16,12 @@
         "Beyaz veya renkli ışık seçenekleri"
       ],
       "images": [
+        "/products/1/b1.jpg",
         "/products/1/pist-kenar-isigi-yerustu-1.png",
         "/products/1/pist-kenar-isigi-yerustu-2.jpg",
         "/products/1/pist-kenar-isigi-yerustu-3.png"
       ],
-      "image": "/products/1/pist-kenar-isigi-yerustu-1.png",
+      "image": "/products/1/b1.jpg",
       "status": "Stokta",
       "year": "2024",
       "technicalSpecs": {

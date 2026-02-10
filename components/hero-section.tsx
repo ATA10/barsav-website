@@ -41,8 +41,8 @@
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8 animate-fade-in">
-            <div className="space-y-4">
-              <h1 className="text-7xl md:text-9xl font-bold text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] text-balance leading-tight">
+            <div className="space-y-2">
+              <h1 className="mt-12 text-7xl md:text-9xl font-bold text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] text-balance leading-tight">
                 {getTranslation(language, "hero.title")}
               </h1>
               <div className="h-1 w-24 bg-gradient-to-r from-white to-blue-200 mx-auto rounded-full shadow-[0_0_20px_rgba(255,255,255,0.8)]" />
