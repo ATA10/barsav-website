@@ -10,7 +10,8 @@ const nextConfig = {
     unoptimized: true,
   },
   env: {
-    NEXT_PUBLIC_BASE_PATH: "/barsav-website",
+    // NEXT_PUBLIC_BASE_PATH: "/barsav-website",
+    NEXT_PUBLIC_BASE_PATH: "/",
   },
 };
 

@@ -11,23 +11,47 @@ export default function Footer() {
   const router = useRouter()
   const { language } = useLanguage()
   
-  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault()
-    const hash = href.replace('#', '')
-    const homePath = getHomePath()
-    const currentPath = window.location.pathname
+  // const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  //   e.preventDefault()
+  //   const hash = href.replace('#', '')
+  //   const homePath = getHomePath()
+  //   const currentPath = window.location.pathname
     
-    // Eğer ana sayfada değilsek, ana sayfaya yönlendir
-    if (currentPath !== homePath && currentPath !== `${homePath}/`) {
-      window.location.href = `${homePath}/#${hash}`
-    } else {
-      const element = document.getElementById(hash)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        window.history.pushState(null, '', `${homePath}/#${hash}`)
-      }
-    }
+  //   // Eğer ana sayfada değilsek, ana sayfaya yönlendir
+  //   if (currentPath !== homePath && currentPath !== `${homePath}/`) {
+  //     window.location.href = `${homePath}/#${hash}`
+  //   } else {
+  //     const element = document.getElementById(hash)
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  //       window.history.pushState(null, '', `${homePath}/#${hash}`)
+  //     }
+  //   }
+  // }
+
+  const handleAnchorClick = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string
+) => {
+  e.preventDefault()
+
+  const hash = href.replace("#", "")
+  const currentPath = window.location.pathname
+
+  // Eğer ana sayfada değilsek ana sayfaya git
+  if (currentPath !== "/") {
+    window.location.href = `/#${hash}`
+    return
   }
+
+  // Ana sayfadaysak smooth scroll yap
+  const element = document.getElementById(hash)
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" })
+    window.history.pushState(null, "", `/#${hash}`)
+  }
+}
+
 
   return (
     <footer className="bg-background border-t border-[color:var(--border)] py-12">
