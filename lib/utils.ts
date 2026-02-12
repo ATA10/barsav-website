@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 // Helper function to add basePath to image URLs for GitHub Pages
 export function getImagePath(path: string): string {
   // Hardcode basePath for GitHub Pages
-  const basePath = '/barsav-website'
+  const basePath = '/'
   
   // If path is absolute URL, return as is
   if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('//')) {
